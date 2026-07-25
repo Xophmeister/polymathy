@@ -3,9 +3,9 @@
  :preferred-format :markdown
  :preferred-workflow :now
 
- ;; No journals — requires a home page to land on instead
+ ;; No journals; requires a home page to land on instead
  :feature/enable-journals? false
- :default-home {:page "contents"}
+ :default-home {:page "Polymathy Project"}
 
  ;; Publish every page regardless of a page-level public:: property
  :publishing/all-pages-public? true
