@@ -27,6 +27,10 @@ jobs:
           output-directory: www
           theme-mode: dark
 
+      - name: Add Mastodon verification link
+        run: |
+          sed -i 's#</head>#<link href="https://hachyderm.io/@xophmeister" rel="me" />\n</head>#' www/index.html
+
       - run: touch www/.nojekyll
 
       - uses: actions/configure-pages@v5
