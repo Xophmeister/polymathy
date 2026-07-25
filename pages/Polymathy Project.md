@@ -1,3 +1,4 @@
 ## Curricula
 - ## Meta
-	- [[Licence]]
+	- ### [[AI instructions]]
+	- ### [[Licence]]
