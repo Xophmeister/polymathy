@@ -7,6 +7,8 @@
  :feature/enable-journals? false
  :default-home {:page "Polymathy Project"}
 
+ :property/separated-by-commas #{:prerequisites}
+
  ;; Publish every page regardless of a page-level public:: property
  :publishing/all-pages-public? true
 

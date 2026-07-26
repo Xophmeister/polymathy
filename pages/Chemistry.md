@@ -1,6 +1,8 @@
-## Level 1: Foundations
-status:: active
-created:: 25 July 2026
+tags:: syllabus
+
+- ## Level 1: Foundations
+  status:: active
+  created:: 25 July 2026
 	- _Entry level set by:_ diagnostic of 25 July 2026 (Appendix A)
 	- Depth marker: roughly GCSE, but sequenced by conceptual dependency rather than by any specification, and extended past GCSE where the structure demands it (ionisation-energy evidence, quantitative energetics, equilibrium).
 	- ### How to use this file
@@ -22,98 +24,61 @@ created:: 25 July 2026
 		  note::
 			- Energy levels and shell occupancy. Electron arrangement for the first twenty elements. Successive ionisation energies as *evidence* for shell structure — the model is to be derived from the data, not asserted. Why the orbiting-planet picture is wrong, what replaces it, and why the shell model survives being wrong in detail.
 			- *Re-tests from diagnostic:* "electrons orbit".
-- ### 3. The periodic table
-  **Prerequisites:** 2
-  **State:** not started
-  **Note:**
-  
-  Periodicity as a consequence of shell filling, not a premise. Group as outer- electron count; period as shell number. Nuclear charge, shielding, effective nuclear charge. Trends in atomic radius, ionisation energy and reactivity — down group 1, down group 7, across a period. Why group 0 does nothing.
-  
-  *Re-tests from diagnostic:* why alkali metals grow more reactive down the group; "periodic over the columns".
-  
-  ---
-- ### 4. Ionic bonding and ionic solids
-  **Prerequisites:** 3
-  **State:** not started
-  **Note:**
-  
-  Why atoms form ions and which ions they form. Electrostatic attraction in a three-dimensional lattice; the ionic solid as a giant structure with no molecules in it. Predicting formulae from charges. Properties as consequences: high melting point, brittleness, conduction when molten or aqueous but not solid.
-  
-  *Re-tests from diagnostic:* conduction requires mobile charge carriers.
-  
-  ---
-- ### 5. Covalent bonding: molecules and networks
-  **Prerequisites:** 3
-  **State:** not started
-  **Note:**
-  
-  The shared pair and why it binds. Single, double and triple bonds. Bond energy as a quantity. The distinction between a molecule and a giant covalent network (diamond, graphite, silicon dioxide) and why the same bond type gives two utterly different classes of substance.
-  
-  ---
-- ### 6. Metallic bonding
-  **Prerequisites:** 3, 4
-  **State:** not started
-  **Note:**
-  
-  Delocalised electrons and cation lattice. Conduction in the solid state and why it differs mechanistically from ionic conduction. Malleability. Trends in melting point with number of delocalised electrons.
-  
-  *Re-tests from diagnostic:* conduction requires mobile charge carriers (contrast with topic 4).
-  
-  ---
-- ### 7. Intermolecular forces, structure and physical properties
-  **Prerequisites:** 4, 5, 6
-  **State:** not started
-  **Note:**
-  
-  Melting and boiling as the loss of long-range and short-range order. London dispersion forces: instantaneous dipoles, correlation between neighbours, and why the time-average does not vanish. Polarisability and why it tracks loosely held outer electrons rather than mass. Permanent dipoles. Hydrogen bonding and the anomalies of water. Synthesis: given a substance's structure, predict its melting point, solubility and conductivity — and the reverse.
-  
-  *Re-tests from diagnostic:* the element/compound fallacy about bond strength; instantaneous dipoles as periodic rather than random-but-correlated; the sceptic's cancellation argument; I₂ versus F₂.
-  
-  ---
-- ### 8. Chemical change and equations
-  **Prerequisites:** 4, 5
-  **State:** not started
-  **Note:**
-  
-  What a reaction is at the level of atoms: rearrangement, with atoms conserved in kind and number. Formulae, balancing, state symbols. Conservation of mass and the drawing of system boundaries — open versus closed vessels. Why mass appears to change when it does not. Order-of-magnitude treatment of mass–energy equivalence and why it is invisible on a laboratory balance.
-  
-  *Re-tests from diagnostic:* the burning-magnesium mass error.
-  
-  ---
-- ### 9. The mole and reacting masses
-  **Prerequisites:** 1, 8
-  **State:** not started
-  **Note:**
-  
-  The mole as a pure count and the Avogadro constant as its size. Molar mass and its relation to relative atomic mass. The core route: mass → moles → balanced equation → moles → mass. Limiting reagent and reagent in excess. Percentage yield. Empirical and molecular formulae from composition data.
-  
-  Brought forward of its usual school position on the strength of the diagnostic.
-  
-  *Re-tests from diagnostic:* the entire mole gap.
-  
-  ---
-- ### 10. Solutions, concentration and gas volumes
-  **Prerequisites:** 9
-  **State:** not started
-  **Note:**
-  
-  Concentration in mol dm⁻³ and in g dm⁻³. Dilution. Molar gas volume and its dependence on temperature and pressure; the ideal gas relationship and the assumptions behind it. Titration arithmetic. Disentangling "amount of substance" from the conditions under which a gas is measured.
-  
-  *Cross-subject:* kinetic theory (physics).
-  
-  ---
-- ### 11. Energetics
-  **Prerequisites:** 5, 7, 9
-  **State:** not started
-  **Note:**
-  
-  Exothermic and endothermic change. Bond breaking as endothermic and bond making as exothermic, and the net enthalpy change as the difference. Enthalpy change per mole; calculation from bond energies; sign conventions. Reaction profiles and activation energy. Where the light and heat of a burning ribbon actually come from.
-  
-  Treated quantitatively, per the diagnostic.
-  
-  *Cross-subject:* energy conservation and the first law (physics).
-  
-  ---
+		- #### 3. The periodic table
+		  prerequisites:: 2
+		  state:: not started
+		  note::
+			- Periodicity as a consequence of shell filling, not a premise. Group as outer- electron count; period as shell number. Nuclear charge, shielding, effective nuclear charge. Trends in atomic radius, ionisation energy and reactivity — down group 1, down group 7, across a period. Why group 0 does nothing.
+			- *Re-tests from diagnostic:* why alkali metals grow more reactive down the group; "periodic over the columns".
+		- #### 4. Ionic bonding and ionic solids
+		  prerequisites:: 3
+		  state:: not started
+		  note::
+			- Why atoms form ions and which ions they form. Electrostatic attraction in a three-dimensional lattice; the ionic solid as a giant structure with no molecules in it. Predicting formulae from charges. Properties as consequences: high melting point, brittleness, conduction when molten or aqueous but not solid.
+			- *Re-tests from diagnostic:* conduction requires mobile charge carriers.
+		- #### 5. Covalent bonding: molecules and networks
+		  prerequisites:: 3
+		  state:: not started
+		  note::
+			- The shared pair and why it binds. Single, double and triple bonds. Bond energy as a quantity. The distinction between a molecule and a giant covalent network (diamond, graphite, silicon dioxide) and why the same bond type gives two utterly different classes of substance.
+		- #### 6. Metallic bonding
+		  prerequisites:: 3, 4
+		  state:: not started
+		  note::
+			- Delocalised electrons and cation lattice. Conduction in the solid state and why it differs mechanistically from ionic conduction. Malleability. Trends in melting point with number of delocalised electrons.
+			- *Re-tests from diagnostic:* conduction requires mobile charge carriers (contrast with topic 4).
+		- #### 7. Intermolecular forces, structure and physical properties
+		  prerequisites:: 4, 5, 6
+		  state:: not started
+		  note::
+			- Melting and boiling as the loss of long-range and short-range order. London dispersion forces: instantaneous dipoles, correlation between neighbours, and why the time-average does not vanish. Polarisability and why it tracks loosely held outer electrons rather than mass. Permanent dipoles. Hydrogen bonding and the anomalies of water. Synthesis: given a substance's structure, predict its melting point, solubility and conductivity — and the reverse.
+			- *Re-tests from diagnostic:* the element/compound fallacy about bond strength; instantaneous dipoles as periodic rather than random-but-correlated; the sceptic's cancellation argument; I₂ versus F₂.
+		- #### 8. Chemical change and equations
+		  prerequisites:: 4, 5
+		  state:: not started
+		  note::
+			- What a reaction is at the level of atoms: rearrangement, with atoms conserved in kind and number. Formulae, balancing, state symbols. Conservation of mass and the drawing of system boundaries — open versus closed vessels. Why mass appears to change when it does not. Order-of-magnitude treatment of mass–energy equivalence and why it is invisible on a laboratory balance.
+			- *Re-tests from diagnostic:* the burning-magnesium mass error.
+		- #### 9. The mole and reacting masses
+		  prerequisites:: 1, 8
+		  state:: not started
+		  note::
+			- The mole as a pure count and the Avogadro constant as its size. Molar mass and its relation to relative atomic mass. The core route: mass → moles → balanced equation → moles → mass. Limiting reagent and reagent in excess. Percentage yield. Empirical and molecular formulae from composition data.
+			- Brought forward of its usual school position on the strength of the diagnostic.
+			- *Re-tests from diagnostic:* the entire mole gap.
+		- #### 10. Solutions, concentration and gas volumes
+		  prerequisites:: 9
+		  state:: not started
+		  note::
+			- Concentration in mol dm⁻³ and in g dm⁻³. Dilution. Molar gas volume and its dependence on temperature and pressure; the ideal gas relationship and the assumptions behind it. Titration arithmetic. Disentangling "amount of substance" from the conditions under which a gas is measured.
+			- *Cross-subject:* kinetic theory (physics).
+		- #### 11. Energetics
+		  prerequisites:: 5, 7, 9
+		  state:: not started
+		  note::
+			- Exothermic and endothermic change. Bond breaking as endothermic and bond making as exothermic, and the net enthalpy change as the difference. Enthalpy change per mole; calculation from bond energies; sign conventions. Reaction profiles and activation energy. Where the light and heat of a burning ribbon actually come from.
+			- Treated quantitatively, per the diagnostic.
+			- *Cross-subject:* energy conservation and the first law (physics).
 - ### 12. Rates of reaction
   **Prerequisites:** 10, 11
   **State:** not started
