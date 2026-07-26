@@ -97,48 +97,44 @@ tags:: syllabus
 		  note::
 			- Acids as proton donors, bases as acceptors. Strong versus weak, and its independence from concentration. pH as a logarithmic scale and what a unit means. Neutralisation. Salt preparation and titration as an application of topic 10.
 			- *Cross-subject:* logarithms (mathematics).
-- ### 15. Redox and electrochemistry
-  **Prerequisites:** 3, 8, 10
-  **State:** not started
-  **Note:**
-  
-  Oxidation and reduction as electron transfer; oxidation numbers as bookkeeping.  Half-equations. The reactivity series as a consequence of ionisation energy rather than a list to memorise. Displacement. Electrolysis of melts and solutions, with products predicted rather than recalled. Simple cells.
-  
-  *Re-tests from diagnostic:* group 1 reactivity, from a second direction.
-  
-  ---
-- ## Deferred to Level 2
-  
-  Recorded here so the omissions are deliberate and reviewable:
-- **Organic chemistry.** At this depth it is largely nomenclature and pattern recognition, and it is done properly only once mechanisms are available.  Depends on topics 5, 7 and 11.
-- **Chemistry of the atmosphere, Earth's resources, polymers, extraction.** Context and application rather than concept; each is an instance of material already covered.
-- **Quantitative equilibrium, rate equations, orbitals and subshells, entropy.** All Level 2 by dependency.
-  
-  ---
-- ## Level completion
-  
-  Level 1 is complete when all fifteen topics are marked complete and no outstanding note remains unresolved against any of them. The next level is designed only then, and specialises on the basis of what proved difficult or interesting here.
-  
-  ---
-- ## Appendix A — Diagnostic record, 25 July 2026
-  
-  **Entry level: 1 (Foundations).**
-  
-  Misconceptions found and corrected in conversation:
-- element versus compound taken to predict bond strength
-- mass apparently lost on combustion; system boundary drawn round the solid only
-- instantaneous dipoles taken to fluctuate periodically; they are random but correlated between neighbours
-  
-  Gaps found:
-- atomic structure absent — no shell model, no electron arrangement
-- mole absent; no mass → count → equation → mass route
-- periodic table held as a picture, not a tool; column ≡ outer-electron count not known
-- conduction requires mobile charge carriers — not known
-  
-  Retained and usable:
-- melting as loss of long-range order
-- intramolecular versus intermolecular distinction, once prompted
-- dimensional reasoning and order-of-magnitude checks intact
-- reasons rather than recalls when pushed
-  
-  **Caveat carried forward:** everything under "corrected in conversation" was told, not earned. Being told is not knowing. Each is assigned above to the topic that owns it and must be re-tested there; none is to be treated as already covered.
+		- #### 15. Redox and electrochemistry
+		  prerequisites:: 3, 8, 10
+		  state:: not started
+		  note::
+			- Oxidation and reduction as electron transfer; oxidation numbers as bookkeeping.  Half-equations. The reactivity series as a consequence of ionisation energy rather than a list to memorise. Displacement. Electrolysis of melts and solutions, with products predicted rather than recalled. Simple cells.
+			- *Re-tests from diagnostic:* group 1 reactivity, from a second direction.
+	- ## Deferred to Level 2
+	  
+	  Recorded here so the omissions are deliberate and reviewable:
+	- **Organic chemistry.** At this depth it is largely nomenclature and pattern recognition, and it is done properly only once mechanisms are available.  Depends on topics 5, 7 and 11.
+	- **Chemistry of the atmosphere, Earth's resources, polymers, extraction.** Context and application rather than concept; each is an instance of material already covered.
+	- **Quantitative equilibrium, rate equations, orbitals and subshells, entropy.** All Level 2 by dependency.
+	  
+	  ---
+	- ## Level completion
+	  
+	  Level 1 is complete when all fifteen topics are marked complete and no outstanding note remains unresolved against any of them. The next level is designed only then, and specialises on the basis of what proved difficult or interesting here.
+	  
+	  ---
+	- ## Appendix A — Diagnostic record, 25 July 2026
+	  
+	  **Entry level: 1 (Foundations).**
+	  
+	  Misconceptions found and corrected in conversation:
+	- element versus compound taken to predict bond strength
+	- mass apparently lost on combustion; system boundary drawn round the solid only
+	- instantaneous dipoles taken to fluctuate periodically; they are random but correlated between neighbours
+	  
+	  Gaps found:
+	- atomic structure absent — no shell model, no electron arrangement
+	- mole absent; no mass → count → equation → mass route
+	- periodic table held as a picture, not a tool; column ≡ outer-electron count not known
+	- conduction requires mobile charge carriers — not known
+	  
+	  Retained and usable:
+	- melting as loss of long-range order
+	- intramolecular versus intermolecular distinction, once prompted
+	- dimensional reasoning and order-of-magnitude checks intact
+	- reasons rather than recalls when pushed
+	  
+	  **Caveat carried forward:** everything under "corrected in conversation" was told, not earned. Being told is not knowing. Each is assigned above to the topic that owns it and must be re-tested there; none is to be treated as already covered.
