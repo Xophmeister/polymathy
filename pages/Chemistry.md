@@ -79,26 +79,22 @@ tags:: syllabus
 			- Exothermic and endothermic change. Bond breaking as endothermic and bond making as exothermic, and the net enthalpy change as the difference. Enthalpy change per mole; calculation from bond energies; sign conventions. Reaction profiles and activation energy. Where the light and heat of a burning ribbon actually come from.
 			- Treated quantitatively, per the diagnostic.
 			- *Cross-subject:* energy conservation and the first law (physics).
-- ### 12. Rates of reaction
-  **Prerequisites:** 10, 11
-  **State:** not started
-  **Note:**
-  
-  Collision theory: frequency, orientation, energy. Effects of concentration, pressure, temperature, surface area and catalysts, each explained rather than listed. Rate as the gradient of a concentration–time curve; initial rate; reading tangents. Why a modest temperature rise produces a large rate change.
-  
-  *Cross-subject:* differentiation and rates of change (mathematics).
-  
-  ---
-- ### 13. Reversible reactions and equilibrium
-  **Prerequisites:** 12
-  **State:** not started
-  **Note:**
-  
-  Dynamic equilibrium as equal opposing rates, not as stasis. Closed systems. Le Chatelier's principle applied to concentration, pressure and temperature. The distinction between the position of an equilibrium and the rate at which it is reached, and why catalysts move one and not the other.
-  
-  *Cross-subject:* homeostasis and steady states (biology).
-  
-  ---
+		- #### 12. Rates of reaction
+		  prerequisites:: 10, 11
+		  state:: not started
+		  note::
+			- Collision theory: frequency, orientation, energy. Effects of concentration, pressure, temperature, surface area and catalysts, each explained rather than listed. Rate as the gradient of a concentration–time curve; initial rate; reading tangents. Why a modest temperature rise produces a large rate change.
+			- *Cross-subject:* differentiation and rates of change (mathematics).
+		- #### 13. Reversible reactions and equilibrium
+		  **Prerequisites:** 12
+		  **State:** not started
+		  **Note:**
+		  
+		  Dynamic equilibrium as equal opposing rates, not as stasis. Closed systems. Le Chatelier's principle applied to concentration, pressure and temperature. The distinction between the position of an equilibrium and the rate at which it is reached, and why catalysts move one and not the other.
+		  
+		  *Cross-subject:* homeostasis and steady states (biology).
+		  
+		  ---
 - ### 14. Acids and bases
   **Prerequisites:** 10, 13
   **State:** not started
