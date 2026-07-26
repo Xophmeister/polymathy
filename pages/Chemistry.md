@@ -10,26 +10,18 @@ created:: 25 July 2026
 			- `in progress`
 			- `complete`
 	- ### Topics
-- ### 1. Atoms, nuclei and isotopes
-  **Prerequisites:** none
-  **State:** not started
-  **Note:**
-  
-  Protons, neutrons, electrons: charge, mass, location. Atomic number as the definition of an element. Mass number. Isotopes and why they exist without changing chemistry. Relative atomic mass as a weighted mean over isotopic abundance. Why chemical behaviour is a property of electrons and not the nucleus.
-  
-  *Re-tests from diagnostic:* "same number of neutrons down a group".
-  
-  ---
-- ### 2. Electrons and the shell model
-  **Prerequisites:** 1
-  **State:** not started
-  **Note:**
-  
-  Energy levels and shell occupancy. Electron arrangement for the first twenty elements. Successive ionisation energies as *evidence* for shell structure — the model is to be derived from the data, not asserted. Why the orbiting-planet picture is wrong, what replaces it, and why the shell model survives being wrong in detail.
-  
-  *Re-tests from diagnostic:* "electrons orbit".
-  
-  ---
+		- #### 1. Atoms, nuclei and isotopes
+		  prerequisites:: none
+		  state:: not started
+		  note::
+			- Protons, neutrons, electrons: charge, mass, location. Atomic number as the definition of an element. Mass number. Isotopes and why they exist without changing chemistry. Relative atomic mass as a weighted mean over isotopic abundance. Why chemical behaviour is a property of electrons and not the nucleus.
+			- *Re-tests from diagnostic:* "same number of neutrons down a group".
+		- #### 2. Electrons and the shell model
+		  prerequisites:: 1
+		  state:: not started
+		  note::
+			- Energy levels and shell occupancy. Electron arrangement for the first twenty elements. Successive ionisation energies as *evidence* for shell structure — the model is to be derived from the data, not asserted. Why the orbiting-planet picture is wrong, what replaces it, and why the shell model survives being wrong in detail.
+			- *Re-tests from diagnostic:* "electrons orbit".
 - ### 3. The periodic table
   **Prerequisites:** 2
   **State:** not started
