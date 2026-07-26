@@ -3,4 +3,5 @@ logseq/bak/
 logseq/version-files/
 logseq/graphs-txid.edn
 .logseq/
+assets/
 www/

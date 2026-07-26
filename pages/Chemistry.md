@@ -86,25 +86,17 @@ tags:: syllabus
 			- Collision theory: frequency, orientation, energy. Effects of concentration, pressure, temperature, surface area and catalysts, each explained rather than listed. Rate as the gradient of a concentration–time curve; initial rate; reading tangents. Why a modest temperature rise produces a large rate change.
 			- *Cross-subject:* differentiation and rates of change (mathematics).
 		- #### 13. Reversible reactions and equilibrium
-		  **Prerequisites:** 12
-		  **State:** not started
-		  **Note:**
-		  
-		  Dynamic equilibrium as equal opposing rates, not as stasis. Closed systems. Le Chatelier's principle applied to concentration, pressure and temperature. The distinction between the position of an equilibrium and the rate at which it is reached, and why catalysts move one and not the other.
-		  
-		  *Cross-subject:* homeostasis and steady states (biology).
-		  
-		  ---
-- ### 14. Acids and bases
-  **Prerequisites:** 10, 13
-  **State:** not started
-  **Note:**
-  
-  Acids as proton donors, bases as acceptors. Strong versus weak, and its independence from concentration. pH as a logarithmic scale and what a unit means. Neutralisation. Salt preparation and titration as an application of topic 10.
-  
-  *Cross-subject:* logarithms (mathematics).
-  
-  ---
+		  prerequisites:: 12
+		  state:: not started
+		  note::
+			- Dynamic equilibrium as equal opposing rates, not as stasis. Closed systems. Le Chatelier's principle applied to concentration, pressure and temperature. The distinction between the position of an equilibrium and the rate at which it is reached, and why catalysts move one and not the other.
+			- *Cross-subject:* homeostasis and steady states (biology).
+		- #### 14. Acids and bases
+		  prerequisites:: 10, 13
+		  state:: not started
+		  note::
+			- Acids as proton donors, bases as acceptors. Strong versus weak, and its independence from concentration. pH as a logarithmic scale and what a unit means. Neutralisation. Salt preparation and titration as an application of topic 10.
+			- *Cross-subject:* logarithms (mathematics).
 - ### 15. Redox and electrochemistry
   **Prerequisites:** 3, 8, 10
   **State:** not started
