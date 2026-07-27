@@ -108,12 +108,14 @@ tags:: syllabus
 		  prerequisites:: ((6a652f81-52b6-4329-8323-e4ce94566a56)), ((6a652f81-1880-42ad-8716-fb8c0468d897))
 		  state:: not started
 		  note::
+		  id:: 6a652f81-7381-4502-8d7c-028e0829e491
 			- Acids as proton donors, bases as acceptors. Strong versus weak, and its independence from concentration. pH as a logarithmic scale and what a unit means. Neutralisation. Salt preparation and titration as an application of ((6a652f81-52b6-4329-8323-e4ce94566a56)).
 			- *Cross-subject:* logarithms (mathematics).
 		- #### 15. Redox and electrochemistry
 		  prerequisites:: ((6a652f81-0192-406b-8fb4-007dd74679d5)), ((6a652f81-623f-41a8-abc7-feecf7d04914)), ((6a652f81-52b6-4329-8323-e4ce94566a56))
 		  state:: not started
 		  note::
+		  id:: 6a652f81-8fab-484a-bf19-a606ba4ce0ff
 			- Oxidation and reduction as electron transfer; oxidation numbers as bookkeeping.  Half-equations. The reactivity series as a consequence of ionisation energy rather than a list to memorise. Displacement. Electrolysis of melts and solutions, with products predicted rather than recalled. Simple cells.
 			- *Re-tests from diagnostic:* group 1 reactivity, from a second direction.
 	- ## Deferred to Level 2
