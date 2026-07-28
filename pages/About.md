@@ -1,0 +1,12 @@
+- #+BEGIN_QUOTE
+  **polymathy** (n. uncountable)
+  _/pəˈlɪməθi/_
+  
+  The knowledge of many arts and sciences; variety of learning.
+  #+END_QUOTE
+- I love learning and, when I was at school, I was particularly good at natural sciences and maths. I went on to do an undergraduate masters degree in mathematics, but for "reasons" it didn't go well. Regardless, as I'm sure with many, in the intervening twenty-to-thirty years, I have forgotten almost everything! I don't like this situation and the [[Polymathy Project]] is my attempt to correct it.
+- My idea is to use AI as a tutor: assessing my latent levels of understanding; building syllabi upon this; and then exercising those topics via the Socratic method. I hope to attain at least A' Level standard (UK pre-university level) across the board and beyond. However, I'm conscious that I'll have to do this around full-time work, so I have no misconceptions about how long it's going to take and how ambitious a task this is!
+- While I won't publish my conversations, this Logseq notebook is made public. This is to keep me honest and accountable. It also enables anyone else who wishes to follow along. Not by reading my notes, but iterating on my instructions and syllabli; you'll have to do the same work I'm doing, I'm afraid! I'm just giving you the tools to get you started.
+- I will be starting off with the natural sciences and maths, but I hope to add more interests as time passes; next up would probably be PPE (philosophy, politics and economics), maybe Italian (which I spent a lot of time learning and have also mostly forgotten) and linguistics (which I have another masters degree in, but haven't forgotten so much of). I'm also interested in a lot of humanities, but these maybe best done via book learning, rather than AI tutorship. We shall see!
+- Those who know me might note the conspicuous exception of computer science. This is simple enough to explain: it's my day job. Not that I "know it all" ­— I don't and have no formal training in CompSci — but what I do know is enough to make a decent living and its academic subtopics of interest to me squarely fit into mathematics (and maybe physics). When I get to specialisations, I should cover these by fiat.
+- inner emigration

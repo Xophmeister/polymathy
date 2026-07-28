@@ -11,7 +11,10 @@ tags:: syllabus
 			- `not started`
 			- `in progress`
 			- `complete`
-		- **Cross-subject prerequisites are binding, not decorative.** Several topics below depend on chemistry topics that are themselves not started, and three depend on probability, for which no syllabus yet exists. Where a topic lists a cross-subject prerequisite, that prerequisite is to be checked in the same way as an internal one. Topics startable today, with nothing outstanding anywhere: **1, 2, 3**.
+		- **Cross-subject prerequisites are binding, not decorative.** Several topics below depend on chemistry topics that are themselves not started, and three depend on probability, for which no syllabus yet exists. Where a topic lists a cross-subject prerequisite, that prerequisite is to be checked in the same way as an internal one. Topics startable today, with nothing outstanding anywhere:
+			- ((6a67d966-8a73-4ddc-b595-68782e0a53df))
+			- ((6a67d966-bc9e-4651-9524-4a6d0814f6ef))
+			- ((6a67d966-0778-4297-8ac1-90464d4e4b50))
 	- ### Topics
 		- #### 1. Life, free energy and the far-from-equilibrium state
 		  prerequisites::
@@ -19,7 +22,7 @@ tags:: syllabus
 		  note::
 		  id:: 6a67d966-8a73-4ddc-b595-68782e0a53df
 			- Why persistence costs an organism something and costs a rock nothing. Equilibrium as the state a system arrives at when left alone, and why the crystal is already there while the cell is not. Entropy as a count of microstates, distinguished sharply from free energy as capacity to do work — the two were conflated in the diagnostic and the confusion must not survive this topic. Maintenance as continuous work against drift: ion gradients, protein conformation, body temperature. Basal metabolic rate as the price of doing nothing. What "an organism is an open system" actually asserts.
-			- Boundary with topic 7: this topic establishes that free energy must be spent continuously and why. Topic 7 covers how it is captured and disbursed.
+			- Boundary with ((6a67d966-9d55-4cbf-b5bf-f22bc57c153c)): this topic establishes that free energy must be spent continuously and why. ((6a67d966-9d55-4cbf-b5bf-f22bc57c153c)) covers how it is captured and disbursed.
 			- *Re-tests from diagnostic:* "a state of entropy"; free energy misidentified as entropy; order as the thing being maintained.
 			- *Cross-subject:* second law, and enthalpy versus entropy ( ((6a652f81-0d4e-41ed-a431-4ea08facae04)); physics).
 		- #### 2. Scale, surface area and diffusion
@@ -36,7 +39,7 @@ tags:: syllabus
 		  state:: not started
 		  note::
 		  id:: 6a67d966-0778-4297-8ac1-90464d4e4b50
-			- The cell as the unit that satisfies topic 2's constraints. Prokaryotic and eukaryotic organisation. Organelles by function rather than by list: nucleus, mitochondrion, chloroplast, ribosome, endoplasmic reticulum, Golgi, lysosome, vacuole. Why a eukaryote compartmentalises at all — incompatible chemistries run simultaneously, and surface area created internally where the outer membrane cannot supply it. What plant, animal, fungal and bacterial cells respectively have and lack, and the cell wall as a specific structure with a specific mechanical job, not a generic boundary.
+			- The cell as the unit that satisfies the constraints of ((6a67d966-bc9e-4651-9524-4a6d0814f6ef)). Prokaryotic and eukaryotic organisation. Organelles by function rather than by list: nucleus, mitochondrion, chloroplast, ribosome, endoplasmic reticulum, Golgi, lysosome, vacuole. Why a eukaryote compartmentalises at all — incompatible chemistries run simultaneously, and surface area created internally where the outer membrane cannot supply it. What plant, animal, fungal and bacterial cells respectively have and lack, and the cell wall as a specific structure with a specific mechanical job, not a generic boundary.
 			- This topic is the mechanistic base the diagnostic found missing. Expect it to be slow.
 			- *Re-tests from diagnostic:* a cell wall attributed to an animal cell.
 		- #### 4. Membranes and transport across them
@@ -44,7 +47,7 @@ tags:: syllabus
 		  state:: not started
 		  note::
 		  id:: 6a67d966-b22a-490b-8bd8-922b7858abdc
-			- The phospholipid bilayer as a consequence of having one end that likes water and one that does not — the structure to be derived from the molecule, not recalled. Fluidity and why the membrane is not a wall. Simple diffusion, facilitated diffusion, osmosis, active transport; which of these cost free energy and why that follows directly from topic 1. Water potential and the behaviour of cells in solutions of differing concentration, worked in both directions. Why a resting cell is spending most of its budget on pumps.
+			- The phospholipid bilayer as a consequence of having one end that likes water and one that does not — the structure to be derived from the molecule, not recalled. Fluidity and why the membrane is not a wall. Simple diffusion, facilitated diffusion, osmosis, active transport; which of these cost free energy and why that follows directly from ((6a67d966-8a73-4ddc-b595-68782e0a53df)). Water potential and the behaviour of cells in solutions of differing concentration, worked in both directions. Why a resting cell is spending most of its budget on pumps.
 			- *Cross-subject:* intermolecular forces and polarity ( ((6a652f81-c7b0-406d-b3a5-0afacc821e0f))); ions in solution ( ((6a652f81-8ee3-4e99-b592-fe8edb22cdce)), ((6a652f81-52b6-4329-8323-e4ce94566a56))).
 		- #### 5. Biological molecules
 		  id:: 6a67d966-2a4c-4a8c-b0e9-a5a52da8f829
@@ -96,7 +99,7 @@ tags:: syllabus
 		  note::
 		  id:: 6a67d966-a2d2-4e7c-842f-d551c4934630
 			- Chromosomes as packaged DNA; homologous pairs; diploid and haploid. Mitosis as production of identical cells and its role in growth and repair. Meiosis as production of gametes, with independent assortment and crossing over as the two mechanisms that generate novel combinations. The arithmetic of how many distinct gametes are possible, done explicitly. Why fertilisation restores the count. Non-disjunction as evidence that the machinery is real and fallible.
-			- This topic supplies the mechanism that topics 12 to 14 assume.
+			- This topic supplies the mechanism that ((6a67d966-6038-4128-a6b5-86cac76d8342)), ((6a67d966-9401-4c47-810f-89b084670196)) and ((6a67d966-971c-48d6-a8de-65c2502525d0)) assume.
 		- #### 12. Inheritance and variation
 		  prerequisites:: ((6a67d966-a2d2-4e7c-842f-d551c4934630)), probability (no syllabus yet)
 		  state:: not started
@@ -126,7 +129,7 @@ tags:: syllabus
 		  state:: not started
 		  note::
 		  id:: 6a67d966-4102-48bb-a5f1-eb369841fbc4
-			- Topic 2's constraint applied to whole organisms. Exchange surfaces as the general solution: large area, thin, moist, well ventilated, well perfused. The lung derived rather than recalled — branching, alveolar dimensions, and the two constraints that stop subdivision: flow resistance rising as $1/r^4$, and surface tension rising as $1/r$ on a wet curved surface, with surfactant as the fix. Countercurrent exchange in gills as a case where the design beats the obvious one. Circulation: why bulk flow exists wherever diffusion has run out of reach. Haemoglobin and the dissociation curve as a cooperative binding phenomenon, connected back to topic 6.
+			- The constraints of ((6a67d966-bc9e-4651-9524-4a6d0814f6ef)) applied to whole organisms. Exchange surfaces as the general solution: large area, thin, moist, well ventilated, well perfused. The lung derived rather than recalled — branching, alveolar dimensions, and the two constraints that stop subdivision: flow resistance rising as $1/r^4$, and surface tension rising as $1/r$ on a wet curved surface, with surfactant as the fix. Countercurrent exchange in gills as a case where the design beats the obvious one. Circulation: why bulk flow exists wherever diffusion has run out of reach. Haemoglobin and the dissociation curve as a cooperative binding phenomenon, connected back to ((6a67d966-f2dc-48fb-8184-688f036835ed)).
 			- Nothing here was available in the diagnostic. Expect this to be the longest topic.
 			- *Cross-subject:* laminar flow and Poiseuille resistance, surface tension (physics); pressure and gas behaviour ( ((6a652f81-52b6-4329-8323-e4ce94566a56))).
 		- #### 16. Homeostasis and control
@@ -134,7 +137,7 @@ tags:: syllabus
 		  state:: not started
 		  note::
 		  id:: 6a67e357-a796-4ae7-b8a8-79407ce215dd
-			- Negative feedback as a control mechanism, stated generally enough that the same shape is recognisable in a thermostat and in a chemical equilibrium. Set point, detector, effector, and why oscillation about the set point is expected rather than a failure. Thermoregulation, blood glucose regulation, osmoregulation. Positive feedback and the small number of places biology uses it deliberately. The cost of homeostasis, connected back to topic 1: what fraction of the budget it consumes and what happens as ambient conditions move away from the set point.
+			- Negative feedback as a control mechanism, stated generally enough that the same shape is recognisable in a thermostat and in a chemical equilibrium. Set point, detector, effector, and why oscillation about the set point is expected rather than a failure. Thermoregulation, blood glucose regulation, osmoregulation. Positive feedback and the small number of places biology uses it deliberately. The cost of homeostasis, connected back to ((6a67d966-8a73-4ddc-b595-68782e0a53df)): what fraction of the budget it consumes and what happens as ambient conditions move away from the set point.
 			- *Cross-subject:* dynamic equilibrium and Le Chatelier ( ((6a652f81-1880-42ad-8716-fb8c0468d897))); feedback and stability (mathematics, physics).
 		- #### 17. Ecosystems: energy flow and matter cycling
 		  prerequisites:: ((6a67d966-8a73-4ddc-b595-68782e0a53df)), ((6a67d966-9d55-4cbf-b5bf-f22bc57c153c)), ((6a67d966-6a68-436f-80af-c1f23d570c39))
@@ -146,13 +149,13 @@ tags:: syllabus
 			- *Cross-subject:* free energy ( ((6a652f81-0d4e-41ed-a431-4ea08facae04))); exponential growth (mathematics).
 	- ### Deferred to Level 2
 		- Recorded here so the omissions are deliberate and reviewable:
-			- **Immunity and disease.** Requires topics 6, 9 and 14, and is largely mechanism-heavy detail that will not stick without them. The pathogen side of the Red Queen is covered in 14; the immunological response is not.
-			- **The nervous system and endocrine signalling in detail.** Homeostasis (16) covers control as a principle and hormones as an instance. Action potentials, synapses and neural integration depend on membrane transport (4) being solid and on physics of potential difference.
+			- **Immunity and disease.** Requires ((6a67d966-f2dc-48fb-8184-688f036835ed)), ((6a67d966-331c-4476-a237-f5569ce96d4b)) and ((6a67d966-971c-48d6-a8de-65c2502525d0)), and is largely mechanism-heavy detail that will not stick without them. The pathogen side of the Red Queen is covered in 14; the immunological response is not.
+			- **The nervous system and endocrine signalling in detail.** Homeostasis ( ((6a67e357-a796-4ae7-b8a8-79407ce215dd))) covers control as a principle and hormones as an instance. Action potentials, synapses and neural integration depend on membrane transport ( ((6a67d966-b22a-490b-8bd8-922b7858abdc))) being solid and on physics of potential difference.
 			- **Enzyme kinetics, quantitative population genetics, detailed metabolic pathways.** Michaelis–Menten, Hardy–Weinberg, glycolysis step by step, the Calvin cycle in full. All Level 2 by dependency, and all require the statistics and algebra that Level 1 deliberately does not lean on.
 			- **Classification, biodiversity, plant physiology beyond photosynthesis, biotechnology, development.** Context and application rather than concept; each is an instance of material covered above.
 	- ### Outstanding structural defect
-		- **There is no mathematics syllabus, and the diagnostic exposed a statistics gap that is not a biology problem.** It bit twice in a single session: the mean square displacement of a random walk could not be produced, and the Poisson assignment in Luria–Delbrück was inverted. Topics 12, 13 and 14 depend on probability directly, and 2 depends on it retrospectively.
-		- Recommendation: run the mathematics diagnostic before topic 12, and expect it to set an entry level well below the biology one in probability and statistics specifically, whatever it finds elsewhere. Do not work around this inside biology sessions; it will recur in physics and in ((6a652f81-4b1e-4023-b7c1-706eb337dfac)).
+		- **There is no mathematics syllabus, and the diagnostic exposed a statistics gap that is not a biology problem.** It bit twice in a single session: the mean square displacement of a random walk could not be produced, and the Poisson assignment in Luria–Delbrück was inverted. ((6a67d966-6038-4128-a6b5-86cac76d8342)), ((6a67d966-9401-4c47-810f-89b084670196)) and ((6a67d966-971c-48d6-a8de-65c2502525d0)) depend on probability directly, and ((6a67d966-bc9e-4651-9524-4a6d0814f6ef)) depends on it retrospectively.
+		- Recommendation: run the mathematics diagnostic before ((6a67d966-6038-4128-a6b5-86cac76d8342)), and expect it to set an entry level well below the biology one in probability and statistics specifically, whatever it finds elsewhere. Do not work around this inside biology sessions; it will recur in physics and in ((6a652f81-4b1e-4023-b7c1-706eb337dfac)).
 	- ### Level completion
 		- Level 1 is complete when all seventeen topics are marked complete and no outstanding note remains unresolved against any of them. The next level is designed only then, and specialises on the basis of what proved difficult or interesting here.
 	- ### Appendix A: Diagnostic record, 26 July 2026
