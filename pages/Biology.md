@@ -133,12 +133,14 @@ tags:: syllabus
 		  prerequisites:: ((6a67d966-9d55-4cbf-b5bf-f22bc57c153c)), ((6a67d966-4102-48bb-a5f1-eb369841fbc4)), ((6a652f81-1880-42ad-8716-fb8c0468d897))
 		  state:: not started
 		  note::
+		  id:: 6a67e357-a796-4ae7-b8a8-79407ce215dd
 			- Negative feedback as a control mechanism, stated generally enough that the same shape is recognisable in a thermostat and in a chemical equilibrium. Set point, detector, effector, and why oscillation about the set point is expected rather than a failure. Thermoregulation, blood glucose regulation, osmoregulation. Positive feedback and the small number of places biology uses it deliberately. The cost of homeostasis, connected back to topic 1: what fraction of the budget it consumes and what happens as ambient conditions move away from the set point.
 			- *Cross-subject:* dynamic equilibrium and Le Chatelier ( ((6a652f81-1880-42ad-8716-fb8c0468d897))); feedback and stability (mathematics, physics).
 		- #### 17. Ecosystems: energy flow and matter cycling
 		  prerequisites:: ((6a67d966-8a73-4ddc-b595-68782e0a53df)), ((6a67d966-9d55-4cbf-b5bf-f22bc57c153c)), ((6a67d966-6a68-436f-80af-c1f23d570c39))
 		  state:: not started
 		  note::
+		  id:: 6a67d966-ae29-4d10-9612-faf1dee28e78
 			- Trophic levels and the roughly tenfold attenuation between them. Where the missing energy goes — respiration, maintenance, egestion, unconsumed tissue — and the thermodynamic verdict on it: energy conserved, free energy degraded, availability lost. Why "wasted" is the wrong word and "lost" needs qualification. The asymmetry that matters: matter cycles, energy passes through once. Carbon and nitrogen cycles. Why food chains are short, and why the argument for eating lower on one is thermodynamic rather than moral. Population dynamics in outline: exponential and limited growth, carrying capacity.
 			- *Re-tests from diagnostic:* trophic transfer treated as conversion inefficiency, with no distinction between energy and available energy.
 			- *Cross-subject:* free energy ( ((6a652f81-0d4e-41ed-a431-4ea08facae04))); exponential growth (mathematics).
