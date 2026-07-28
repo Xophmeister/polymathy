@@ -1,4 +1,8 @@
-## Curricula
+- #+BEGIN_QUOTE
+  **Wisdom begins in wonder.**
+  — Socrates
+  #+END_QUOTE
+- ## Curricula
 	- ### [[Chemistry]]
 	- ### [[Biology]]
 - ## Meta
