@@ -6,12 +6,12 @@ tags:: syllabus
 	- **Entry level set by:** diagnostic of 26 July 2026 (Appendix A)
 	- Depth marker: roughly GCSE, but sequenced by conceptual dependency rather than by any specification, and extended past GCSE wherever the structure demands it — which, on the evidence of the diagnostic, it does repeatedly (free energy versus entropy, diffusion scaling, marginal stability of the fold, frequency-dependent selection).
 	- ### How to use this file
-	- One topic per conversation. At the start of a session, the tutor reads this file, confirms the topic, checks its prerequisites are marked complete, and flags any outstanding notes recorded against those prerequisites. At the end, the tutor states whether the topic can be marked complete and supplies the exact note to record.
-	- States:
-		- `not started`
-		- `in progress`
-		- `complete`
-	- **Cross-subject prerequisites are binding, not decorative.** Several topics below depend on chemistry topics that are themselves not started, and three depend on probability, for which no syllabus yet exists. Where a topic lists a cross-subject prerequisite, that prerequisite is to be checked in the same way as an internal one. Topics startable today, with nothing outstanding anywhere: **1, 2, 3**.
+		- One topic per conversation. At the start of a session, the tutor reads this file, confirms the topic, checks its prerequisites are marked complete, and flags any outstanding notes recorded against those prerequisites. At the end, the tutor states whether the topic can be marked complete and supplies the exact note to record.
+		- States:
+			- `not started`
+			- `in progress`
+			- `complete`
+		- **Cross-subject prerequisites are binding, not decorative.** Several topics below depend on chemistry topics that are themselves not started, and three depend on probability, for which no syllabus yet exists. Where a topic lists a cross-subject prerequisite, that prerequisite is to be checked in the same way as an internal one. Topics startable today, with nothing outstanding anywhere: **1, 2, 3**.
 	- ### Topics
 		- #### 1. Life, free energy and the far-from-equilibrium state
 		  prerequisites::
