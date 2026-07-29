@@ -20,6 +20,28 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Annotate each page with last commit date
+        run: |
+          git ls-files -z -- 'pages/*.md' | while IFS= read -r -d '' PAGE; do
+            LAST_UPDATED="$(git log -1 --format='%ad' --date=short -- "${PAGE}")"
+            [[ "${LAST_UPDATED}" ]] || continue
+
+            # Poor man's urlencoding for spaces in page names
+            ENCODED="${PAGE// /%20}"
+            HISTORY_URL="https://github.com/${GITHUB_REPOSITORY}/commits/${GITHUB_REF_NAME}/${ENCODED}"
+
+            printf \
+              'last-updated:: %s ([page history](%s))\n' \
+              "${LAST_UPDATED}" \
+              "${HISTORY_URL}" \
+            | cat - "${PAGE}" \
+            > "${PAGE}.tmp"
+
+            mv "${PAGE}.tmp" "${PAGE}"
+          done
 
       - uses: logseq/publish-spa@v0.3.1
         with:
