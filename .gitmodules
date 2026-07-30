@@ -1,0 +1,3 @@
+[submodule ".hooks"]
+	path = .hooks
+	url = tweag:Xophmeister/logseq-hooks.git
