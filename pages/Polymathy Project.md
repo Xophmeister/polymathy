@@ -3,6 +3,9 @@
   — Socrates
   #+END_QUOTE
 - ## Curricula
+	- ### [[Mathematics]]
+		- #### [[Mathematical methods for science]]
+	- ### [[Physics]]
 	- ### [[Chemistry]]
 	- ### [[Biology]]
 - ## Meta
