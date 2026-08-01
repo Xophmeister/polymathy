@@ -4,7 +4,7 @@ created:: 2026-07-25
 
 - Depth marker: roughly GCSE, but sequenced by conceptual dependency rather than by any specification, and extended past GCSE where the structure demands it (ionisation-energy evidence, quantitative energetics, equilibrium).
 - See ((6a652f81-5edb-4c1c-80ba-a2dd2a1415d1))
-- ### How to use this file
+- ### How to use this page
 	- One topic per conversation. At the start of a session, the tutor reads this file, confirms the topic, checks its prerequisites are marked complete, and flags any outstanding notes recorded against those prerequisites. At the end, the tutor states whether the topic can be marked complete and supplies the exact note to record.
 	- States:
 		- `not started`
@@ -124,7 +124,7 @@ created:: 2026-07-25
 		- **Quantitative equilibrium, rate equations, orbitals and subshells, entropy.** All Level 2 by dependency.
 - ## Level completion
 	- Level 1 is complete when all fifteen topics are marked complete and no outstanding note remains unresolved against any of them. The next level is designed only then, and specialises on the basis of what proved difficult or interesting here.
-- ## Appendix A: Diagnostic record, 25 July 2026
+- ## Appendix A: Diagnostic record (2026-07-25)
   id:: 6a652f81-5edb-4c1c-80ba-a2dd2a1415d1
 	- **Entry level: 1 (Foundations).**
 	- Misconceptions found and corrected in conversation:
