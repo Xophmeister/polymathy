@@ -31,10 +31,10 @@ jobs:
 
             # Poor man's urlencoding for spaces in page names
             ENCODED="${PAGE// /%20}"
-            HISTORY_URL="https://github.com/${GITHUB_REPOSITORY}/commits/${GITHUB_REF_NAME}/${ENCODED}"
+            HISTORY_URL="https://github.com/${GITHUB_REPOSITORY}/blame/${GITHUB_REF_NAME}/${ENCODED}"
 
             printf \
-              'last-updated:: %s ([page history](%s))\n' \
+              'last-updated:: %s ([history](%s))\n' \
               "${LAST_UPDATED}" \
               "${HISTORY_URL}" \
             | cat - "${PAGE}" \
