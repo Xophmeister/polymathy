@@ -4,11 +4,14 @@
   #+END_QUOTE
 - ## Curricula
 	- ### [[Mathematics]]
-		- #### [[Mathematical methods for science]]
+		- #### [Mathematical methods for science]([[Mathematics/Mathematical methods for science]])
 	- ### [[Physics]]
+		- #### [Foundations]([[Physics/Foundations]])
 	- ### [[Chemistry]]
+		- #### [Foundations]([[Chemistry/Foundations]])
 	- ### [[Biology]]
+		- #### [Foundations]([[Biology/Foundations]])
 - ## Meta
 	- ### [[About]]
-	- ### [[AI instructions]]
+	- ### [[AI tutor system prompt]]
 	- ### [[Licence]]
