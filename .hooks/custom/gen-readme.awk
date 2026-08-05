@@ -4,25 +4,10 @@
 # more standard Markdown; specifically for generating the repo's
 # README.md file. Use like so:
 #
-#   tools/gen-readme.awk < pages/About.md > README.md
+#   gen-readme.awk < pages/About.md > README.md
 #
-# This has to be run manually at the moment, because logseq-hooks is
-# installed and that makes adding an arbitrary new hook tricky.
-#
-# Also, probably best if pages/About.md is checked out at the commit you
-# want to generate the README.md from, because this script will embed
-# the current commit hash in the generated file.
-
-function commit() {
-  cmd = "git rev-parse --short HEAD"
-  if ((cmd | getline id) > 0) {
-    close(cmd)
-  } else {
-    id = "unknown"
-  }
-
-  return id
-}
+# This is set-up as part of a pre-commit hook, so it should never need
+# to be run manually.
 
 BEGIN {
   depth = 0
@@ -30,8 +15,7 @@ BEGIN {
   printed = 0
 
   # Header
-  now = strftime("%Y-%m-%d")
-  print "<!-- Generated from pages/About.md on " now  " (" commit() ") -->"
+  print "<!-- Generated from pages/About.md by `gen-readme.awk` -- DO NOT EDIT -->"
   print ""
 
   # Page title

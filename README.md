@@ -1,4 +1,4 @@
-<!-- Generated from pages/About.md on 2026-08-04 (3264e5d) -->
+<!-- Generated from pages/About.md by `gen-readme.awk` -- DO NOT EDIT -->
 
 # Polymathy Project
 

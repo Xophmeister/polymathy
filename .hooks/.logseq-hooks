@@ -1,0 +1,17 @@
+#!/usr/bin/env bash
+
+# Hands a hook over to the logseq-hooks submodule. Symlinked to under each hook
+# name that should be delegated, so $0 is the name git invoked us by -- which
+# is why the resolved path below is used only to locate the submodule, never to
+# work out which hook this is.
+#
+# exec is what keeps this transparent: the working directory git set, the
+# arguments and the exit status all pass through untouched. prepare-commit-msg
+# depends on the last of those, since it defers a commit by exiting non-zero.
+
+set -eu
+
+readonly HOOKS_DIR="$(dirname "$(readlink -f "${BASH_SOURCE[0]}")")"
+readonly HOOK="$(basename "$0")"
+
+exec "${HOOKS_DIR}/logseq-hooks/${HOOK}" "$@"

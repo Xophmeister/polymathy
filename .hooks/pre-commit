@@ -1,0 +1,59 @@
+#!/usr/bin/env bash
+
+# The graph's own pre-commit tasks. git runs exactly one hooks directory, so
+# these live here rather than in the submodule, alongside the wrappers that
+# hand the other two hooks over to logseq-hooks.
+#
+# Each task is a function, called from the bottom of the file. They run in
+# order and any failure aborts the commit; nothing here should touch the
+# working tree until it knows it has succeeded.
+
+set -euo pipefail
+
+HOOKS_DIR="$(dirname "$(readlink -f "${BASH_SOURCE[0]}")")"
+readonly HOOKS_DIR
+
+# Scratch space for tasks that build a file before deciding to keep it.
+SCRATCH="$(mktemp -d)"
+readonly SCRATCH
+trap 'rm -rf "${SCRATCH}"' EXIT
+
+# git runs hooks from the top of the working tree, so paths below need no
+# qualifying.
+
+# ---------------------------------------------------------------------- tasks
+
+# Regenerate README.md whenever the About page it is derived from is part of
+# the commit being made.
+update_readme() {
+  local about="pages/About.md"
+  local readme="README.md"
+  local generated="${SCRATCH}/README.md"
+
+  if git diff --cached --quiet -- "${about}"; then
+    return 0
+  fi
+
+  # Read from the index rather than the working tree: Logseq autosaves
+  # continuously, so the file on disk may already have moved on from what is
+  # being committed, and a README generated from that would not match the page
+  # committed beside it.
+  git show ":${about}" | "${HOOKS_DIR}/custom/gen-readme.awk" > "${generated}"
+
+  # The README is often already correct: prepare-commit-msg aborts an
+  # auto-commit whose changes do not yet amount to anything, leaving About.md
+  # staged for the next attempt half an hour later, by which point this task
+  # has already run over the same content. Comparing first keeps those retries
+  # from rewriting and re-staging a file that has not changed.
+  #
+  # Copying the contents rather than moving the file keeps README.md's own
+  # mode, rather than giving it mktemp's.
+  if ! cmp -s "${generated}" "${readme}"; then
+    cat "${generated}" > "${readme}"
+    git add -- "${readme}"
+  fi
+}
+
+# ----------------------------------------------------------------------- main
+
+update_readme
