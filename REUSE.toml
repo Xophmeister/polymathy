@@ -1,0 +1,22 @@
+version = 1
+SPDX-PackageName = "polymathy"
+SPDX-PackageDownloadLocation = "https://github.com/Xophmeister/polymathy"
+
+[[annotations]]
+path = ["pages/**", "assets/**", "logseq/**", "README.md"]
+precedence = "aggregate"
+SPDX-FileCopyrightText = "Christopher Harrison"
+SPDX-License-Identifier = "CC-BY-SA-4.0"
+
+[[annotations]]
+path = [".github/**", ".hooks/**"]
+precedence = "aggregate"
+SPDX-FileCopyrightText = "Christopher Harrison"
+SPDX-License-Identifier = "GPL-3.0-or-later"
+
+# Unlicensed files, to keep REUSE happy
+[[annotations]]
+path = [".gitignore", ".gitmodules"]
+precedence = "aggregate"
+SPDX-FileCopyrightText = "NONE"
+SPDX-License-Identifier = "CC0-1.0"

@@ -15,4 +15,5 @@
  ;; Sane, git-friendly filenames
  :file/name-format :triple-lowbar
 
- :ui/show-brackets? true}
+ :ui/show-brackets? true
+ :favorites []}
