@@ -5,6 +5,7 @@
 - ## Curricula
 	- ### [[Mathematics]]
 		- #### [Mathematical methods for science]([[Mathematics/Mathematical methods for science]])
+			- ##### [Foundations]([[Mathematics/Mathematical methods for science/Foundations]])
 	- ### [[Physics]]
 		- #### [Foundations]([[Physics/Foundations]])
 	- ### [[Chemistry]]

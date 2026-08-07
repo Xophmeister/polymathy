@@ -1,6 +1,7 @@
 tags:: syllabus
 status:: active
 created:: 2026-07-25
+model:: Opus 5 (High)
 
 - Depth marker: roughly GCSE, but sequenced by conceptual dependency rather than by any specification, and extended past GCSE where the structure demands it (ionisation-energy evidence, quantitative energetics, equilibrium).
 - See ((6a652f81-5edb-4c1c-80ba-a2dd2a1415d1))

@@ -1,6 +1,7 @@
 tags:: syllabus
 status:: active
 created:: 2026-07-26
+model:: Opus 5 (High)
 
 - Depth marker: roughly GCSE, but sequenced by conceptual dependency rather than by any specification, and extended past GCSE wherever the structure demands it — which, on the evidence of the diagnostic, it does repeatedly (free energy versus entropy, diffusion scaling, marginal stability of the fold, frequency-dependent selection).
 - See ((6a67d966-786f-4240-a121-aa6a5c34ac85))

@@ -1,6 +1,7 @@
 tags:: syllabus
 status:: active
 created:: 2026-07-31
+model:: Opus 5 (High)
 
 - Depth marker: roughly A' Level, but sequenced by conceptual dependency rather than by any specification, and extended past it wherever the structure demands it — statistical entropy rather than the thermodynamic definition, energy density of the field, indistinguishability rather than "wave–particle duality".
 - The depth marker is higher than chemistry's or biology's because the qualification is more recent and the diagnostic found reasoning that survived where recall did not. It is not evidence that less work is required.
