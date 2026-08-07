@@ -5,18 +5,18 @@ model:: Opus 5 (High)
 
 - Depth marker: roughly A' Level Mathematics and Further Mathematics in content, but selected by what the three science syllabi actually need and pitched at *use* rather than proof.
 - See ((6a764603-5cb6-4ed0-8377-98340d1c62a3))
-- ### What this subject is, and is not
+- ## What this subject is, and is not
 	- This is a **service course**. Its purpose is instrumental: the mathematical tools the sciences need, sequenced by which science needs them next. It exists because the same defect was found in three consecutive diagnostics — statistics in biology on 2026-07-26, statistics again in physics on 2026-07-31, and calculus and vector tools alongside it — and because working around it inside individual subject sessions was demonstrably failing.
 	- It is **not** a level of a pure mathematics syllabus. Abstraction, derivation for its own sake, and proof are a separate subject with its own diagnostic, not yet run. Where a derivation appears below it is because the derivation is how the tool is understood, not because rigour is the goal.
 	- The diagnostic found the pure-mathematical machinery largely intact — algebraic manipulation is fluent and unblocking. What is missing is the instrumental layer: which quantity to reach for, what it means physically, and what it buys. Expect this subject to move faster than the other three foundation levels for that reason. That is not licence to skip anything.
-- ### How to use this page
+- ## How to use this page
 	- One topic per conversation. At the start of a session, the tutor reads this file, confirms the topic, checks its prerequisites are marked complete, and flags any outstanding notes recorded against those prerequisites. At the end, the tutor states whether the topic can be marked complete and supplies the exact note to record.
 	- States:
 		- `not started`
 		- `in progress`
 		- `complete`
 	- **This subject has no cross-subject prerequisites.** It is upstream of everything. Topics 1, 3, 4 and 8 are startable today; the rest follow internally.
-- ### What each topic unblocks
+- ## What each topic unblocks
 	- The reason for the ordering. Sciences are blocked until the methods topic in the left column is complete.
 	- | Methods topic | Unblocks |
 	  |---|---|
@@ -32,8 +32,8 @@ model:: Opus 5 (High)
 	  | 9, 10, 12 | biology 12 |
 	  | 10, 11 | physics 1 (quantitative half); biology 2 (retrospectively) |
 	- Nothing in physics beyond topics 1 and 2 opens until methods topic 5. That is the single most consequential fact about the ordering below, and it is why calculus is not deferred behind statistics despite statistics being the more painful gap.
-- ### Topics
-	- #### 1. Number, powers and estimation
+- ## Topics
+	- ### 1. Number, powers and estimation
 	  prerequisites::
 	  state:: not started
 	  note::
@@ -41,7 +41,7 @@ model:: Opus 5 (High)
 		- Indices and roots as one operation rather than two. Fractional and negative exponents. Splitting a fractional power into an integer part and a root that is known — $2^{-5/2} = 1/(4\sqrt{2})$ — and the small set of constants worth holding cold: $\sqrt{2}$, $\sqrt{3}$, $\ln 2$, $\ln 10$, $e$. Significant figures and what a stated precision claims. Order-of-magnitude arithmetic and Fermi estimation done numerically rather than gestured at. The binomial approximation $(1+x)^n \approx 1 + nx$ for small $x$, derived rather than quoted, together with the question of how small is small enough — the first appearance of "linearise, then check the term you discarded".
 		- Order-of-magnitude reasoning is recorded as *intact* in all three science diagnostics. This topic is what makes it numerical.
 		- *Re-tests from diagnostic:* $2^{-5/2}$ estimated in the head, with the method stated.
-	- #### 2. Proportionality, scaling and self-consistency
+	- ### 2. Proportionality, scaling and self-consistency
 	  prerequisites:: 1
 	  state:: not started
 	  note::
@@ -50,7 +50,7 @@ model:: Opus 5 (High)
 		- **Boundary with physics 1.** This topic owns dimensional analysis as a mathematical technique. Physics 1 owns measurement practice — random against systematic as categories, propagation, precision against accuracy, where the floor is. Neither covers the other, and physics 1 is startable independently of this.
 		- *Re-tests from diagnostic:* the composition test, run properly, against a candidate scaling law — it was offered and not used.
 		- *Cross-subject:* diffusion and surface-to-volume (biology 2); the $1/r^4$ and $1/r$ results (biology 15, physics 8); dimensional checking (physics 1, where it went missing under content uncertainty).
-	- #### 3. Vectors
+	- ### 3. Vectors
 	  prerequisites:: 1
 	  state:: not started
 	  note::
@@ -58,7 +58,7 @@ model:: Opus 5 (High)
 		- Scalar and vector quantities, and what the distinction is *for*. Components in an orthogonal basis; addition, subtraction and scaling done component-wise. Magnitude and direction; resolution along chosen axes, and the freedom to choose the axes well. The independence of components — why a boat pointed across a river crosses in the same time whatever the current does — and, immediately, **the limit of that independence**: components may be reasoned about separately exactly when nothing couples them, and a constraint on the *magnitude* is the standard coupling. Unit vectors. The scalar product, its geometric meaning, and the consequence that a force perpendicular to a displacement does no work. The vector product in outline, for torque and the magnetic force. Relative velocity in two dimensions, worked in both directions.
 		- *Re-tests from diagnostic:* the magnitude constraint coupling components, which was not seen; relative velocity in two dimensions.
 		- *Cross-subject:* frames and relative motion (physics 2, whose two-dimensional half is blocked on this); kinematics, forces, momentum (physics 3, 4, 5); work as a scalar product (physics 6); the magnetic force doing no work (physics 15).
-	- #### 4. Differentiation
+	- ### 4. Differentiation
 	  prerequisites:: 1
 	  state:: not started
 	  note::
@@ -66,7 +66,7 @@ model:: Opus 5 (High)
 		- The derivative as gradient of a tangent and as instantaneous rate of change, held as one object rather than two. Standard derivatives: powers, $e^{kx}$, $\ln x$, $\sin$, $\cos$. Product, quotient and chain rules as working tools. Higher derivatives. Stationary points, their classification, and optimisation. Reading gradients off experimental curves — the tangent to a concentration–time curve, the initial rate. What the derivative of a quantity means when that quantity is *itself* a rate, and the units that result.
 		- The diagnostic handled this cleanly on question 1. Expect it to be quick, and use the time on the graphical and instrumental half rather than the manipulation.
 		- *Cross-subject:* rate as the gradient of a concentration–time curve (chemistry 12); velocity and acceleration as derivatives (physics 3); power as a derivative (physics 6).
-	- #### 5. Integration
+	- ### 5. Integration
 	  prerequisites:: 4
 	  state:: not started
 	  note::
@@ -75,7 +75,7 @@ model:: Opus 5 (High)
 		- And the separate failure mode: the integral computed correctly, the initial condition known exactly, and the answer still wrong — because the model generating the integrand has left the regime where it holds. Saturation, exhaustion, phase change. A correct operation on a model that has stopped applying.
 		- *Re-tests from diagnostic:* definite against indefinite, conflated once and then stated correctly unprompted — a slip rather than a gap, but it is to be confirmed here.
 		- *Cross-subject:* the constant-acceleration equations derived by integration (physics 3); work as an integral of force (physics 6); hydrostatic pressure (physics 8).
-	- #### 6. Exponentials, logarithms and log plots
+	- ### 6. Exponentials, logarithms and log plots
 	  prerequisites:: 1, 4
 	  state:: not started
 	  note::
@@ -84,7 +84,7 @@ model:: Opus 5 (High)
 		- **Semi-log and log–log plots as hypothesis discriminators.** An exponential is straight on semi-log; a power law is straight on log–log; the parameter falls out of the gradient in each case. Arrhenius plots and reaction-order plots as the instances the chemistry syllabus needs. This is the single most-used graphical tool in the experimental sciences and it was not recognised as useful in the diagnostic.
 		- *Re-tests from diagnostic:* the value of a log plot, which was not seen; the power-law half of the discrimination, which was absent; $t_{1/2} = \ln 2 / \lambda$, which was produced correctly and is to be reproduced from scratch.
 		- *Cross-subject:* pH as a logarithmic scale (chemistry 14); rate constants and Arrhenius (chemistry 12); exponential and limited growth (biology 17); $S = k_B \ln \Omega$ (physics 12); the decay law (physics 18).
-	- #### 7. Differential equations
+	- ### 7. Differential equations
 	  prerequisites:: 5, 6
 	  state:: not started
 	  note::
@@ -92,14 +92,14 @@ model:: Opus 5 (High)
 		- First-order separable equations, solved by separation and integration, with the initial condition supplying the constant. The two archetypes, each stated first as a sentence about the world and only then as an equation: $\dot{N} = -\lambda N$ — rate proportional to amount, covering decay, cooling, capacitor discharge and unconstrained growth — and the logistic form, growth against a ceiling. Second-order linear equations with constant coefficients, taken far enough to obtain $\ddot{x} = -\omega^2 x$ and its solution, and the damped case $\ddot{x} + \gamma\dot{x} + \omega_0^2 x = 0$ with the three regimes distinguished by the discriminant.
 		- The reason this topic exists at Level 1 rather than Level 2: the physics syllabus requires the SHM solution *derived* and the exponential decay law *derived from memorylessness*, in both cases explicitly refusing the quoted result.
 		- *Cross-subject:* simple harmonic motion and damping (physics 9); the decay law (physics 18); rate equations (chemistry 12); dynamic equilibrium and approach to steady state (chemistry 13); homeostatic oscillation about a set point (biology 16); population growth (biology 17).
-	- #### 8. Counting
+	- ### 8. Counting
 	  prerequisites:: 1
 	  state:: not started
 	  note::
 	  id:: 6a764603-bb4b-4d28-9bbb-69531bf77848
 		- The multiplication principle. Permutations and combinations, with $\binom{n}{r}$ derived rather than quoted. Counting arrangements subject to constraints. The number of distinct outcomes of a sequence of independent choices, and the arithmetic of how fast it grows. Microstate counting: the number of ways of distributing units among states, and the reason everybody works with $\ln \Omega$ rather than $\Omega$ — a question about arithmetic before it is a question about physics. Stirling's approximation in outline. The explicit arithmetic of $e^{-10^{23}}$, so that "overwhelming" has a size.
 		- *Cross-subject:* entropy as a count of microstates (physics 12, where the entropy-as-order misconception is to be killed and where this topic supplies the arithmetic that kills it); the number of distinct gametes from independent assortment (biology 11); cross ratios (biology 12).
-	- #### 9. Probability
+	- ### 9. Probability
 	  prerequisites:: 8
 	  state:: not started
 	  note::
@@ -109,7 +109,7 @@ model:: Opus 5 (High)
 		- **The memoryless property, attached correctly** — to the exponential waiting time and the geometric distribution, and *not* to the Poisson count. The misattachment has now occurred in two diagnostics, five weeks apart, in two subjects.
 		- *Re-tests from diagnostic:* "memoryless" applied to Poisson (biology, 26 July; physics/methods, 7 August); the Poisson assignment in Luria–Delbrück, which was inverted; the conditions under which Poisson is the right model at all.
 		- *Cross-subject:* monohybrid and dihybrid crosses as probability problems (biology 12); Luria–Delbrück, variance-to-mean ratio, jackpot distributions (biology 13); frequency-dependent selection (biology 14); counting statistics and the decay law (physics 18).
-	- #### 10. Expectation, variance and the additivity of variance
+	- ### 10. Expectation, variance and the additivity of variance
 	  prerequisites:: 9
 	  state:: not started
 	  note::
@@ -124,7 +124,7 @@ model:: Opus 5 (High)
 		- **Everything in this topic was supplied in the diagnostic rather than earned, including the definition of standard deviation, which was given wrongly.** The random walk was produced correctly once the machinery had been handed over; that is not the same as producing it. Nothing here is to be treated as covered.
 		- *Re-tests from diagnostic:* the whole topic. Specifically — why square rather than take the modulus; the fate of the cross term and the sign argument behind it; $\operatorname{Var} = \mu$ for Poisson; the random walk from a standing start; the rod assembly reproduced without prompting.
 		- *Cross-subject:* the $1/\sqrt{n}$ law and uncertainty propagation (physics 1); counting statistics (physics 18); mean square displacement (biology 2, where the derivation is recorded as supplied — this is where the debt is paid); sampling variation in observed cross ratios (biology 12); variance-to-mean ratio as the discriminator in Luria–Delbrück (biology 13).
-	- #### 11. Sampling and uncertainty
+	- ### 11. Sampling and uncertainty
 	  prerequisites:: 10
 	  state:: not started
 	  note::
@@ -134,7 +134,7 @@ model:: Opus 5 (High)
 		- **Boundary with physics 1.** Physics 1 owns the experimental categories — random against systematic as properties of a *procedure* rather than of an instrument, precision against accuracy, and the practice of measurement. This topic owns the mathematics those categories run on. Physics 1's qualitative half is startable now; its quantitative half waits on this.
 		- *Re-tests from diagnostic:* the $1/\sqrt{n}$ law, which was unavailable in two diagnostics; the fractional uncertainty of a Poisson count.
 		- *Cross-subject:* measurement and uncertainty (physics 1); activity and the statistics of counting (physics 18).
-	- #### 12. Fitting and testing against data
+	- ### 12. Fitting and testing against data
 	  prerequisites:: 6, 11
 	  state:: not started
 	  note::
@@ -143,7 +143,7 @@ model:: Opus 5 (High)
 		- Residuals as the check that the model was the right shape, and the standing caution that a high $R^2$ is evidence about a *fit* and not about a *mechanism*.
 		- Then the question the biology syllabus raises directly: how far may an observed value depart from an expected one before the model is in trouble? The shape of a significance test, stated in terms of variance and expected deviation rather than delivered as a recipe, with the chi-squared goodness-of-fit test as the worked instance. What a $p$-value is, what it is not, and the specific misreading that makes it useless.
 		- *Cross-subject:* expected ratios and how far an observation may deviate (biology 12, which is blocked on this); rate order determined from data (chemistry 12); gradient extraction from log plots (physics 18).
-- ### Deferred to Level 2
+- ## Deferred to Level 2
 - Recorded here so the omissions are deliberate and reviewable:
 	- **Complex numbers, and oscillations handled in exponential form.** Topic 7 gets the SHM and damping results by real methods. The complex treatment is faster and more general and belongs with AC circuits and wave superposition, which are themselves Level 2.
 	- **Partial differentiation and multivariable calculus.** Required properly for thermodynamic potentials and Maxwell relations, both already deferred in physics. Uncertainty propagation in topic 11 is handled in the fractional form that avoids it.
@@ -153,9 +153,9 @@ model:: Opus 5 (High)
 	- **Taylor series beyond the first-order term.** Topic 1 takes the linearisation; the general machinery is Level 2.
 	- **Numerical methods, non-linear dynamics, chaos.** Application rather than foundation.
 	- **Confidence intervals, hypothesis testing in full, regression diagnostics, Bayesian inference proper.** Topic 12 takes the goodness-of-fit case because biology 12 needs it. The rest is a Level 2 topic in its own right.
-- ### Level completion
+- ## Level completion
 	- Level 1 is complete when all twelve topics are marked complete and no outstanding note remains unresolved against any of them. The next level is designed only then, and specialises on the basis of what proved difficult or interesting here — and, distinctively for this subject, on what the science syllabi have by then turned out to demand.
-- ### Appendix A: Diagnostic record (2026-08-07)
+- ## Appendix A: Diagnostic record (2026-08-07)
   id:: 6a764603-5cb6-4ed0-8377-98340d1c62a3
 	- **Entry level: 1 (Foundations).**
 	- Five questions spanning calculus and modelling, variance and its additivity, exponentials and log plots, vectors, and counting statistics.
