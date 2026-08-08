@@ -31,7 +31,8 @@ model:: Opus 5 (High)
 	  note::
 	  id:: 6a67d966-bc9e-4651-9524-4a6d0814f6ef
 		- Square–cube scaling and the fall of surface-to-volume as $1/r$. Why the constraint forbids large cells and simultaneously predicts the form of large ones: inert interior, departure from the sphere. Diffusion as a random walk; $t \propto L^2$ derived rather than asserted, and the consequence that diffusion is excellent over micrometres and useless over millimetres. Why the interior constraint is the harder of the two, and why abolishing the boundary constraint does not rescue a large cell. Order-of-magnitude work throughout.
-		- Handled well in the diagnostic and retained here anyway, because the derivation of $t \propto L^2$ was supplied rather than produced.
+		- Handled well in the diagnostic and retained here anyway, because the derivation of $t \propto L^2$ was supplied rather than produced. However, the $t \propto L^2$ derivation is owned by methods 10 and is not re-derivable here; do not mark this topic complete on the strength of the scaling argument alone.
+		- The $\mathbb{E}[D^2] = nL^2$ result was produced on 2026-08-07, but only after the machinery was supplied in the same session. Still to be earned from a standing start; owned by ((6a764603-6a7b-471e-8b5f-e52238c76f6a)).
 		- *Re-tests from diagnostic:* $\mathbb{E}[X^2]$ for a sum of independent zero-mean steps.
 		- *Cross-subject:* variance of sums of independent random variables (mathematics — no syllabus yet); random walks and mean free path (physics).
 	- ### 3. Cells and compartments
@@ -94,14 +95,14 @@ model:: Opus 5 (High)
 		- Entirely absent in the diagnostic and supplied wholesale; nothing here is to be treated as covered.
 		- *Re-tests from diagnostic:* differentiation explained by present environment alone, with no account of memory across division.
 	- ### 11. Cell division: mitosis and meiosis
-	  prerequisites:: ((6a67d966-0778-4297-8ac1-90464d4e4b50)), ((6a67d966-331c-4476-a237-f5569ce96d4b))
+	  prerequisites:: ((6a67d966-0778-4297-8ac1-90464d4e4b50)), ((6a67d966-331c-4476-a237-f5569ce96d4b)), ((6a764603-bb4b-4d28-9bbb-69531bf77848))
 	  state:: not started
 	  note::
 	  id:: 6a67d966-a2d2-4e7c-842f-d551c4934630
 		- Chromosomes as packaged DNA; homologous pairs; diploid and haploid. Mitosis as production of identical cells and its role in growth and repair. Meiosis as production of gametes, with independent assortment and crossing over as the two mechanisms that generate novel combinations. The arithmetic of how many distinct gametes are possible, done explicitly. Why fertilisation restores the count. Non-disjunction as evidence that the machinery is real and fallible.
 		- This topic supplies the mechanism that ((6a67d966-6038-4128-a6b5-86cac76d8342)), ((6a67d966-9401-4c47-810f-89b084670196)) and ((6a67d966-971c-48d6-a8de-65c2502525d0)) assume.
 	- ### 12. Inheritance and variation
-	  prerequisites:: ((6a67d966-a2d2-4e7c-842f-d551c4934630)), probability (no syllabus yet)
+	  prerequisites:: ((6a67d966-a2d2-4e7c-842f-d551c4934630)), ((6a764603-6a7b-471e-8b5f-e52238c76f6a)), ((6a764603-7297-4b85-beff-26db87c6c2f4))
 	  state:: not started
 	  note::
 	  id:: 6a67d966-6038-4128-a6b5-86cac76d8342
@@ -109,7 +110,7 @@ model:: Opus 5 (High)
 		- Do not take this topic before the statistics gap is addressed. The diagnostic exposed it twice in one session and this is where it next bites.
 		- *Cross-subject:* probability, expectation, sampling variation (mathematics — no syllabus yet).
 	- ### 13. Evolution by natural selection
-	  prerequisites:: ((6a67d966-6038-4128-a6b5-86cac76d8342))
+	  prerequisites:: ((6a67d966-6038-4128-a6b5-86cac76d8342)), ((6a764603-9774-4284-916d-c03620cbb92e)), ((6a764603-6a7b-471e-8b5f-e52238c76f6a))
 	  state:: not started
 	  note::
 	  id:: 6a67d966-9401-4c47-810f-89b084670196
@@ -125,7 +126,7 @@ model:: Opus 5 (High)
 		- The two-fold cost of sex stated properly, so that the puzzle is felt before it is solved. Why "sex generates variation, which helps the lineage adapt" does not by itself pay the bill — benefits accruing to lineages over many generations cannot outrun a cost paid by individuals now. Negative frequency-dependent selection: rarity as an immediate advantage against pathogens tracking the common genotype. The Red Queen. Clonal uniformity and its consequences, including the agricultural case. Group selection as the fallacy to be able to name on sight.
 		- *Re-tests from diagnostic:* the deferred-benefit fallacy, which reappeared after being pointed out.
 	- ### 15. Exchange surfaces and mass transport
-	  prerequisites:: ((6a67d966-bc9e-4651-9524-4a6d0814f6ef)), ((6a67d966-b22a-490b-8bd8-922b7858abdc)), ((6a67d966-9d55-4cbf-b5bf-f22bc57c153c)), physics
+	  prerequisites:: ((6a67d966-bc9e-4651-9524-4a6d0814f6ef)), ((6a67d966-b22a-490b-8bd8-922b7858abdc)), ((6a67d966-9d55-4cbf-b5bf-f22bc57c153c)), ((6a6d2611-3e9e-49d4-a33b-cebe73480c28))
 	  state:: not started
 	  note::
 	  id:: 6a67d966-4102-48bb-a5f1-eb369841fbc4
@@ -140,7 +141,7 @@ model:: Opus 5 (High)
 		- Negative feedback as a control mechanism, stated generally enough that the same shape is recognisable in a thermostat and in a chemical equilibrium. Set point, detector, effector, and why oscillation about the set point is expected rather than a failure. Thermoregulation, blood glucose regulation, osmoregulation. Positive feedback and the small number of places biology uses it deliberately. The cost of homeostasis, connected back to ((6a67d966-8a73-4ddc-b595-68782e0a53df)): what fraction of the budget it consumes and what happens as ambient conditions move away from the set point.
 		- *Cross-subject:* dynamic equilibrium and Le Chatelier ( ((6a652f81-1880-42ad-8716-fb8c0468d897))); feedback and stability (mathematics, physics).
 	- ### 17. Ecosystems: energy flow and matter cycling
-	  prerequisites:: ((6a67d966-8a73-4ddc-b595-68782e0a53df)), ((6a67d966-9d55-4cbf-b5bf-f22bc57c153c)), ((6a67d966-6a68-436f-80af-c1f23d570c39))
+	  prerequisites:: ((6a67d966-8a73-4ddc-b595-68782e0a53df)), ((6a67d966-9d55-4cbf-b5bf-f22bc57c153c)), ((6a67d966-6a68-436f-80af-c1f23d570c39)), ((6a764603-6fef-4d19-800a-0be0a896acbc))
 	  state:: not started
 	  note::
 	  id:: 6a67d966-ae29-4d10-9612-faf1dee28e78
@@ -156,6 +157,7 @@ model:: Opus 5 (High)
 - ## Outstanding structural defect
 	- **There is no mathematics syllabus, and the diagnostic exposed a statistics gap that is not a biology problem.** It bit twice in a single session: the mean square displacement of a random walk could not be produced, and the Poisson assignment in Luria–Delbrück was inverted. ((6a67d966-6038-4128-a6b5-86cac76d8342)), ((6a67d966-9401-4c47-810f-89b084670196)) and ((6a67d966-971c-48d6-a8de-65c2502525d0)) depend on probability directly, and ((6a67d966-bc9e-4651-9524-4a6d0814f6ef)) depends on it retrospectively.
 	- Recommendation: run the mathematics diagnostic before ((6a67d966-6038-4128-a6b5-86cac76d8342)), and expect it to set an entry level well below the biology one in probability and statistics specifically, whatever it finds elsewhere. Do not work around this inside biology sessions; it will recur in physics and in ((6a652f81-4b1e-4023-b7c1-706eb337dfac)).
+	- **Resolved 2026-08-07.** ((6a67d966-6038-4128-a6b5-86cac76d8342)), ((6a67d966-9401-4c47-810f-89b084670196)) and ((6a67d966-971c-48d6-a8de-65c2502525d0)) are blocked on ((6a764603-9774-4284-916d-c03620cbb92e)) and ((6a764603-6a7b-471e-8b5f-e52238c76f6a)) (and ((6a764603-7297-4b85-beff-26db87c6c2f4)), for the ratio-deviation question in ((6a67d966-6038-4128-a6b5-86cac76d8342))) rather than on the absence of a syllabus.
 - ## Level completion
 	- Level 1 is complete when all seventeen topics are marked complete and no outstanding note remains unresolved against any of them. The next level is designed only then, and specialises on the basis of what proved difficult or interesting here.
 - ## Appendix A: Diagnostic record (2026-07-20)

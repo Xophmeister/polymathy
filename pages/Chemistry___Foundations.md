@@ -91,7 +91,7 @@ model:: Opus 5 (High)
 		- Treated quantitatively, per the diagnostic.
 		- *Cross-subject:* energy conservation and the first law (physics).
 	- ### 12. Rates of reaction
-	  prerequisites:: ((6a652f81-52b6-4329-8323-e4ce94566a56)), ((6a652f81-0d4e-41ed-a431-4ea08facae04))
+	  prerequisites:: ((6a652f81-52b6-4329-8323-e4ce94566a56)), ((6a652f81-0d4e-41ed-a431-4ea08facae04)), ((6a764603-68bf-4c9b-b789-01547b08ac39))
 	  state:: not started
 	  note::
 	  id:: 6a652f81-4b1e-4023-b7c1-706eb337dfac
@@ -105,7 +105,7 @@ model:: Opus 5 (High)
 		- Dynamic equilibrium as equal opposing rates, not as stasis. Closed systems. Le Chatelier's principle applied to concentration, pressure and temperature. The distinction between the position of an equilibrium and the rate at which it is reached, and why catalysts move one and not the other.
 		- *Cross-subject:* homeostasis and steady states (biology).
 	- ### 14. Acids and bases
-	  prerequisites:: ((6a652f81-52b6-4329-8323-e4ce94566a56)), ((6a652f81-1880-42ad-8716-fb8c0468d897))
+	  prerequisites:: ((6a652f81-52b6-4329-8323-e4ce94566a56)), ((6a652f81-1880-42ad-8716-fb8c0468d897)), ((6a764603-6fef-4d19-800a-0be0a896acbc))
 	  state:: not started
 	  note::
 	  id:: 6a652f81-7381-4502-8d7c-028e0829e491
