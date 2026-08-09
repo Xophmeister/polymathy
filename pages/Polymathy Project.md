@@ -4,8 +4,8 @@
   #+END_QUOTE
 - ## Curricula
 	- ### [[Mathematics]]
-		- #### [Mathematical methods for science]([[Mathematics/Mathematical methods for science]])
-			- ##### [Foundations]([[Mathematics/Mathematical methods for science/Foundations]])
+	- ### [Mathematical methods for science]([[Mathematical methods for science]])
+		- #### [Foundations]([[Mathematical methods for science/Foundations]])
 	- ### [[Physics]]
 		- #### [Foundations]([[Physics/Foundations]])
 	- ### [[Chemistry]]
@@ -15,6 +15,7 @@
 - ## Meta
 	- ### [[About]]
 		- #### [[AI tutor system prompt]]
+		- #### [[Follow]]
 		- #### Licence
 		  collapsed:: true
 			- Logseq graph content (pages and assets): CC BY-SA 4.0

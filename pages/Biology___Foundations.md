@@ -16,7 +16,7 @@ model:: Opus 5 (High)
 		- ((6a67d966-bc9e-4651-9524-4a6d0814f6ef))
 		- ((6a67d966-0778-4297-8ac1-90464d4e4b50))
 - ## Topics
-	- ### 1. Life, free energy and the far-from-equilibrium state
+	- ### BIO1.1. Life, free energy and the far-from-equilibrium state
 	  prerequisites::
 	  state:: not started
 	  note::
@@ -25,7 +25,7 @@ model:: Opus 5 (High)
 		- Boundary with ((6a67d966-9d55-4cbf-b5bf-f22bc57c153c)): this topic establishes that free energy must be spent continuously and why. ((6a67d966-9d55-4cbf-b5bf-f22bc57c153c)) covers how it is captured and disbursed.
 		- *Re-tests from diagnostic:* "a state of entropy"; free energy misidentified as entropy; order as the thing being maintained.
 		- *Cross-subject:* second law, and enthalpy versus entropy ( ((6a652f81-0d4e-41ed-a431-4ea08facae04)); physics).
-	- ### 2. Scale, surface area and diffusion
+	- ### BIO1.2. Scale, surface area and diffusion
 	  prerequisites:: ((6a67d966-8a73-4ddc-b595-68782e0a53df))
 	  state:: not started
 	  note::
@@ -35,7 +35,7 @@ model:: Opus 5 (High)
 		- The $\mathbb{E}[D^2] = nL^2$ result was produced on 2026-08-07, but only after the machinery was supplied in the same session. Still to be earned from a standing start; owned by ((6a764603-6a7b-471e-8b5f-e52238c76f6a)).
 		- *Re-tests from diagnostic:* $\mathbb{E}[X^2]$ for a sum of independent zero-mean steps.
 		- *Cross-subject:* variance of sums of independent random variables (mathematics — no syllabus yet); random walks and mean free path (physics).
-	- ### 3. Cells and compartments
+	- ### BIO1.3. Cells and compartments
 	  prerequisites:: ((6a67d966-bc9e-4651-9524-4a6d0814f6ef))
 	  state:: not started
 	  note::
@@ -43,14 +43,14 @@ model:: Opus 5 (High)
 		- The cell as the unit that satisfies the constraints of ((6a67d966-bc9e-4651-9524-4a6d0814f6ef)). Prokaryotic and eukaryotic organisation. Organelles by function rather than by list: nucleus, mitochondrion, chloroplast, ribosome, endoplasmic reticulum, Golgi, lysosome, vacuole. Why a eukaryote compartmentalises at all — incompatible chemistries run simultaneously, and surface area created internally where the outer membrane cannot supply it. What plant, animal, fungal and bacterial cells respectively have and lack, and the cell wall as a specific structure with a specific mechanical job, not a generic boundary.
 		- This topic is the mechanistic base the diagnostic found missing. Expect it to be slow.
 		- *Re-tests from diagnostic:* a cell wall attributed to an animal cell.
-	- ### 4. Membranes and transport across them
+	- ### BIO1.4. Membranes and transport across them
 	  prerequisites:: ((6a67d966-0778-4297-8ac1-90464d4e4b50))
 	  state:: not started
 	  note::
 	  id:: 6a67d966-b22a-490b-8bd8-922b7858abdc
 		- The phospholipid bilayer as a consequence of having one end that likes water and one that does not — the structure to be derived from the molecule, not recalled. Fluidity and why the membrane is not a wall. Simple diffusion, facilitated diffusion, osmosis, active transport; which of these cost free energy and why that follows directly from ((6a67d966-8a73-4ddc-b595-68782e0a53df)). Water potential and the behaviour of cells in solutions of differing concentration, worked in both directions. Why a resting cell is spending most of its budget on pumps.
 		- *Cross-subject:* intermolecular forces and polarity ( ((6a652f81-c7b0-406d-b3a5-0afacc821e0f))); ions in solution ( ((6a652f81-8ee3-4e99-b592-fe8edb22cdce)), ((6a652f81-52b6-4329-8323-e4ce94566a56))).
-	- ### 5. Biological molecules
+	- ### BIO1.5. Biological molecules
 	  id:: 6a67d966-2a4c-4a8c-b0e9-a5a52da8f829
 	  prerequisites:: ((6a67d966-0778-4297-8ac1-90464d4e4b50)), ((6a652f81-04dd-4127-8193-ebcd1957fe2c)), ((6a652f81-c7b0-406d-b3a5-0afacc821e0f))
 	  state:: not started
@@ -58,7 +58,7 @@ model:: Opus 5 (High)
 		- Carbohydrates, lipids, proteins and nucleic acids as four solutions to four problems. Monomer and polymer; condensation and hydrolysis as one reaction run in two directions. Why storage molecules are the shape they are (compact, insoluble, osmotically inert) and structural ones are not. The primary, secondary, tertiary and quaternary levels of protein structure, and which interactions hold each.
 		- Cannot be taken before ((6a652f81-04dd-4127-8193-ebcd1957fe2c)) and ((6a652f81-c7b0-406d-b3a5-0afacc821e0f)): covalent bonding and intermolecular forces are load-bearing here, and both are recorded as not started.
 		- *Cross-subject:* covalent bonding ( ((6a652f81-04dd-4127-8193-ebcd1957fe2c))); hydrogen bonding, dispersion forces, solubility ( ((6a652f81-c7b0-406d-b3a5-0afacc821e0f))).
-	- ### 6. Proteins, enzymes and catalysis
+	- ### BIO1.6. Proteins, enzymes and catalysis
 	  prerequisites:: ((6a67d966-2a4c-4a8c-b0e9-a5a52da8f829)), ((6a652f81-0d4e-41ed-a431-4ea08facae04)), ((6a652f81-4b1e-4023-b7c1-706eb337dfac))
 	  state:: not started
 	  note::
@@ -66,27 +66,27 @@ model:: Opus 5 (High)
 		- The fold as a genuine equilibrium — sequence specifies structure, refolding is spontaneous — but a *marginal* one, with net stability a small difference between two large opposing terms. Why marginal stability is functional rather than a defect. Denaturation as loss of arrangement rather than breakage of covalent bonds, cooperativity, threshold behaviour, and aggregation as the reason denaturation is irreversible in a body but not in a tube. Enzymes as catalysts: activation energy lowered, equilibrium position untouched. Specificity, active site, effects of temperature and pH, and why the temperature curve has two limbs with different causes.
 		- *Re-tests from diagnostic:* "bonds breaking irreversibly"; the fold's relationship to equilibrium, which was half-guessed and must be earned.
 		- *Cross-subject:* bond energies and enthalpy ( ((6a652f81-0d4e-41ed-a431-4ea08facae04))); activation energy and catalysts ( ((6a652f81-4b1e-4023-b7c1-706eb337dfac))); acids and pH ( ((6a652f81-7381-4502-8d7c-028e0829e491))).
-	- ### 7. Respiration and the ATP economy
+	- ### BIO1.7. Respiration and the ATP economy
 	  prerequisites:: ((6a67d966-8a73-4ddc-b595-68782e0a53df)), ((6a67d966-b22a-490b-8bd8-922b7858abdc)), ((6a67d966-f2dc-48fb-8184-688f036835ed)), ((6a652f81-0d4e-41ed-a431-4ea08facae04))
 	  state:: not started
 	  note::
 	  id:: 6a67d966-9d55-4cbf-b5bf-f22bc57c153c
 		- Why an intermediate currency exists at all rather than burning glucose directly at the point of use. ATP hydrolysis and the coupling of unfavourable processes to favourable ones. Aerobic respiration in outline — glycolysis, the link reaction, Krebs, oxidative phosphorylation — at the level of what each stage is *for*, with the electron transport chain as a gradient built and then spent. Anaerobic respiration and its cost. Where the oxygen goes and where the carbon dioxide comes from. Order-of-magnitude accounting: ATP turnover per day against body mass.
 		- *Cross-subject:* enthalpy and bond energies ( ((6a652f81-0d4e-41ed-a431-4ea08facae04))); oxidation and reduction as electron transfer ( ((6a652f81-8fab-484a-bf19-a606ba4ce0ff))).
-	- ### 8. Photosynthesis
+	- ### BIO1.8. Photosynthesis
 	  prerequisites:: ((6a67d966-9d55-4cbf-b5bf-f22bc57c153c)), ((6a652f81-8fab-484a-bf19-a606ba4ce0ff))
 	  state:: not started
 	  note::
 	  id:: 6a67d966-6a68-436f-80af-c1f23d570c39
 		- Light capture and what a pigment does with a photon. The light-dependent and light-independent stages as, respectively, the manufacture of a chemical store and its expenditure on fixing carbon. Photosynthesis and respiration as related but non-identical processes, and why calling one the reverse of the other is only half true. Limiting factors and the reading of rate curves. The origin of the atmosphere's oxygen.
 		- *Cross-subject:* redox ( ((6a652f81-8fab-484a-bf19-a606ba4ce0ff))); photons and energy levels (physics).
-	- ### 9. Nucleic acids, the genetic code and protein synthesis
+	- ### BIO1.9. Nucleic acids, the genetic code and protein synthesis
 	  prerequisites:: ((6a67d966-2a4c-4a8c-b0e9-a5a52da8f829)), ((6a67d966-f2dc-48fb-8184-688f036835ed))
 	  state:: not started
 	  note::
 	  id:: 6a67d966-331c-4476-a237-f5569ce96d4b
 		- DNA structure and why a double helix of complementary strands is simultaneously a store and a copying mechanism. Semi-conservative replication. The code: triplets, redundancy, and why redundancy is not waste. Transcription and translation. Mutation as a change of sequence, and the classification of mutations by their consequence rather than their chemistry. Why "DNA is a blueprint" is the wrong metaphor and what to replace it with.
-	- ### 10. Gene expression, differentiation and epigenetic memory
+	- ### BIO1.10. Gene expression, differentiation and epigenetic memory
 	  prerequisites:: ((6a67d966-0778-4297-8ac1-90464d4e4b50)), ((6a67d966-331c-4476-a237-f5569ce96d4b))
 	  state:: not started
 	  note::
@@ -94,14 +94,14 @@ model:: Opus 5 (High)
 		- Same genome, different cells. Transcriptional regulation. The distinction between what initiates a cell fate (environment, signalling) and what maintains it across division — DNA methylation, histone modification, self-sustaining transcription-factor loops. Stem cells and potency. Why heritable-without-sequence-change is not a contradiction, and where the boundary with Lamarckism actually lies.
 		- Entirely absent in the diagnostic and supplied wholesale; nothing here is to be treated as covered.
 		- *Re-tests from diagnostic:* differentiation explained by present environment alone, with no account of memory across division.
-	- ### 11. Cell division: mitosis and meiosis
+	- ### BIO1.11. Cell division: mitosis and meiosis
 	  prerequisites:: ((6a67d966-0778-4297-8ac1-90464d4e4b50)), ((6a67d966-331c-4476-a237-f5569ce96d4b)), ((6a764603-bb4b-4d28-9bbb-69531bf77848))
 	  state:: not started
 	  note::
 	  id:: 6a67d966-a2d2-4e7c-842f-d551c4934630
 		- Chromosomes as packaged DNA; homologous pairs; diploid and haploid. Mitosis as production of identical cells and its role in growth and repair. Meiosis as production of gametes, with independent assortment and crossing over as the two mechanisms that generate novel combinations. The arithmetic of how many distinct gametes are possible, done explicitly. Why fertilisation restores the count. Non-disjunction as evidence that the machinery is real and fallible.
 		- This topic supplies the mechanism that ((6a67d966-6038-4128-a6b5-86cac76d8342)), ((6a67d966-9401-4c47-810f-89b084670196)) and ((6a67d966-971c-48d6-a8de-65c2502525d0)) assume.
-	- ### 12. Inheritance and variation
+	- ### BIO1.12. Inheritance and variation
 	  prerequisites:: ((6a67d966-a2d2-4e7c-842f-d551c4934630)), ((6a764603-6a7b-471e-8b5f-e52238c76f6a)), ((6a764603-7297-4b85-beff-26db87c6c2f4))
 	  state:: not started
 	  note::
@@ -109,7 +109,7 @@ model:: Opus 5 (High)
 		- Alleles, genotype, phenotype, dominance. Monohybrid and dihybrid crosses worked as probability problems rather than as diagram-filling. Sex linkage. Codominance and multiple alleles. Continuous versus discontinuous variation, and the genetic versus environmental contributions to each. Expected ratios as expectations, with the accompanying question of how far an observed ratio may deviate before the model is in trouble.
 		- Do not take this topic before the statistics gap is addressed. The diagnostic exposed it twice in one session and this is where it next bites.
 		- *Cross-subject:* probability, expectation, sampling variation (mathematics — no syllabus yet).
-	- ### 13. Evolution by natural selection
+	- ### BIO1.13. Evolution by natural selection
 	  prerequisites:: ((6a67d966-6038-4128-a6b5-86cac76d8342)), ((6a764603-9774-4284-916d-c03620cbb92e)), ((6a764603-6a7b-471e-8b5f-e52238c76f6a))
 	  state:: not started
 	  note::
@@ -118,14 +118,14 @@ model:: Opus 5 (High)
 		- The diagnostic produced the amplification argument correctly but attached the wrong distribution to it. That is a statistics error, and it must be resolved before this topic, not during it.
 		- *Re-tests from diagnostic:* Poisson and the pre-existing-mutation hypothesis, inverted; "memoryless" misapplied.
 		- *Cross-subject:* probability distributions, variance (mathematics); antibiotic resistance as an applied case.
-	- ### 14. Sex, recombination and coevolution
+	- ### BIO1.14. Sex, recombination and coevolution
 	  prerequisites:: ((6a67d966-9401-4c47-810f-89b084670196))
 	  state:: not started
 	  note::
 	  id:: 6a67d966-971c-48d6-a8de-65c2502525d0
 		- The two-fold cost of sex stated properly, so that the puzzle is felt before it is solved. Why "sex generates variation, which helps the lineage adapt" does not by itself pay the bill — benefits accruing to lineages over many generations cannot outrun a cost paid by individuals now. Negative frequency-dependent selection: rarity as an immediate advantage against pathogens tracking the common genotype. The Red Queen. Clonal uniformity and its consequences, including the agricultural case. Group selection as the fallacy to be able to name on sight.
 		- *Re-tests from diagnostic:* the deferred-benefit fallacy, which reappeared after being pointed out.
-	- ### 15. Exchange surfaces and mass transport
+	- ### BIO1.15. Exchange surfaces and mass transport
 	  prerequisites:: ((6a67d966-bc9e-4651-9524-4a6d0814f6ef)), ((6a67d966-b22a-490b-8bd8-922b7858abdc)), ((6a67d966-9d55-4cbf-b5bf-f22bc57c153c)), ((6a6d2611-3e9e-49d4-a33b-cebe73480c28))
 	  state:: not started
 	  note::
@@ -133,14 +133,14 @@ model:: Opus 5 (High)
 		- The constraints of ((6a67d966-bc9e-4651-9524-4a6d0814f6ef)) applied to whole organisms. Exchange surfaces as the general solution: large area, thin, moist, well ventilated, well perfused. The lung derived rather than recalled — branching, alveolar dimensions, and the two constraints that stop subdivision: flow resistance rising as $1/r^4$, and surface tension rising as $1/r$ on a wet curved surface, with surfactant as the fix. Countercurrent exchange in gills as a case where the design beats the obvious one. Circulation: why bulk flow exists wherever diffusion has run out of reach. Haemoglobin and the dissociation curve as a cooperative binding phenomenon, connected back to ((6a67d966-f2dc-48fb-8184-688f036835ed)).
 		- Nothing here was available in the diagnostic. Expect this to be the longest topic.
 		- *Cross-subject:* laminar flow and Poiseuille resistance, surface tension (physics); pressure and gas behaviour ( ((6a652f81-52b6-4329-8323-e4ce94566a56))).
-	- ### 16. Homeostasis and control
+	- ### BIO1.16. Homeostasis and control
 	  prerequisites:: ((6a67d966-9d55-4cbf-b5bf-f22bc57c153c)), ((6a67d966-4102-48bb-a5f1-eb369841fbc4)), ((6a652f81-1880-42ad-8716-fb8c0468d897))
 	  state:: not started
 	  note::
 	  id:: 6a67e357-a796-4ae7-b8a8-79407ce215dd
 		- Negative feedback as a control mechanism, stated generally enough that the same shape is recognisable in a thermostat and in a chemical equilibrium. Set point, detector, effector, and why oscillation about the set point is expected rather than a failure. Thermoregulation, blood glucose regulation, osmoregulation. Positive feedback and the small number of places biology uses it deliberately. The cost of homeostasis, connected back to ((6a67d966-8a73-4ddc-b595-68782e0a53df)): what fraction of the budget it consumes and what happens as ambient conditions move away from the set point.
 		- *Cross-subject:* dynamic equilibrium and Le Chatelier ( ((6a652f81-1880-42ad-8716-fb8c0468d897))); feedback and stability (mathematics, physics).
-	- ### 17. Ecosystems: energy flow and matter cycling
+	- ### BIO1.17. Ecosystems: energy flow and matter cycling
 	  prerequisites:: ((6a67d966-8a73-4ddc-b595-68782e0a53df)), ((6a67d966-9d55-4cbf-b5bf-f22bc57c153c)), ((6a67d966-6a68-436f-80af-c1f23d570c39)), ((6a764603-6fef-4d19-800a-0be0a896acbc))
 	  state:: not started
 	  note::
