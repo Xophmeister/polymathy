@@ -1,0 +1,9 @@
+# Text files: normalise line endings, sane diffs
+*.md   text eol=lf diff=markdown
+*.org  text eol=lf
+*.edn  text eol=lf
+*.css  text eol=lf
+*.js   text eol=lf
+
+# Assets are binary; route through LFS
+assets/** filter=lfs diff=lfs merge=lfs -text
