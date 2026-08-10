@@ -3,15 +3,15 @@
   — Socrates
   #+END_QUOTE
 - ## Curricula
-	- ### [[Mathematics]]
-	- ### [Mathematical methods for science]([[Mathematical methods for science]])
-		- #### [Foundations]([[Mathematical methods for science/Foundations]])
-	- ### [[Physics]]
-		- #### [Foundations]([[Physics/Foundations]])
-	- ### [[Chemistry]]
-		- #### [Foundations]([[Chemistry/Foundations]])
-	- ### [[Biology]]
-		- #### [Foundations]([[Biology/Foundations]])
+	- ### Mathematics
+	- ### Mathematical methods for science
+		- #### [Foundations]([[METH1: Foundations]])
+	- ### Physics
+		- #### [Foundations]([[PHYS1: Foundations]])
+	- ### Chemistry
+		- #### [Foundations]([[CHEM1: Foundations]])
+	- ### Biology
+		- #### [Foundations]([[BIO1: Foundations]])
 - ## Meta
 	- ### [[About]]
 		- #### [[AI tutor system prompt]]

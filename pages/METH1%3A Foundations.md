@@ -1,7 +1,8 @@
-tags:: syllabus
-status:: active
 created:: 2026-08-07
+status:: active
+course-code:: [[METH1]]
 model:: Opus 5 (High)
+tags:: syllabus, METH1
 
 - Depth marker: roughly A' Level Mathematics and Further Mathematics in content, but selected by what the three science syllabi actually need and pitched at *use* rather than proof.
 - See ((6a764603-5cb6-4ed0-8377-98340d1c62a3))
@@ -33,7 +34,7 @@ model:: Opus 5 (High)
 	  | ((6a764603-6a7b-471e-8b5f-e52238c76f6a)), ((6a764603-a8e4-4234-b650-a45bc7ce1cb8)) | ((6a6d2611-4f8d-4fc3-b91e-1af00b90d9c6)) (quantitative half), ((6a67d966-bc9e-4651-9524-4a6d0814f6ef)) (retrospectively) |
 	- Nothing in physics beyond ((6a6d2611-4f8d-4fc3-b91e-1af00b90d9c6)) and ((6a6d2611-817a-482c-b036-f05969927429)) opens until ((6a764603-0b3c-41d0-bf58-4816eaed5355)). That is the single most consequential fact about the ordering below, and it is why calculus is not deferred behind statistics despite statistics being the more painful gap.
 - ## Topics
-	- ### METH1.1. Number, powers and estimation
+	- ### METH1.1: Number, powers and estimation
 	  prerequisites::
 	  state:: not started
 	  note::
@@ -41,7 +42,7 @@ model:: Opus 5 (High)
 		- Indices and roots as one operation rather than two. Fractional and negative exponents. Splitting a fractional power into an integer part and a root that is known — $2^{-5/2} = 1/(4\sqrt{2})$ — and the small set of constants worth holding cold: $\sqrt{2}$, $\sqrt{3}$, $\ln 2$, $\ln 10$, $e$. Significant figures and what a stated precision claims. Order-of-magnitude arithmetic and Fermi estimation done numerically rather than gestured at. The binomial approximation $(1+x)^n \approx 1 + nx$ for small $x$, derived rather than quoted, together with the question of how small is small enough — the first appearance of "linearise, then check the term you discarded".
 		- Order-of-magnitude reasoning is recorded as *intact* in all three science diagnostics. This topic is what makes it numerical.
 		- *Re-tests from diagnostic:* $2^{-5/2}$ estimated in the head, with the method stated.
-	- ### METH1.2. Proportionality, scaling and self-consistency
+	- ### METH1.2: Proportionality, scaling and self-consistency
 	  prerequisites:: ((6a764603-b3e8-4083-aa3b-45c339131c28))
 	  state:: not started
 	  note::
@@ -50,7 +51,7 @@ model:: Opus 5 (High)
 		- **Boundary with** ((6a6d2611-4f8d-4fc3-b91e-1af00b90d9c6)): This topic owns dimensional analysis as a mathematical technique. ((6a6d2611-4f8d-4fc3-b91e-1af00b90d9c6)) owns measurement practice — random against systematic as categories, propagation, precision against accuracy, where the floor is. Neither covers the other, and ((6a6d2611-4f8d-4fc3-b91e-1af00b90d9c6)) is startable independently of this.
 		- *Re-tests from diagnostic:* the composition test, run properly, against a candidate scaling law — it was offered and not used.
 		- *Cross-subject:* diffusion and surface-to-volume ( ((6a67d966-bc9e-4651-9524-4a6d0814f6ef))); the $1/r^4$ and $1/r$ results ( ((6a67d966-4102-48bb-a5f1-eb369841fbc4)), ((6a6d2611-3e9e-49d4-a33b-cebe73480c28))); dimensional checking ( ((6a6d2611-4f8d-4fc3-b91e-1af00b90d9c6)), where it went missing under content uncertainty).
-	- ### METH1.3. Vectors
+	- ### METH1.3: Vectors
 	  prerequisites:: ((6a764603-b3e8-4083-aa3b-45c339131c28))
 	  state:: not started
 	  note::
@@ -58,7 +59,7 @@ model:: Opus 5 (High)
 		- Scalar and vector quantities, and what the distinction is *for*. Components in an orthogonal basis; addition, subtraction and scaling done component-wise. Magnitude and direction; resolution along chosen axes, and the freedom to choose the axes well. The independence of components — why a boat pointed across a river crosses in the same time whatever the current does — and, immediately, **the limit of that independence**: components may be reasoned about separately exactly when nothing couples them, and a constraint on the *magnitude* is the standard coupling. Unit vectors. The scalar product, its geometric meaning, and the consequence that a force perpendicular to a displacement does no work. The vector product in outline, for torque and the magnetic force. Relative velocity in two dimensions, worked in both directions.
 		- *Re-tests from diagnostic:* the magnitude constraint coupling components, which was not seen; relative velocity in two dimensions.
 		- *Cross-subject:* frames and relative motion ( ((6a6d2611-817a-482c-b036-f05969927429)), whose two-dimensional half is blocked on this); kinematics, forces, momentum ( ((6a6d2611-9d5c-401e-999d-01150d52f0ec)), ((6a6d2611-cf79-41dc-a66b-5424286da946)), ((6a6d2611-5a70-4774-a7c4-dd87ee59b226))); work as a scalar product ( ((6a6d2611-8b27-4f10-a37b-b6008c805c38))); the magnetic force doing no work ( ((6a6d2611-2e88-4976-919b-e7828bb9f413))).
-	- ### METH1.4. Differentiation
+	- ### METH1.4: Differentiation
 	  prerequisites:: ((6a764603-b3e8-4083-aa3b-45c339131c28))
 	  state:: not started
 	  note::
@@ -66,7 +67,7 @@ model:: Opus 5 (High)
 		- The derivative as gradient of a tangent and as instantaneous rate of change, held as one object rather than two. Standard derivatives: powers, $e^{kx}$, $\ln x$, $\sin$, $\cos$. Product, quotient and chain rules as working tools. Higher derivatives. Stationary points, their classification, and optimisation. Reading gradients off experimental curves — the tangent to a concentration–time curve, the initial rate. What the derivative of a quantity means when that quantity is *itself* a rate, and the units that result.
 		- The diagnostic handled this cleanly on question 1. Expect it to be quick, and use the time on the graphical and instrumental half rather than the manipulation.
 		- *Cross-subject:* rate as the gradient of a concentration–time curve ( ((6a652f81-4b1e-4023-b7c1-706eb337dfac))); velocity and acceleration as derivatives ( ((6a6d2611-9d5c-401e-999d-01150d52f0ec))); power as a derivative ( ((6a6d2611-8b27-4f10-a37b-b6008c805c38))).
-	- ### METH1.5. Integration
+	- ### METH1.5: Integration
 	  prerequisites:: ((6a764603-68bf-4c9b-b789-01547b08ac39))
 	  state:: not started
 	  note::
@@ -75,7 +76,7 @@ model:: Opus 5 (High)
 		- And the separate failure mode: the integral computed correctly, the initial condition known exactly, and the answer still wrong — because the model generating the integrand has left the regime where it holds. Saturation, exhaustion, phase change. A correct operation on a model that has stopped applying.
 		- *Re-tests from diagnostic:* definite against indefinite, conflated once and then stated correctly unprompted — a slip rather than a gap, but it is to be confirmed here.
 		- *Cross-subject:* the constant-acceleration equations derived by integration ( ((6a6d2611-9d5c-401e-999d-01150d52f0ec))); work as an integral of force ( ((6a6d2611-8b27-4f10-a37b-b6008c805c38))); hydrostatic pressure ( ((6a6d2611-3e9e-49d4-a33b-cebe73480c28))).
-	- ### METH1.6. Exponentials, logarithms and log plots
+	- ### METH1.6: Exponentials, logarithms and log plots
 	  prerequisites:: ((6a764603-b3e8-4083-aa3b-45c339131c28)), ((6a764603-68bf-4c9b-b789-01547b08ac39))
 	  state:: not started
 	  note::
@@ -84,7 +85,7 @@ model:: Opus 5 (High)
 		- **Semi-log and log–log plots as hypothesis discriminators.** An exponential is straight on semi-log; a power law is straight on log–log; the parameter falls out of the gradient in each case. Arrhenius plots and reaction-order plots as the instances the chemistry syllabus needs. This is the single most-used graphical tool in the experimental sciences and it was not recognised as useful in the diagnostic.
 		- *Re-tests from diagnostic:* the value of a log plot, which was not seen; the power-law half of the discrimination, which was absent; $t_{1/2} = \ln 2 / \lambda$, which was produced correctly and is to be reproduced from scratch.
 		- *Cross-subject:* pH as a logarithmic scale ( ((6a652f81-7381-4502-8d7c-028e0829e491))); rate constants and Arrhenius ( ((6a652f81-4b1e-4023-b7c1-706eb337dfac))); exponential and limited growth ( ((6a67d966-ae29-4d10-9612-faf1dee28e78))); $S = k_B \ln \Omega$ ( ((6a6d2611-53e4-4c4e-8a67-2c923fc45b70))); the decay law ( ((6a6d2611-1992-43a0-a932-507b1ebca6c1))).
-	- ### METH1.7. Differential equations
+	- ### METH1.7: Differential equations
 	  prerequisites:: ((6a764603-0b3c-41d0-bf58-4816eaed5355)), ((6a764603-6fef-4d19-800a-0be0a896acbc))
 	  state:: not started
 	  note::
@@ -92,14 +93,14 @@ model:: Opus 5 (High)
 		- First-order separable equations, solved by separation and integration, with the initial condition supplying the constant. The two archetypes, each stated first as a sentence about the world and only then as an equation: $\dot{N} = -\lambda N$ — rate proportional to amount, covering decay, cooling, capacitor discharge and unconstrained growth — and the logistic form, growth against a ceiling. Second-order linear equations with constant coefficients, taken far enough to obtain $\ddot{x} = -\omega^2 x$ and its solution, and the damped case $\ddot{x} + \gamma\dot{x} + \omega_0^2 x = 0$ with the three regimes distinguished by the discriminant.
 		- The reason this topic exists at Level 1 rather than Level 2: the physics syllabus requires the SHM solution *derived* and the exponential decay law *derived from memorylessness*, in both cases explicitly refusing the quoted result.
 		- *Cross-subject:* simple harmonic motion and damping ( ((6a6d2611-f7df-4d36-a9be-25f818693951))); the decay law ( ((6a6d2611-1992-43a0-a932-507b1ebca6c1))); rate equations ( ((6a652f81-4b1e-4023-b7c1-706eb337dfac))); dynamic equilibrium and approach to steady state ( ((6a652f81-1880-42ad-8716-fb8c0468d897))); homeostatic oscillation about a set point ( ((6a67e357-a796-4ae7-b8a8-79407ce215dd))); population growth ( ((6a67d966-ae29-4d10-9612-faf1dee28e78))).
-	- ### METH1.8. Counting
+	- ### METH1.8: Counting
 	  prerequisites:: ((6a764603-b3e8-4083-aa3b-45c339131c28))
 	  state:: not started
 	  note::
 	  id:: 6a764603-bb4b-4d28-9bbb-69531bf77848
 		- The multiplication principle. Permutations and combinations, with $\binom{n}{r}$ derived rather than quoted. Counting arrangements subject to constraints. The number of distinct outcomes of a sequence of independent choices, and the arithmetic of how fast it grows. Microstate counting: the number of ways of distributing units among states, and the reason everybody works with $\ln \Omega$ rather than $\Omega$ — a question about arithmetic before it is a question about physics. Stirling's approximation in outline. The explicit arithmetic of $e^{-10^{23}}$, so that "overwhelming" has a size.
 		- *Cross-subject:* entropy as a count of microstates ( ((6a6d2611-53e4-4c4e-8a67-2c923fc45b70)), where the entropy-as-order misconception is to be killed and where this topic supplies the arithmetic that kills it); the number of distinct gametes from independent assortment ( ((6a67d966-a2d2-4e7c-842f-d551c4934630))); cross ratios ( ((6a67d966-6038-4128-a6b5-86cac76d8342))).
-	- ### METH1.9. Probability
+	- ### METH1.9: Probability
 	  prerequisites:: ((6a764603-bb4b-4d28-9bbb-69531bf77848))
 	  state:: not started
 	  note::
@@ -109,7 +110,7 @@ model:: Opus 5 (High)
 		- **The memoryless property, attached correctly** — to the exponential waiting time and the geometric distribution, and *not* to the Poisson count. The misattachment has now occurred in two diagnostics, five weeks apart, in two subjects.
 		- *Re-tests from diagnostic:* "memoryless" applied to Poisson (biology, 2026-07-26; physics/methods, 2026-08-07); the Poisson assignment in Luria–Delbrück, which was inverted; the conditions under which Poisson is the right model at all.
 		- *Cross-subject:* monohybrid and dihybrid crosses as probability problems ( ((6a67d966-6038-4128-a6b5-86cac76d8342))); Luria–Delbrück, variance-to-mean ratio, jackpot distributions ( ((6a67d966-9401-4c47-810f-89b084670196))); frequency-dependent selection ( ((6a67d966-971c-48d6-a8de-65c2502525d0))); counting statistics and the decay law ( ((6a6d2611-1992-43a0-a932-507b1ebca6c1))).
-	- ### METH1.10. Expectation, variance and the additivity of variance
+	- ### METH1.10: Expectation, variance and the additivity of variance
 	  prerequisites:: ((6a764603-9774-4284-916d-c03620cbb92e))
 	  state:: not started
 	  note::
@@ -124,7 +125,7 @@ model:: Opus 5 (High)
 		- **Everything in this topic was supplied in the diagnostic rather than earned, including the definition of standard deviation, which was given wrongly.** The random walk was produced correctly once the machinery had been handed over; that is not the same as producing it. Nothing here is to be treated as covered.
 		- *Re-tests from diagnostic:* the whole topic. Specifically — why square rather than take the modulus; the fate of the cross term and the sign argument behind it; $\operatorname{Var} = \mu$ for Poisson; the random walk from a standing start; the rod assembly reproduced without prompting.
 		- *Cross-subject:* the $1/\sqrt{n}$ law and uncertainty propagation ( ((6a6d2611-4f8d-4fc3-b91e-1af00b90d9c6))); counting statistics ( ((6a6d2611-1992-43a0-a932-507b1ebca6c1))); mean square displacement ( ((6a67d966-bc9e-4651-9524-4a6d0814f6ef)), where the derivation is recorded as supplied — this is where the debt is paid); sampling variation in observed cross ratios ( ((6a67d966-6038-4128-a6b5-86cac76d8342))); variance-to-mean ratio as the discriminator in Luria–Delbrück ( ((6a67d966-9401-4c47-810f-89b084670196))).
-	- ### METH1.11. Sampling and uncertainty
+	- ### METH1.11: Sampling and uncertainty
 	  prerequisites:: ((6a764603-6a7b-471e-8b5f-e52238c76f6a))
 	  state:: not started
 	  note::
@@ -134,7 +135,7 @@ model:: Opus 5 (High)
 		- **Boundary with** ((6a6d2611-4f8d-4fc3-b91e-1af00b90d9c6)): ((6a6d2611-4f8d-4fc3-b91e-1af00b90d9c6)) owns the experimental categories — random against systematic as properties of a *procedure* rather than of an instrument, precision against accuracy, and the practice of measurement. This topic owns the mathematics those categories run on. The qualitative half of ((6a6d2611-4f8d-4fc3-b91e-1af00b90d9c6)) is startable now; its quantitative half waits on this.
 		- *Re-tests from diagnostic:* the $1/\sqrt{n}$ law, which was unavailable in two diagnostics; the fractional uncertainty of a Poisson count.
 		- *Cross-subject:* measurement and uncertainty ( ((6a6d2611-4f8d-4fc3-b91e-1af00b90d9c6))); activity and the statistics of counting ( ((6a6d2611-1992-43a0-a932-507b1ebca6c1))).
-	- ### METH1.12. Fitting and testing against data
+	- ### METH1.12: Fitting and testing against data
 	  prerequisites:: ((6a764603-6fef-4d19-800a-0be0a896acbc)), ((6a764603-a8e4-4234-b650-a45bc7ce1cb8))
 	  state:: not started
 	  note::

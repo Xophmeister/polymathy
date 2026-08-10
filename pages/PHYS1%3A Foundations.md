@@ -1,7 +1,8 @@
-tags:: syllabus
-status:: active
 created:: 2026-07-31
+status:: active
+course-code:: [[PHYS1]]
 model:: Opus 5 (High)
+tags:: syllabus, PHYS1
 
 - Depth marker: roughly A' Level, but sequenced by conceptual dependency rather than by any specification, and extended past it wherever the structure demands it — statistical entropy rather than the thermodynamic definition, energy density of the field, indistinguishability rather than "wave–particle duality".
 - The depth marker is higher than chemistry's or biology's because the qualification is more recent and the diagnostic found reasoning that survived where recall did not. It is not evidence that less work is required.
@@ -15,7 +16,7 @@ model:: Opus 5 (High)
 	- **Cross-subject prerequisites are binding, not decorative.** Physics depends on mathematical methods more heavily than either other subject does, and no methods syllabus yet exists. See "Outstanding structural defect" below. Where a topic lists a cross-subject prerequisite, that prerequisite is checked in the same way as an internal one.
 	- Nothing is startable until ((6a764603-0755-44c9-9bf7-7183c2981d1f)). ((6a6d2611-817a-482c-b036-f05969927429)) opens then; ((6a6d2611-9d5c-401e-999d-01150d52f0ec)) opens at ((6a764603-0b3c-41d0-bf58-4816eaed5355)).
 - ## Topics
-	- ### PHYS1.1. Measurement, dimensions and uncertainty
+	- ### PHYS1.1: Measurement, dimensions and uncertainty
 	  prerequisites:: ((6a764603-9d94-459c-a35d-e86f65a6f2b5)), ((6a764603-a8e4-4234-b650-a45bc7ce1cb8))
 	  state:: not started
 	  note::
@@ -25,7 +26,7 @@ model:: Opus 5 (High)
 		- *Caveat:* the $1/\sqrt{n}$ result and the propagation formulae need variance of sums of independent random variables.
 		- *Re-tests from diagnostic:* "you could get arbitrarily close to 0% error"; random error described as averaging to the size of a single deviation; $v \propto Mr^{-2}$ surviving unchecked.
 		- *Cross-subject:* variance, independence, sampling (mathematical methods — no syllabus yet).
-	- ### PHYS1.2. Frames of reference and relative motion
+	- ### PHYS1.2: Frames of reference and relative motion
 	  prerequisites:: ((6a764603-0755-44c9-9bf7-7183c2981d1f))
 	  state:: not started
 	  note::
@@ -35,14 +36,14 @@ model:: Opus 5 (High)
 		- The equivalence principle stated but not developed: no local experiment distinguishes uniform acceleration from a uniform gravitational field. Where that leads is Level 2.
 		- *Caveat:* relative velocity in two dimensions needs vector addition. Restrict to one dimension until methods supplies it, or accept that this topic will be returned to.
 		- *Re-tests from diagnostic:* orbital speed "balancing" gravity; the lift passenger's extra downward force left unnamed.
-	- ### PHYS1.3. Kinematics
+	- ### PHYS1.3: Kinematics
 	  prerequisites:: ((6a6d2611-817a-482c-b036-f05969927429)), ((6a764603-0755-44c9-9bf7-7183c2981d1f)), ((6a764603-68bf-4c9b-b789-01547b08ac39)), ((6a764603-0b3c-41d0-bf58-4816eaed5355))
 	  state:: not started
 	  note::
 	  id:: 6a6d2611-9d5c-401e-999d-01150d52f0ec
 		- Displacement, velocity and acceleration as vectors, and as derivatives of one another. Motion graphs read in both directions: gradient and area, and what each means. The constant-acceleration equations derived by integration rather than memorised, together with the conditions under which they fail. Projectile motion as two independent one-dimensional problems, and why the independence holds. Terminal velocity as the first case where the acceleration is not constant, handled qualitatively.
 		- *Cross-subject:* differentiation, integration, vectors (mathematical methods).
-	- ### PHYS1.4. Forces and Newton's laws
+	- ### PHYS1.4: Forces and Newton's laws
 	  prerequisites:: ((6a6d2611-9d5c-401e-999d-01150d52f0ec))
 	  state:: not started
 	  note::
@@ -50,7 +51,7 @@ model:: Opus 5 (High)
 		- The first law as a statement about frames, not a special case of the second. The second law as $\vec{F} = m\vec{a}$ and the identification of mass with inertia. The third law, with the pair always acting on *different* bodies — and the standard confusions that follow from forgetting it. Free-body diagrams as the discipline that makes force problems tractable. Contact forces derived rather than listed: the normal force as whatever it must be to prevent interpenetration, friction as static and kinetic with the static case an inequality, tension, drag. Resolution into components; the inclined plane; connected bodies.
 		- The lift-and-scales problem belongs here, and is to be produced without help this time.
 		- *Re-tests from diagnostic:* what the scales measure, and why the friend's account fails.
-	- ### PHYS1.5. Momentum and its conservation
+	- ### PHYS1.5: Momentum and its conservation
 	  prerequisites:: ((6a6d2611-cf79-41dc-a66b-5424286da946))
 	  state:: not started
 	  note::
@@ -58,7 +59,7 @@ model:: Opus 5 (High)
 		- Momentum as the quantity conserved when no external force acts, obtained from the third law rather than asserted. Impulse and the force–time graph. Elastic and inelastic collisions, and the recognition that momentum is conserved in both while kinetic energy is not. Explosions and recoil. Rocket propulsion in outline.
 		- Placed deliberately **before** energy. The central misconception in the diagnostic was the treatment of force and energy as interchangeable currencies; the corrective is to establish momentum as the thing external forces govern, on its own, before energy is introduced at all. The two are not to be met together.
 		- *Cross-subject:* vectors (mathematical methods).
-	- ### PHYS1.6. Work, energy and power
+	- ### PHYS1.6: Work, energy and power
 	  prerequisites:: ((6a6d2611-5a70-4774-a7c4-dd87ee59b226))
 	  state:: not started
 	  note::
@@ -67,7 +68,7 @@ model:: Opus 5 (High)
 		- This topic owns the diagnostic's principal misconception. It is not complete until the accelerating car, the skater pushing off a wall, and the standing jump can all be accounted for without reaching for an external force as the source of the energy.
 		- *Re-tests from diagnostic:* rolling friction doing no work, with the energy correctly sourced; "that's where the horizontal force comes from" offered in answer to a question about energy; rotational kinetic energy of the wheels named as a source rather than a cost.
 		- *Cross-subject:* free energy and the price of persistence ( ((6a67d966-8a73-4ddc-b595-68782e0a53df))); enthalpy and bond energies ( ((6a652f81-0d4e-41ed-a431-4ea08facae04))).
-	- ### PHYS1.7. Circular motion and gravitation
+	- ### PHYS1.7: Circular motion and gravitation
 	  prerequisites:: ((6a6d2611-8b27-4f10-a37b-b6008c805c38))
 	  state:: not started
 	  note::
@@ -76,7 +77,7 @@ model:: Opus 5 (High)
 		- Kepler's laws stated and the third derived for the circular case.
 		- *Re-tests from diagnostic:* the whole of question 2, unassisted — including $\Delta(\text{KE}) = -\Delta E$ and $\Delta U = +2\Delta E$, and the account of where the engine's energy went.
 		- *Cross-subject:* the inverse-square form recurs in electrostatics ( ((6a6d2611-fcb6-457d-bcbb-37e16e056b9a))).
-	- ### PHYS1.8. Fluids: pressure, buoyancy and flow
+	- ### PHYS1.8: Fluids: pressure, buoyancy and flow
 	  prerequisites:: ((6a6d2611-cf79-41dc-a66b-5424286da946)), ((6a6d2611-8b27-4f10-a37b-b6008c805c38)), ((6a764603-9d94-459c-a35d-e86f65a6f2b5)), ((6a764603-0b3c-41d0-bf58-4816eaed5355))
 	  state:: not started
 	  note::
@@ -84,28 +85,28 @@ model:: Opus 5 (High)
 		- Pressure as force per area and as a scalar acting equally in all directions. Hydrostatic pressure and its independence of vessel shape. Archimedes' principle derived from the pressure difference rather than recalled. Continuity, and Bernoulli as energy conservation for a flowing fluid — with the common misapplications identified. Viscosity; laminar and turbulent flow and the Reynolds number as the discriminator. Poiseuille's law and the $1/r^4$ dependence of resistance on radius, which is the single most consequential result in this topic. Surface tension as energy per unit area, the Laplace pressure across a curved surface going as $1/r$, and why that makes small bubbles unstable against large ones.
 		- This topic exists principally to serve ((6a67d966-4102-48bb-a5f1-eb369841fbc4)), which is blocked without it, and secondarily because the diagnostic found no fluid physics at all.
 		- *Cross-subject:* the lung, the branching airway and surfactant ( ((6a67d966-4102-48bb-a5f1-eb369841fbc4))); circulation and bulk flow ( ((6a67d966-4102-48bb-a5f1-eb369841fbc4))).
-	- ### PHYS1.9. Oscillations
+	- ### PHYS1.9: Oscillations
 	  prerequisites:: ((6a6d2611-294e-448e-8e55-f3ac23d43cc2)), ((6a764603-b774-41ca-80b9-1c4c26c8bb74))
 	  state:: not started
 	  note::
 	  id:: 6a6d2611-f7df-4d36-a9be-25f818693951
 		- Simple harmonic motion as the consequence of a restoring force proportional to displacement, with the differential equation solved rather than its solution quoted. Period independent of amplitude, and the small-angle approximation that makes the pendulum simple — including what happens when it is relaxed. Energy in an oscillator, exchanged between kinetic and potential twice per cycle. Damping: light, heavy, critical. Driven oscillation and resonance; the amplitude–frequency response and the role of damping in setting its width. Negative feedback and stability as the general shape of which the oscillator is an instance.
 		- *Cross-subject:* homeostasis, set points and expected oscillation about them ( ((6a67e357-a796-4ae7-b8a8-79407ce215dd))); dynamic equilibrium ( ((6a652f81-1880-42ad-8716-fb8c0468d897))).
-	- ### PHYS1.10. Waves
+	- ### PHYS1.10: Waves
 	  prerequisites:: ((6a6d2611-f7df-4d36-a9be-25f818693951))
 	  state:: not started
 	  note::
 	  id:: 6a6d2611-92c5-4af5-be74-9375491a203a
 		- The wave as a disturbance that transports energy without transporting matter. Transverse and longitudinal, and the mechanical reason a gas supports only the latter: no resistance to shear, hence no restoring force for a transverse disturbance, hence no polarisation. Seismic S-waves and the liquid outer core as the evidence that this is a real distinction and not a definition. Speed, frequency, wavelength. Superposition; standing waves and modes; beats. Reflection, refraction and the change of speed that causes it. Diffraction and the two-slit pattern, worked quantitatively. Polarisation and Malus's law.
 		- *Re-tests from diagnostic:* why sound cannot be polarised, and why that has anything to do with the vacuum — the connection was half-made and must be made whole.
-	- ### PHYS1.11. Thermal physics: temperature, heat and kinetic theory
+	- ### PHYS1.11: Thermal physics: temperature, heat and kinetic theory
 	  prerequisites:: ((6a6d2611-8b27-4f10-a37b-b6008c805c38)), ((6a764603-6a7b-471e-8b5f-e52238c76f6a))
 	  state:: not started
 	  note::
 	  id:: 6a6d2611-98e1-4256-aac1-c658129b3b06
 		- Temperature as what two bodies in thermal equilibrium share, and the zeroth law as the statement that makes thermometry possible. Internal energy; heat and work as the two ways of changing it, and the first law as an accounting identity. Specific and latent heat. Kinetic theory: pressure derived from molecular collisions, the equipartition result relating mean kinetic energy to temperature, and the ideal gas equation obtained rather than assumed. The Maxwell–Boltzmann distribution and why a modest temperature rise produces a large change in the number of molecules above a threshold. Mean free path. Diffusion as a random walk and $t \propto L^2$.
 		- *Cross-subject:* molar gas volume and the ideal gas relationship ( ((6a652f81-52b6-4329-8323-e4ce94566a56))); collision theory and the temperature dependence of rate ( ((6a652f81-4b1e-4023-b7c1-706eb337dfac))); diffusion scaling ( ((6a67d966-bc9e-4651-9524-4a6d0814f6ef)), where the derivation was supplied rather than produced).
-	- ### PHYS1.12. Entropy and the second law
+	- ### PHYS1.12: Entropy and the second law
 	  prerequisites:: ((6a6d2611-98e1-4256-aac1-c658129b3b06)), ((6a764603-6fef-4d19-800a-0be0a896acbc)), ((6a764603-bb4b-4d28-9bbb-69531bf77848))
 	  state:: not started
 	  note::
@@ -114,7 +115,7 @@ model:: Opus 5 (High)
 		- **This topic carries a misconception that has already survived one correction, in another subject.** Entropy-as-order was found and corrected in the biology diagnostic of 2026-07-26 and reappeared intact in the physics diagnostic of 2026-07-31. It is not to be treated as covered anywhere until it is earned here.
 		- *Re-tests from diagnostic:* "entropy is about state of order"; irreversibility explained by an energy requirement; the reverse process wrongly implied to violate something.
 		- *Cross-subject:* free energy and the far-from-equilibrium state ( ((6a67d966-8a73-4ddc-b595-68782e0a53df))); trophic attenuation and the energy/available-energy distinction ( ((6a67d966-ae29-4d10-9612-faf1dee28e78))); enthalpy against entropy ( ((6a652f81-0d4e-41ed-a431-4ea08facae04))).
-	- ### PHYS1.13. Electric charge, field and potential
+	- ### PHYS1.13: Electric charge, field and potential
 	  prerequisites:: ((6a6d2611-8b27-4f10-a37b-b6008c805c38)), ((6a6d2611-294e-448e-8e55-f3ac23d43cc2))
 	  state:: not started
 	  note::
@@ -123,20 +124,20 @@ model:: Opus 5 (High)
 		- The diagnostic found nothing here at all: not atrophied recall but absence. Expect this to be slow and start from the beginning.
 		- *Re-tests from diagnostic:* the entire capacitor question.
 		- *Cross-subject:* ionisation energy as work against attraction ( ((6a652f81-da78-4db3-9c2d-1bf6c35244f4))); the ionic lattice as electrostatics ( ((6a652f81-8ee3-4e99-b592-fe8edb22cdce))).
-	- ### PHYS1.14. Electric circuits
+	- ### PHYS1.14: Electric circuits
 	  prerequisites:: ((6a6d2611-fcb6-457d-bcbb-37e16e056b9a))
 	  state:: not started
 	  note::
 	  id:: 6a6d2611-e082-4c06-bb91-d3010f19fa2a
 		- Current as rate of flow of charge, and the drift velocity calculation that shows how slow it actually is against how fast the effect propagates. Potential difference as energy per unit charge, and the reason the water-pressure analogy helps and where it stops. Resistance and resistivity; Ohm's law as an empirical property of some materials rather than a law of nature, with non-ohmic components as the demonstration. Series and parallel, derived from charge and energy conservation. EMF and internal resistance; maximum power transfer. Kirchhoff's laws as conservation statements. Energy and power in circuits.
 		- *Cross-subject:* conduction requires mobile charge carriers, in metals and in electrolytes ( ((6a652f81-8ee3-4e99-b592-fe8edb22cdce)), ((6a652f81-490e-436d-b631-67406bd786d3))); electrolysis ( ((6a652f81-8fab-484a-bf19-a606ba4ce0ff))).
-	- ### PHYS1.15. Magnetic fields and electromagnetic induction
+	- ### PHYS1.15: Magnetic fields and electromagnetic induction
 	  prerequisites:: ((6a6d2611-e082-4c06-bb91-d3010f19fa2a))
 	  state:: not started
 	  note::
 	  id:: 6a6d2611-2e88-4976-919b-e7828bb9f413
 		- The magnetic field as what a moving charge produces and what a moving charge feels. The force law, its perpendicularity, and the immediate consequence that the magnetic force does no work — a case of ((6a6d2611-8b27-4f10-a37b-b6008c805c38))'s principle that should by now be unsurprising. Circular motion of charges in fields, connected back to ((6a6d2611-294e-448e-8e55-f3ac23d43cc2)). Fields from currents; the force between conductors. Flux and flux linkage. Faraday's law and Lenz's law, with Lenz derived from energy conservation rather than presented as a sign convention. Motors, generators, transformers. Eddy currents.
-	- ### PHYS1.16. Electromagnetic waves and light
+	- ### PHYS1.16: Electromagnetic waves and light
 	  prerequisites:: ((6a6d2611-92c5-4af5-be74-9375491a203a)), ((6a6d2611-2e88-4976-919b-e7828bb9f413))
 	  state:: not started
 	  note::
@@ -144,7 +145,7 @@ model:: Opus 5 (High)
 		- Maxwell's equations in outline — not solved, but stated well enough to see the closure: a changing electric field sources a magnetic one and a changing magnetic field sources an electric one, so the disturbance sustains itself with no medium required. The propagation speed obtained from two measured electrical constants, and the historical force of its coming out equal to the speed of light. The spectrum as one phenomenon across twenty orders of magnitude. Why light is transverse and therefore polarisable, closing the loop from ((6a6d2611-92c5-4af5-be74-9375491a203a)). The luminiferous aether: what it was for, what killed it, and why its death is a better lesson than its content.
 		- *Re-tests from diagnostic:* "an EM wave doesn't rely on interacting with its environment to propagate, but I can't clearly say why" — the second half is owed here.
 		- *Cross-subject:* photons and pigment absorption ( ((6a67d966-6a68-436f-80af-c1f23d570c39))).
-	- ### PHYS1.17. Quantum behaviour
+	- ### PHYS1.17: Quantum behaviour
 	  prerequisites:: ((6a6d2611-53e4-4c4e-8a67-2c923fc45b70)), ((6a6d2611-e5ad-436f-9a52-75e3784d847a))
 	  state:: not started
 	  note::
@@ -153,7 +154,7 @@ model:: Opus 5 (High)
 		- "Wave–particle duality" is to be identified as a historical label for the puzzle rather than an explanation of it, and retired. Schrödinger's cat is to be identified as a *reductio*, with its intended target named.
 		- *Re-tests from diagnostic:* the disturbance account of decoherence, offered and untested; "simultaneously a wave and a particle" as an explanation.
 		- *Cross-subject:* shells, energy levels and ionisation energy as evidence ( ((6a652f81-da78-4db3-9c2d-1bf6c35244f4))); absorption spectra ( ((6a652f81-0192-406b-8fb4-007dd74679d5))).
-	- ### PHYS1.18. The nucleus
+	- ### PHYS1.18: The nucleus
 	  prerequisites:: ((6a6d2611-fcb6-457d-bcbb-37e16e056b9a)), ((6a764603-6fef-4d19-800a-0be0a896acbc)), ((6a764603-b774-41ca-80b9-1c4c26c8bb74)), ((6a764603-9774-4284-916d-c03620cbb92e)), ((6a764603-6a7b-471e-8b5f-e52238c76f6a)), ((6a764603-a8e4-4234-b650-a45bc7ce1cb8))
 	  state:: not started
 	  note::
@@ -188,7 +189,7 @@ model:: Opus 5 (High)
 	- The statistics gap in particular has now been found in three separate diagnostics — biology on 2026-07-26 (mean square displacement of a random walk; the Poisson assignment in Luria–Delbrück inverted), and physics on 2026-07-31 (the $1/\sqrt{n}$ law unavailable; random error described as averaging to the size of a single deviation). It also blocks ((6a67d966-6038-4128-a6b5-86cac76d8342)), ((6a67d966-9401-4c47-810f-89b084670196)) and ((6a67d966-971c-48d6-a8de-65c2502525d0)), and bears on ((6a652f81-4b1e-4023-b7c1-706eb337dfac)).
 	- **Recommendation: the mathematical methods diagnostic is the next session, ahead of any physics or biology topic.** It has now been deferred once and the cost of deferring it again is that three of four subjects stall.
 	- Mathematical methods is a distinct subject from mathematics, not a level of it. Its purpose is instrumental — the tools the sciences need, sequenced by which science needs them next. A pure mathematics syllabus, concerned with abstraction, derivation and proof, is a separate subject with its own diagnostic, and is not addressed by this.
-	- **Resolved 2026-08-07.** The mathematical methods syllabus exists (Level 1, twelve topics). The dependency table above stands; consult [Mathematical methods for science]([[Mathematical methods for science]]) for which methods topic unblocks what.
+	- **Resolved 2026-08-07.** The mathematical methods syllabus exists (Level 1, twelve topics). The dependency table above stands; consult [[METH1]] for which methods topic unblocks what.
 - ## Level completion
 	- Level 1 is complete when all eighteen topics are marked complete and no outstanding note remains unresolved against any of them. The next level is designed only then, and specialises on the basis of what proved difficult or interesting here.
 - ## Appendix A: Diagnostic record (2026-07-31)

@@ -1,1 +1,0 @@
-alias:: Pure mathematics
