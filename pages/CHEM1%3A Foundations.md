@@ -1,6 +1,6 @@
 created:: 2026-07-25
 status:: active
-course-code:: [[CHEM1]]
+course-code:: CHEM1
 model:: Opus 5 (High)
 tags:: syllabus, CHEM1
 

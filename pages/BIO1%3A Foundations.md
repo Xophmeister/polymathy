@@ -1,6 +1,6 @@
 created:: 2026-07-26
 status:: active
-course-code:: [[BIO1]]
+course-code:: BIO1
 model:: Opus 5 (High)
 tags:: syllabus, BIO1
 
