@@ -44,8 +44,28 @@
 			- TODO [The nucleus]([[PHYS1.18: The nucleus]])
 	- ### Chemistry
 		- #### [Foundations]([[CHEM1: Foundations]])
+			- [[CHEM1.1: Atoms, nuclei and isotopes]]
+			- [[CHEM1.2: Electrons and the shell model]]
+			- [[CHEM1.3: The periodic table]]
+			- [[CHEM1.4: Ionic bonding and ionic solids]]
+			- [[CHEM1.5: Covalent bonding: molecules and networks]]
+			- [[CHEM1.6: Metallic bonding]]
+			- [[CHEM1.7: Intermolecular forces, structure and physical properties]]
+			- [[CHEM1.8: Chemical change and equations]]
+			- [[CHEM1.9: The mole and reacting masses]]
+			- [[CHEM1.10: Solutions, concentration and gas volumes]]
+			- [[CHEM1.11: Energetics]]
+			- [[CHEM1.12: Rates of reaction]]
+			- [[CHEM1.13: Reversible reactions and equilibrium]]
+			- [[CHEM1.14: Acids and bases]]
+			- [[CHEM1.15: Redox and electrochemistry]]
 	- ### Biology
 		- #### [Foundations]([[BIO1: Foundations]])
+			- [[BIO1.1: Life, free energy and the far-from-equilibrium state]]
+			- [[BIO1.2: Scale, surface area and diffusion]]
+			- [[BIO1.3: Cells and compartments]]
+			- [[BIO1.4: Membranes and transport across them]]
+			-
 - ## Meta
 	- ### [[About]]
 		- #### [[AI tutor system prompt]]
