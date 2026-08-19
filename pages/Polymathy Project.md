@@ -7,10 +7,6 @@
 	- ### Mathematical methods for science
 		- #### [Foundations]([[METH1: Foundations]])
 			- TODO [Number, powers and estimation]([[METH1.1: Number, powers and estimation]])
-			  :LOGBOOK:
-			  CLOCK: [2026-08-16 Sun 22:00:22]--[2026-08-16 Sun 23:20:47] =>  01:20:25
-			  CLOCK: [2026-08-16 Sun 23:20:48]--[2026-08-16 Sun 23:20:51] =>  00:00:03
-			  :END:
 			- TODO [Proportionality, scaling and self-consistency]([[METH1.2: Proportionality, scaling and self-consistency]])
 			- TODO [Vectors]([[METH1.3: Vectors]])
 			- TODO [Differentiation]([[METH1.4: Differentiation]])
@@ -44,28 +40,40 @@
 			- TODO [The nucleus]([[PHYS1.18: The nucleus]])
 	- ### Chemistry
 		- #### [Foundations]([[CHEM1: Foundations]])
-			- [[CHEM1.1: Atoms, nuclei and isotopes]]
-			- [[CHEM1.2: Electrons and the shell model]]
-			- [[CHEM1.3: The periodic table]]
-			- [[CHEM1.4: Ionic bonding and ionic solids]]
-			- [[CHEM1.5: Covalent bonding: molecules and networks]]
-			- [[CHEM1.6: Metallic bonding]]
-			- [[CHEM1.7: Intermolecular forces, structure and physical properties]]
-			- [[CHEM1.8: Chemical change and equations]]
-			- [[CHEM1.9: The mole and reacting masses]]
-			- [[CHEM1.10: Solutions, concentration and gas volumes]]
-			- [[CHEM1.11: Energetics]]
-			- [[CHEM1.12: Rates of reaction]]
-			- [[CHEM1.13: Reversible reactions and equilibrium]]
-			- [[CHEM1.14: Acids and bases]]
-			- [[CHEM1.15: Redox and electrochemistry]]
+			- TODO [Atoms, nuclei and isotopes]([[CHEM1.1: Atoms, nuclei and isotopes]])
+			- TODO [Electrons and the shell model]([[CHEM1.2: Electrons and the shell model]])
+			- TODO [The periodic table]([[CHEM1.3: The periodic table]])
+			- TODO [Ionic bonding and ionic solids]([[CHEM1.4: Ionic bonding and ionic solids]])
+			- TODO [Covalent bonding: molecules and networks]([[CHEM1.5: Covalent bonding: molecules and networks]])
+			- TODO [Metallic bonding]([[CHEM1.6: Metallic bonding]])
+			- TODO [Intermolecular forces, structure and physical properties]([[CHEM1.7: Intermolecular forces, structure and physical properties]])
+			- TODO [Chemical change and equations]([[CHEM1.8: Chemical change and equations]])
+			- TODO [The mole and reacting masses]([[CHEM1.9: The mole and reacting masses]])
+			- TODO [Solutions, concentration and gas volumes]([[CHEM1.10: Solutions, concentration and gas volumes]])
+			- TODO [Energetics]([[CHEM1.11: Energetics]])
+			- TODO [Rates of reaction]([[CHEM1.12: Rates of reaction]])
+			- TODO [Reversible reactions and equilibrium]([[CHEM1.13: Reversible reactions and equilibrium]])
+			- TODO [Acids and bases]([[CHEM1.14: Acids and bases]])
+			- TODO [Redox and electrochemistry]([[CHEM1.15: Redox and electrochemistry]])
 	- ### Biology
 		- #### [Foundations]([[BIO1: Foundations]])
-			- [[BIO1.1: Life, free energy and the far-from-equilibrium state]]
-			- [[BIO1.2: Scale, surface area and diffusion]]
-			- [[BIO1.3: Cells and compartments]]
-			- [[BIO1.4: Membranes and transport across them]]
-			-
+			- TODO [Life, free energy and the far-from-equilibrium state]([[BIO1.1: Life, free energy and the far-from-equilibrium state]])
+			- TODO [Scale, surface area and diffusion]([[BIO1.2: Scale, surface area and diffusion]])
+			- TODO [Cells and compartments]([[BIO1.3: Cells and compartments]])
+			- TODO [Membranes and transport across them]([[BIO1.4: Membranes and transport across them]])
+			- TODO [Biological molecules]([[BIO1.5: Biological molecules]])
+			- TODO [Proteins, enzymes and catalysis]([[BIO1.6: Proteins, enzymes and catalysis]])
+			- TODO [Respiration and the ATP economy]([[BIO1.7: Respiration and the ATP economy]])
+			- TODO [Photosynthesis]([[BIO1.8: Photosynthesis]])
+			- TODO [Nucleic acids, the genetic code and protein synthesis]([[BIO1.9: Nucleic acids, the genetic code and protein synthesis]])
+			- TODO [Gene expression, differentiation and epigenetic memory]([[BIO1.10: Gene expression, differentiation and epigenetic memory]])
+			- TODO [Cell division: mitosis and meiosis]([[BIO1.11: Cell division: mitosis and meiosis]])
+			- TODO [Inheritance and variation]([[BIO1.12: Inheritance and variation]])
+			- TODO [Evolution by natural selection]([[BIO1.13: Evolution by natural selection]])
+			- TODO [Sex, recombination and coevolution]([[BIO1.14: Sex, recombination and coevolution]])
+			- TODO [Exchange surfaces and mass transport]([[BIO1.15: Exchange surfaces and mass transport]])
+			- TODO [Homeostasis and control]([[BIO1.16: Homeostasis and control]])
+			- TODO [Ecosystems: energy flow and matter cycling]([[BIO1.17: Ecosystems: energy flow and matter cycling]])
 - ## Meta
 	- ### [[About]]
 		- #### [[AI tutor system prompt]]
