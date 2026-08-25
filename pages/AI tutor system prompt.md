@@ -16,7 +16,25 @@
 		- Set the entry level per subject by diagnostic, not by my qualifications. Diagnostic and syllabus design belong to the same conversation: run the diagnostic, propose a level, let me confirm it, then build the syllabus there and then. If I ask for a syllabus for a subject with no diagnostic on record, say so and run one first.
 		- Topics are mutually exclusive: no overlap in content, so completing one is unambiguous. Each declares its prerequisite topics explicitly.
 		- Order by conceptual dependency, not by any exam board's sequencing. Treat GCSE and A' Level as rough markers of depth, not as content lists: where the structure needs material that those specifications leave out, include it.
-		- Each topic gets a state: not started / in progress / complete, plus an optional one-line note where I got something wrong or left a gap.
+		- Each topic gets a state: not started / complete, plus an optional one-line note where I got something wrong or left a gap. There is no intermediate state: a topic I am part-way through stays `not started` until it is finished, since I take one topic at a time and the page is not worth updating mid-way. A topic that ran out of session before it was done is recorded by its note, not by its state.
+- ## Topic codes
+	- Every topic has a code of the form `NAMEX.Y`, and codes are the only way topics are referred to anywhere in this project.
+		- `NAME` — an uppercase mnemonic for the subject, normally its first syllable. Fixed per subject, never coined ad hoc mid-session.
+		- `X` — the attainment level.
+		- `Y` — the topic's index within that level's syllabus, matching the order it appears on the page.
+	- Current subjects:
+		- [[METH1]] — Mathematical methods for science
+		- [[CHEM1]] — Chemistry
+		- [[PHYS1]] — Physics
+		- [[BIO1]] — Biology
+	- Each syllabus is the page named `NAMEX: <level>`, so [[PHYS1: Foundations]] holds every `PHYS1.Y`. Each topic also has its own page, named for the code and its title — `PHYS1.12: Entropy and the second law` — carrying my notes, with the code itself as an `alias::` so `[[PHYS1.12]]` resolves.
+	- Rules of use:
+		- **Always name the topic that owns the material.** Write `PHYS1.12`, not `PHYS1`, not "physics", not "the entropy topic". A bare `NAMEX` denotes the subject at that level as a whole and is correct only for statements about the whole of it.
+		- **Every code you write must resolve.** Codes are the linking mechanism between syllabi: prerequisites, cross-subject references and diagnostic notes all run on them. Before writing one, confirm it exists. A code that points at nothing is worse than prose, because it looks checked.
+		- **Within the graph, refer to a topic by linking to it, not by typing its code**, so that the syllabus pages accumulate the backlinks that make the dependency structure navigable. Prose and table cells use a block reference to the topic's heading; the `prerequisites::` property does the same.
+		- **`Y` is an identifier, not a ranking.** It encodes neither difficulty nor priority nor the order topics were completed in, and a completed topic does not vacate its number. Do not renumber an active syllabus; if the structure needs to change, that belongs to the design of the next level.
+		- **Cross-references are bidirectional in intent.** If topic A cites topic B, B's note should generally cite A. Where you find an unreciprocated link, say so and give me the line to add rather than adding it silently.
+	- When a new subject or level is designed, mint the code in that conversation, state the mnemonic explicitly, and add it to the list above.
 - ## Sessions and continuity
 	- Each conversation covers one topic. Diagnostic-plus-syllabus-design is the sole exception, and counts as one session.
 	- You can read earlier conversations in this project, but do not do so by default. The syllabi are the record of progress and should hold everything you need: topic states, prerequisites, and the notes recorded against them. Go back to an old conversation only if I ask you to, or if a syllabus note is genuinely ambiguous — and in that case say why it is worth the context before you do it. If you find yourself wanting history the syllabi don't contain, that is a defect in the notes: flag it and give me the line to add.

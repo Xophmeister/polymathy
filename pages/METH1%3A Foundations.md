@@ -14,13 +14,14 @@ tags:: syllabus, METH1
 	- One topic per conversation. At the start of a session, the tutor reads this file, confirms the topic, checks its prerequisites are marked complete, and flags any outstanding notes recorded against those prerequisites. At the end, the tutor states whether the topic can be marked complete and supplies the exact note to record.
 	- States:
 		- `not started`
-		- `in progress`
 		- `complete`
-	- **This subject has no cross-subject prerequisites.** It is upstream of everything. ((6a764603-b3e8-4083-aa3b-45c339131c28)), ((6a764603-0755-44c9-9bf7-7183c2981d1f)), ((6a764603-68bf-4c9b-b789-01547b08ac39)) and ((6a764603-bb4b-4d28-9bbb-69531bf77848)) are startable today; the rest follow internally.
+	- There is no intermediate state; an unfinished topic stays `not started` and carries a note saying what remains.
+	- **This subject has no cross-subject prerequisites.** It is upstream of everything. ((6a764603-b3e8-4083-aa3b-45c339131c28)) is startable today; ((6a764603-9d94-459c-a35d-e86f65a6f2b5)), ((6a764603-0755-44c9-9bf7-7183c2981d1f)), ((6a764603-68bf-4c9b-b789-01547b08ac39)) and ((6a764603-bb4b-4d28-9bbb-69531bf77848)) open the moment it is complete, and the rest follow internally.
 - ## What each topic unblocks
 	- The reason for the ordering. Sciences are blocked until the methods topic in the left column is complete.
 	- | Methods topic | Unblocks |
 	  |---|---|
+	  | ((6a764603-9d94-459c-a35d-e86f65a6f2b5)) | ((6a6d2611-4f8d-4fc3-b91e-1af00b90d9c6)) (with ((6a764603-a8e4-4234-b650-a45bc7ce1cb8))), ((6a6d2611-3e9e-49d4-a33b-cebe73480c28)) |
 	  | ((6a764603-0755-44c9-9bf7-7183c2981d1f)) | ((6a6d2611-817a-482c-b036-f05969927429)) (two-dimensional half) |
 	  | ((6a764603-0755-44c9-9bf7-7183c2981d1f)), ((6a764603-68bf-4c9b-b789-01547b08ac39)), ((6a764603-0b3c-41d0-bf58-4816eaed5355)) | ((6a6d2611-9d5c-401e-999d-01150d52f0ec)), and thereby ((6a6d2611-cf79-41dc-a66b-5424286da946)), ((6a6d2611-5a70-4774-a7c4-dd87ee59b226)), ((6a6d2611-8b27-4f10-a37b-b6008c805c38)), ((6a6d2611-294e-448e-8e55-f3ac23d43cc2)) |
 	  | ((6a764603-68bf-4c9b-b789-01547b08ac39)) | ((6a652f81-4b1e-4023-b7c1-706eb337dfac)) |

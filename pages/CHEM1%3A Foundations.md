@@ -10,8 +10,9 @@ tags:: syllabus, CHEM1
 	- One topic per conversation. At the start of a session, the tutor reads this file, confirms the topic, checks its prerequisites are marked complete, and flags any outstanding notes recorded against those prerequisites. At the end, the tutor states whether the topic can be marked complete and supplies the exact note to record.
 	- States:
 		- `not started`
-		- `in progress`
 		- `complete`
+	- There is no intermediate state; an unfinished topic stays `not started` and carries a note saying what remains.
+	- **Cross-subject prerequisites are binding, not decorative.** Two topics depend on [[METH1]]: ((6a652f81-4b1e-4023-b7c1-706eb337dfac)) on ((6a764603-68bf-4c9b-b789-01547b08ac39)), and ((6a652f81-7381-4502-8d7c-028e0829e491)) on ((6a764603-6fef-4d19-800a-0be0a896acbc)). Where a topic lists a cross-subject prerequisite, that prerequisite is checked in the same way as an internal one. Everything up to ((6a652f81-0d4e-41ed-a431-4ea08facae04)) is startable without reference to another subject.
 - ## Topics
 	- ### [[CHEM1.1: Atoms, nuclei and isotopes]]
 	  id:: 6a652f81-3ddd-43f8-8a38-18c1c85d37c3
@@ -82,7 +83,7 @@ tags:: syllabus, CHEM1
 	  state:: not started
 	  note::
 		- Concentration in mol dm⁻³ and in g dm⁻³. Dilution. Molar gas volume and its dependence on temperature and pressure; the ideal gas relationship and the assumptions behind it. Titration arithmetic. Disentangling "amount of substance" from the conditions under which a gas is measured.
-		- *Cross-subject:* kinetic theory (physics).
+		- *Cross-subject:* kinetic theory and the ideal gas equation ( ((6a6d2611-98e1-4256-aac1-c658129b3b06))); pressure and gas behaviour in exchange surfaces ( ((6a67d966-4102-48bb-a5f1-eb369841fbc4))).
 	- ### [[CHEM1.11: Energetics]]
 	  id:: 6a652f81-0d4e-41ed-a431-4ea08facae04
 	  prerequisites:: ((6a652f81-04dd-4127-8193-ebcd1957fe2c)), ((6a652f81-c7b0-406d-b3a5-0afacc821e0f)), ((6a652f81-0dc8-4d39-a97e-cbc07d2fa7eb))
@@ -90,28 +91,28 @@ tags:: syllabus, CHEM1
 	  note::
 		- Exothermic and endothermic change. Bond breaking as endothermic and bond making as exothermic, and the net enthalpy change as the difference. Enthalpy change per mole; calculation from bond energies; sign conventions. Reaction profiles and activation energy. Where the light and heat of a burning ribbon actually come from.
 		- Treated quantitatively, per the diagnostic.
-		- *Cross-subject:* energy conservation and the first law (physics).
+		- *Cross-subject:* energy conservation and the first law ( ((6a6d2611-8b27-4f10-a37b-b6008c805c38)), ((6a6d2611-98e1-4256-aac1-c658129b3b06))); enthalpy against entropy ( ((6a6d2611-53e4-4c4e-8a67-2c923fc45b70))); bond energies and the ATP economy ( ((6a67d966-f2dc-48fb-8184-688f036835ed)), ((6a67d966-9d55-4cbf-b5bf-f22bc57c153c))).
 	- ### [[CHEM1.12: Rates of reaction]]
 	  id:: 6a652f81-4b1e-4023-b7c1-706eb337dfac
 	  prerequisites:: ((6a652f81-52b6-4329-8323-e4ce94566a56)), ((6a652f81-0d4e-41ed-a431-4ea08facae04)), ((6a764603-68bf-4c9b-b789-01547b08ac39))
 	  state:: not started
 	  note::
 		- Collision theory: frequency, orientation, energy. Effects of concentration, pressure, temperature, surface area and catalysts, each explained rather than listed. Rate as the gradient of a concentration–time curve; initial rate; reading tangents. Why a modest temperature rise produces a large rate change.
-		- *Cross-subject:* differentiation and rates of change (mathematics).
+		- *Cross-subject:* differentiation and rates of change ( ((6a764603-68bf-4c9b-b789-01547b08ac39))); the Maxwell–Boltzmann distribution and the temperature dependence of rate ( ((6a6d2611-98e1-4256-aac1-c658129b3b06))); enzymes as catalysts ( ((6a67d966-f2dc-48fb-8184-688f036835ed))).
 	- ### [[CHEM1.13: Reversible reactions and equilibrium]]
 	  id:: 6a652f81-1880-42ad-8716-fb8c0468d897
 	  prerequisites:: ((6a652f81-4b1e-4023-b7c1-706eb337dfac))
 	  state:: not started
 	  note::
 		- Dynamic equilibrium as equal opposing rates, not as stasis. Closed systems. Le Chatelier's principle applied to concentration, pressure and temperature. The distinction between the position of an equilibrium and the rate at which it is reached, and why catalysts move one and not the other.
-		- *Cross-subject:* homeostasis and steady states (biology).
+		- *Cross-subject:* homeostasis and steady states ( ((6a67e357-a796-4ae7-b8a8-79407ce215dd))); negative feedback and oscillation about a set point ( ((6a6d2611-f7df-4d36-a9be-25f818693951))).
 	- ### [[CHEM1.14: Acids and bases]]
 	  id:: 6a652f81-7381-4502-8d7c-028e0829e491
 	  prerequisites:: ((6a652f81-52b6-4329-8323-e4ce94566a56)), ((6a652f81-1880-42ad-8716-fb8c0468d897)), ((6a764603-6fef-4d19-800a-0be0a896acbc))
 	  state:: not started
 	  note::
 		- Acids as proton donors, bases as acceptors. Strong versus weak, and its independence from concentration. pH as a logarithmic scale and what a unit means. Neutralisation. Salt preparation and titration as an application of ((6a652f81-52b6-4329-8323-e4ce94566a56)).
-		- *Cross-subject:* logarithms (mathematics).
+		- *Cross-subject:* logarithms and logarithmic scales ( ((6a764603-6fef-4d19-800a-0be0a896acbc))); pH and enzyme activity ( ((6a67d966-f2dc-48fb-8184-688f036835ed))).
 	- ### [[CHEM1.15: Redox and electrochemistry]]
 	  id:: 6a652f81-8fab-484a-bf19-a606ba4ce0ff
 	  prerequisites:: ((6a652f81-0192-406b-8fb4-007dd74679d5)), ((6a652f81-623f-41a8-abc7-feecf7d04914)), ((6a652f81-52b6-4329-8323-e4ce94566a56))

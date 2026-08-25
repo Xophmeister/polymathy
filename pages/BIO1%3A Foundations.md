@@ -10,9 +10,9 @@ tags:: syllabus, BIO1
 	- One topic per conversation. At the start of a session, the tutor reads this file, confirms the topic, checks its prerequisites are marked complete, and flags any outstanding notes recorded against those prerequisites. At the end, the tutor states whether the topic can be marked complete and supplies the exact note to record.
 	- States:
 		- `not started`
-		- `in progress`
 		- `complete`
-	- **Cross-subject prerequisites are binding, not decorative.** Several topics below depend on chemistry topics that are themselves not started, and three depend on probability, for which no syllabus yet exists. Where a topic lists a cross-subject prerequisite, that prerequisite is to be checked in the same way as an internal one. Topics startable today, with nothing outstanding anywhere:
+	- There is no intermediate state; an unfinished topic stays `not started` and carries a note saying what remains.
+	- **Cross-subject prerequisites are binding, not decorative.** Several topics below depend on chemistry topics that are themselves not started, and three depend on the probability and statistics topics of [[METH1]] — ((6a764603-9774-4284-916d-c03620cbb92e)) to ((6a764603-7297-4b85-beff-26db87c6c2f4)). Where a topic lists a cross-subject prerequisite, that prerequisite is to be checked in the same way as an internal one. Topics startable today, with nothing outstanding anywhere:
 		- ((6a67d966-8a73-4ddc-b595-68782e0a53df))
 		- ((6a67d966-bc9e-4651-9524-4a6d0814f6ef))
 		- ((6a67d966-0778-4297-8ac1-90464d4e4b50))
@@ -32,10 +32,10 @@ tags:: syllabus, BIO1
 	  state:: not started
 	  note::
 		- Square–cube scaling and the fall of surface-to-volume as $1/r$. Why the constraint forbids large cells and simultaneously predicts the form of large ones: inert interior, departure from the sphere. Diffusion as a random walk; $t \propto L^2$ derived rather than asserted, and the consequence that diffusion is excellent over micrometres and useless over millimetres. Why the interior constraint is the harder of the two, and why abolishing the boundary constraint does not rescue a large cell. Order-of-magnitude work throughout.
-		- Handled well in the diagnostic and retained here anyway, because the derivation of $t \propto L^2$ was supplied rather than produced. However, the $t \propto L^2$ derivation is owned by methods 10 and is not re-derivable here; do not mark this topic complete on the strength of the scaling argument alone.
+		- Handled well in the diagnostic and retained here anyway, because the derivation of $t \propto L^2$ was supplied rather than produced. However, the $t \propto L^2$ derivation is owned by ((6a764603-6a7b-471e-8b5f-e52238c76f6a)) and is not re-derivable here; do not mark this topic complete on the strength of the scaling argument alone.
 		- The $\mathbb{E}[D^2] = nL^2$ result was produced on 2026-08-07, but only after the machinery was supplied in the same session. Still to be earned from a standing start; owned by ((6a764603-6a7b-471e-8b5f-e52238c76f6a)).
 		- *Re-tests from diagnostic:* $\mathbb{E}[X^2]$ for a sum of independent zero-mean steps.
-		- *Cross-subject:* variance of sums of independent random variables (mathematics — no syllabus yet); random walks and mean free path (physics).
+		- *Cross-subject:* variance of sums of independent random variables ( ((6a764603-6a7b-471e-8b5f-e52238c76f6a))); random walks and mean free path ( ((6a6d2611-98e1-4256-aac1-c658129b3b06))).
 	- ### [[BIO1.3: Cells and compartments]]
 	  id:: 6a67d966-0778-4297-8ac1-90464d4e4b50
 	  prerequisites:: ((6a67d966-bc9e-4651-9524-4a6d0814f6ef))
@@ -80,7 +80,7 @@ tags:: syllabus, BIO1
 	  state:: not started
 	  note::
 		- Light capture and what a pigment does with a photon. The light-dependent and light-independent stages as, respectively, the manufacture of a chemical store and its expenditure on fixing carbon. Photosynthesis and respiration as related but non-identical processes, and why calling one the reverse of the other is only half true. Limiting factors and the reading of rate curves. The origin of the atmosphere's oxygen.
-		- *Cross-subject:* redox ( ((6a652f81-8fab-484a-bf19-a606ba4ce0ff))); photons and energy levels (physics).
+		- *Cross-subject:* redox ( ((6a652f81-8fab-484a-bf19-a606ba4ce0ff))); photon energy and discrete levels ( ((6a6d2611-6d35-45b0-9e5a-95cfdf53cfe4))); the electromagnetic spectrum ( ((6a6d2611-e5ad-436f-9a52-75e3784d847a))).
 	- ### [[BIO1.9: Nucleic acids, the genetic code and protein synthesis]]
 	  id:: 6a67d966-331c-4476-a237-f5569ce96d4b
 	  prerequisites:: ((6a67d966-2a4c-4a8c-b0e9-a5a52da8f829)), ((6a67d966-f2dc-48fb-8184-688f036835ed))
@@ -109,7 +109,7 @@ tags:: syllabus, BIO1
 	  note::
 		- Alleles, genotype, phenotype, dominance. Monohybrid and dihybrid crosses worked as probability problems rather than as diagram-filling. Sex linkage. Codominance and multiple alleles. Continuous versus discontinuous variation, and the genetic versus environmental contributions to each. Expected ratios as expectations, with the accompanying question of how far an observed ratio may deviate before the model is in trouble.
 		- Do not take this topic before the statistics gap is addressed. The diagnostic exposed it twice in one session and this is where it next bites.
-		- *Cross-subject:* probability, expectation, sampling variation (mathematics — no syllabus yet).
+		- *Cross-subject:* probability ( ((6a764603-9774-4284-916d-c03620cbb92e))); expectation and variance ( ((6a764603-6a7b-471e-8b5f-e52238c76f6a))); sampling variation, and how far an observed ratio may deviate ( ((6a764603-a8e4-4234-b650-a45bc7ce1cb8)), ((6a764603-7297-4b85-beff-26db87c6c2f4))).
 	- ### [[BIO1.13: Evolution by natural selection]]
 	  id:: 6a67d966-9401-4c47-810f-89b084670196
 	  prerequisites:: ((6a67d966-6038-4128-a6b5-86cac76d8342)), ((6a764603-9774-4284-916d-c03620cbb92e)), ((6a764603-6a7b-471e-8b5f-e52238c76f6a))
@@ -118,7 +118,7 @@ tags:: syllabus, BIO1
 		- Variation, heritability, differential survival: the argument stated so that its conclusion is forced. Selection as an editor, never an instructor — and the Lamarckian framing identified wherever it hides in ordinary language. Mutation as prior to and independent of selection pressure, with the Luria–Delbrück experiment as the evidence: variance-to-mean ratio as the discriminator, Poisson under induced mutation, jackpot distributions under pre-existing mutation. Directional, stabilising and disruptive selection. Speciation and isolation. Fitness as reproductive success, not vigour.
 		- The diagnostic produced the amplification argument correctly but attached the wrong distribution to it. That is a statistics error, and it must be resolved before this topic, not during it.
 		- *Re-tests from diagnostic:* Poisson and the pre-existing-mutation hypothesis, inverted; "memoryless" misapplied.
-		- *Cross-subject:* probability distributions, variance (mathematics); antibiotic resistance as an applied case.
+		- *Cross-subject:* probability distributions and the Poisson conditions ( ((6a764603-9774-4284-916d-c03620cbb92e))); variance and the variance-to-mean ratio ( ((6a764603-6a7b-471e-8b5f-e52238c76f6a))); antibiotic resistance as an applied case.
 	- ### [[BIO1.14: Sex, recombination and coevolution]]
 	  id:: 6a67d966-971c-48d6-a8de-65c2502525d0
 	  prerequisites:: ((6a67d966-9401-4c47-810f-89b084670196))
@@ -133,14 +133,14 @@ tags:: syllabus, BIO1
 	  note::
 		- The constraints of ((6a67d966-bc9e-4651-9524-4a6d0814f6ef)) applied to whole organisms. Exchange surfaces as the general solution: large area, thin, moist, well ventilated, well perfused. The lung derived rather than recalled — branching, alveolar dimensions, and the two constraints that stop subdivision: flow resistance rising as $1/r^4$, and surface tension rising as $1/r$ on a wet curved surface, with surfactant as the fix. Countercurrent exchange in gills as a case where the design beats the obvious one. Circulation: why bulk flow exists wherever diffusion has run out of reach. Haemoglobin and the dissociation curve as a cooperative binding phenomenon, connected back to ((6a67d966-f2dc-48fb-8184-688f036835ed)).
 		- Nothing here was available in the diagnostic. Expect this to be the longest topic.
-		- *Cross-subject:* laminar flow and Poiseuille resistance, surface tension (physics); pressure and gas behaviour ( ((6a652f81-52b6-4329-8323-e4ce94566a56))).
+		- *Cross-subject:* laminar flow, Poiseuille resistance and surface tension ( ((6a6d2611-3e9e-49d4-a33b-cebe73480c28))); pressure and gas behaviour ( ((6a652f81-52b6-4329-8323-e4ce94566a56))).
 	- ### [[BIO1.16: Homeostasis and control]]
 	  id:: 6a67e357-a796-4ae7-b8a8-79407ce215dd
 	  prerequisites:: ((6a67d966-9d55-4cbf-b5bf-f22bc57c153c)), ((6a67d966-4102-48bb-a5f1-eb369841fbc4)), ((6a652f81-1880-42ad-8716-fb8c0468d897))
 	  state:: not started
 	  note::
 		- Negative feedback as a control mechanism, stated generally enough that the same shape is recognisable in a thermostat and in a chemical equilibrium. Set point, detector, effector, and why oscillation about the set point is expected rather than a failure. Thermoregulation, blood glucose regulation, osmoregulation. Positive feedback and the small number of places biology uses it deliberately. The cost of homeostasis, connected back to ((6a67d966-8a73-4ddc-b595-68782e0a53df)): what fraction of the budget it consumes and what happens as ambient conditions move away from the set point.
-		- *Cross-subject:* dynamic equilibrium and Le Chatelier ( ((6a652f81-1880-42ad-8716-fb8c0468d897))); feedback and stability (mathematics, physics).
+		- *Cross-subject:* dynamic equilibrium and Le Chatelier ( ((6a652f81-1880-42ad-8716-fb8c0468d897))); negative feedback, stability and oscillation about a set point ( ((6a6d2611-f7df-4d36-a9be-25f818693951)), on the differential-equation machinery of ((6a764603-b774-41ca-80b9-1c4c26c8bb74))).
 	- ### [[BIO1.17: Ecosystems: energy flow and matter cycling]]
 	  id:: 6a67d966-ae29-4d10-9612-faf1dee28e78
 	  prerequisites:: ((6a67d966-8a73-4ddc-b595-68782e0a53df)), ((6a67d966-9d55-4cbf-b5bf-f22bc57c153c)), ((6a67d966-6a68-436f-80af-c1f23d570c39)), ((6a764603-6fef-4d19-800a-0be0a896acbc))
@@ -148,7 +148,7 @@ tags:: syllabus, BIO1
 	  note::
 		- Trophic levels and the roughly tenfold attenuation between them. Where the missing energy goes — respiration, maintenance, egestion, unconsumed tissue — and the thermodynamic verdict on it: energy conserved, free energy degraded, availability lost. Why "wasted" is the wrong word and "lost" needs qualification. The asymmetry that matters: matter cycles, energy passes through once. Carbon and nitrogen cycles. Why food chains are short, and why the argument for eating lower on one is thermodynamic rather than moral. Population dynamics in outline: exponential and limited growth, carrying capacity.
 		- *Re-tests from diagnostic:* trophic transfer treated as conversion inefficiency, with no distinction between energy and available energy.
-		- *Cross-subject:* free energy ( ((6a652f81-0d4e-41ed-a431-4ea08facae04))); exponential growth (mathematics).
+		- *Cross-subject:* enthalpy and free energy ( ((6a652f81-0d4e-41ed-a431-4ea08facae04))); entropy and the degradation of available energy ( ((6a6d2611-53e4-4c4e-8a67-2c923fc45b70))); exponential and limited growth ( ((6a764603-6fef-4d19-800a-0be0a896acbc)), ((6a764603-b774-41ca-80b9-1c4c26c8bb74))).
 - ## Deferred to Level 2
 	- Recorded here so the omissions are deliberate and reviewable:
 		- **Immunity and disease.** Requires ((6a67d966-f2dc-48fb-8184-688f036835ed)), ((6a67d966-331c-4476-a237-f5569ce96d4b)) and ((6a67d966-971c-48d6-a8de-65c2502525d0)), and is largely mechanism-heavy detail that will not stick without them. The pathogen side of the Red Queen is covered in 14; the immunological response is not.
@@ -157,7 +157,7 @@ tags:: syllabus, BIO1
 		- **Classification, biodiversity, plant physiology beyond photosynthesis, biotechnology, development.** Context and application rather than concept; each is an instance of material covered above.
 - ## Outstanding structural defect
 	- **There is no mathematics syllabus, and the diagnostic exposed a statistics gap that is not a biology problem.** It bit twice in a single session: the mean square displacement of a random walk could not be produced, and the Poisson assignment in Luria–Delbrück was inverted. ((6a67d966-6038-4128-a6b5-86cac76d8342)), ((6a67d966-9401-4c47-810f-89b084670196)) and ((6a67d966-971c-48d6-a8de-65c2502525d0)) depend on probability directly, and ((6a67d966-bc9e-4651-9524-4a6d0814f6ef)) depends on it retrospectively.
-	- Recommendation: run the mathematics diagnostic before ((6a67d966-6038-4128-a6b5-86cac76d8342)), and expect it to set an entry level well below the biology one in probability and statistics specifically, whatever it finds elsewhere. Do not work around this inside biology sessions; it will recur in physics and in ((6a652f81-4b1e-4023-b7c1-706eb337dfac)).
+	- Recommendation: run the mathematics diagnostic before ((6a67d966-6038-4128-a6b5-86cac76d8342)), and expect it to set an entry level well below the biology one in probability and statistics specifically, whatever it finds elsewhere. Do not work around this inside biology sessions; it will recur in ((6a6d2611-4f8d-4fc3-b91e-1af00b90d9c6)) and ((6a6d2611-1992-43a0-a932-507b1ebca6c1)), and in ((6a652f81-4b1e-4023-b7c1-706eb337dfac)).
 	- **Resolved 2026-08-07.** ((6a67d966-6038-4128-a6b5-86cac76d8342)), ((6a67d966-9401-4c47-810f-89b084670196)) and ((6a67d966-971c-48d6-a8de-65c2502525d0)) are blocked on ((6a764603-9774-4284-916d-c03620cbb92e)) and ((6a764603-6a7b-471e-8b5f-e52238c76f6a)) (and ((6a764603-7297-4b85-beff-26db87c6c2f4)), for the ratio-deviation question in ((6a67d966-6038-4128-a6b5-86cac76d8342))) rather than on the absence of a syllabus.
 - ## Level completion
 	- Level 1 is complete when all seventeen topics are marked complete and no outstanding note remains unresolved against any of them. The next level is designed only then, and specialises on the basis of what proved difficult or interesting here.

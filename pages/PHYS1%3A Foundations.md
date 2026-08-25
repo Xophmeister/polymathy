@@ -11,9 +11,9 @@ tags:: syllabus, PHYS1
 	- One topic per conversation. At the start of a session, the tutor reads this file, confirms the topic, checks its prerequisites are marked complete, and flags any outstanding notes recorded against those prerequisites. At the end, the tutor states whether the topic can be marked complete and supplies the exact note to record.
 	- States:
 		- `not started`
-		- `in progress`
 		- `complete`
-	- **Cross-subject prerequisites are binding, not decorative.** Physics depends on mathematical methods more heavily than either other subject does, and no methods syllabus yet exists. See "Outstanding structural defect" below. Where a topic lists a cross-subject prerequisite, that prerequisite is checked in the same way as an internal one.
+	- There is no intermediate state; an unfinished topic stays `not started` and carries a note saying what remains.
+	- **Cross-subject prerequisites are binding, not decorative.** Physics depends on mathematical methods more heavily than either other subject does; twelve of the eighteen topics below are blocked on [[METH1]] directly or through a prerequisite chain. See "Outstanding structural defect" below for the full table. Where a topic lists a cross-subject prerequisite, that prerequisite is checked in the same way as an internal one.
 	- Nothing is startable until ((6a764603-0755-44c9-9bf7-7183c2981d1f)). ((6a6d2611-817a-482c-b036-f05969927429)) opens then; ((6a6d2611-9d5c-401e-999d-01150d52f0ec)) opens at ((6a764603-0b3c-41d0-bf58-4816eaed5355)).
 - ## Topics
 	- ### [[PHYS1.1: Measurement, dimensions and uncertainty]]
@@ -23,9 +23,9 @@ tags:: syllabus, PHYS1
 	  note::
 		- Base quantities and SI units. Dimensional analysis as a working tool: checking equations, and deriving the *form* of a relationship up to a dimensionless constant. Orders of magnitude and Fermi estimation. Random and systematic error as categories, not as descriptions of particular instruments — the same ruler produces both. Why repetition beats one and does nothing whatever to the other, with the $1/\sqrt{n}$ improvement derived rather than asserted. Propagation of uncertainty through a formula, including the doubling that follows from a squared term. Precision against accuracy. Where the floor is: which term dominates once the obvious one has been beaten down, and why "arbitrarily close to zero error" is never available.
 		- First topic deliberately. The diagnostic found dimensional checking — recorded as reliable in both other subjects — absent at the moment it was most needed. This topic re-arms it before anything depends on it.
-		- *Caveat:* the $1/\sqrt{n}$ result and the propagation formulae need variance of sums of independent random variables.
+		- *Caveat:* the $1/\sqrt{n}$ result and the propagation formulae need variance of sums of independent random variables ( ((6a764603-6a7b-471e-8b5f-e52238c76f6a))), which is why ((6a764603-a8e4-4234-b650-a45bc7ce1cb8)) is a prerequisite here. The qualitative half — random against systematic, precision against accuracy, where the floor is — is startable on ((6a764603-9d94-459c-a35d-e86f65a6f2b5)) alone.
 		- *Re-tests from diagnostic:* "you could get arbitrarily close to 0% error"; random error described as averaging to the size of a single deviation; $v \propto Mr^{-2}$ surviving unchecked.
-		- *Cross-subject:* variance, independence, sampling (mathematical methods — no syllabus yet).
+		- *Cross-subject:* dimensional analysis and scaling ( ((6a764603-9d94-459c-a35d-e86f65a6f2b5))); variance and independence ( ((6a764603-6a7b-471e-8b5f-e52238c76f6a))); sampling, standard error and propagation ( ((6a764603-a8e4-4234-b650-a45bc7ce1cb8))).
 	- ### [[PHYS1.2: Frames of reference and relative motion]]
 	  id:: 6a6d2611-817a-482c-b036-f05969927429
 	  prerequisites:: ((6a764603-0755-44c9-9bf7-7183c2981d1f))
@@ -34,7 +34,7 @@ tags:: syllabus, PHYS1
 		- What an inertial frame is and how you would tell whether you are in one. Galilean relativity: which quantities are frame-dependent and which are not. Relative velocity, worked in both directions. Pseudo-forces — centrifugal, Coriolis — as the terms that appear when Newton's second law is written in an accelerating frame, and the sharp statement that they have no source and no third-law partner. Why the pseudo-force description is legitimate and useful rather than a mistake, and exactly what goes wrong when a statement true in one frame is imported into another.
 		- Promoted to second position on the strength of the diagnostic, where the frame error appeared twice in three questions and was not recognised as a single error both times.
 		- The equivalence principle stated but not developed: no local experiment distinguishes uniform acceleration from a uniform gravitational field. Where that leads is Level 2.
-		- *Caveat:* relative velocity in two dimensions needs vector addition. Restrict to one dimension until methods supplies it, or accept that this topic will be returned to.
+		- *Caveat:* relative velocity in two dimensions needs vector addition, which is why ((6a764603-0755-44c9-9bf7-7183c2981d1f)) is a prerequisite here. The one-dimensional half is startable without it; take that route only by accepting that this topic will be returned to.
 		- *Re-tests from diagnostic:* orbital speed "balancing" gravity; the lift passenger's extra downward force left unnamed.
 	- ### [[PHYS1.3: Kinematics]]
 	  id:: 6a6d2611-9d5c-401e-999d-01150d52f0ec
@@ -42,7 +42,7 @@ tags:: syllabus, PHYS1
 	  state:: not started
 	  note::
 		- Displacement, velocity and acceleration as vectors, and as derivatives of one another. Motion graphs read in both directions: gradient and area, and what each means. The constant-acceleration equations derived by integration rather than memorised, together with the conditions under which they fail. Projectile motion as two independent one-dimensional problems, and why the independence holds. Terminal velocity as the first case where the acceleration is not constant, handled qualitatively.
-		- *Cross-subject:* differentiation, integration, vectors (mathematical methods).
+		- *Cross-subject:* vectors ( ((6a764603-0755-44c9-9bf7-7183c2981d1f))); differentiation ( ((6a764603-68bf-4c9b-b789-01547b08ac39))); integration ( ((6a764603-0b3c-41d0-bf58-4816eaed5355))).
 	- ### [[PHYS1.4: Forces and Newton's laws]]
 	  id:: 6a6d2611-cf79-41dc-a66b-5424286da946
 	  prerequisites:: ((6a6d2611-9d5c-401e-999d-01150d52f0ec))
@@ -58,7 +58,7 @@ tags:: syllabus, PHYS1
 	  note::
 		- Momentum as the quantity conserved when no external force acts, obtained from the third law rather than asserted. Impulse and the force–time graph. Elastic and inelastic collisions, and the recognition that momentum is conserved in both while kinetic energy is not. Explosions and recoil. Rocket propulsion in outline.
 		- Placed deliberately **before** energy. The central misconception in the diagnostic was the treatment of force and energy as interchangeable currencies; the corrective is to establish momentum as the thing external forces govern, on its own, before energy is introduced at all. The two are not to be met together.
-		- *Cross-subject:* vectors (mathematical methods).
+		- *Cross-subject:* vectors ( ((6a764603-0755-44c9-9bf7-7183c2981d1f))).
 	- ### [[PHYS1.6: Work, energy and power]]
 	  id:: 6a6d2611-8b27-4f10-a37b-b6008c805c38
 	  prerequisites:: ((6a6d2611-5a70-4774-a7c4-dd87ee59b226))
@@ -160,7 +160,7 @@ tags:: syllabus, PHYS1
 	  state:: not started
 	  note::
 		- Nuclear structure and the strong force as what overcomes electrostatic repulsion at short range, with the range dependence explaining the limit on nuclear size. Isotopes. Radioactive decay as a memoryless random process at the level of the individual nucleus, and the exponential law derived from that rather than fitted to data — including why "half-life" is meaningful for a nucleus with no age and no memory. Activity, decay constant, and the statistics of counting. Alpha, beta and gamma emission. Binding energy per nucleon, the curve, and fission and fusion as two routes to the same place. Mass–energy equivalence and the order-of-magnitude reason it is invisible on a chemical balance.
-		- *Cross-subject:* isotopes and relative atomic mass ( ((6a652f81-3ddd-43f8-8a38-18c1c85d37c3))); mass–energy and conservation of mass in reactions ( ((6a652f81-623f-41a8-abc7-feecf7d04914))); the memoryless property, correctly attached this time (mathematical methods; and ((6a67d966-9401-4c47-810f-89b084670196)), where it was misapplied).
+		- *Cross-subject:* isotopes and relative atomic mass ( ((6a652f81-3ddd-43f8-8a38-18c1c85d37c3))); mass–energy and conservation of mass in reactions ( ((6a652f81-623f-41a8-abc7-feecf7d04914))); the memoryless property, correctly attached this time ( ((6a764603-9774-4284-916d-c03620cbb92e)); and ((6a67d966-9401-4c47-810f-89b084670196)), where it was misapplied).
 - ## Deferred to Level 2
 	- Recorded here so the omissions are deliberate and reviewable:
 		- **Special relativity.** The equivalence principle is touched in ((6a6d2611-817a-482c-b036-f05969927429)) and left there. Simultaneity, time dilation, length contraction and the invariant interval are Level 2, and are better done once the frame material of ((6a6d2611-817a-482c-b036-f05969927429)) is secure rather than alongside it.
@@ -173,23 +173,23 @@ tags:: syllabus, PHYS1
 		- **AC circuits, reactance, impedance.** Depends on ((6a6d2611-f7df-4d36-a9be-25f818693951)), ((6a6d2611-e082-4c06-bb91-d3010f19fa2a)) and ((6a6d2611-2e88-4976-919b-e7828bb9f413)).
 		- **Astrophysics and cosmology.** Application of ((6a6d2611-294e-448e-8e55-f3ac23d43cc2)), ((6a6d2611-53e4-4c4e-8a67-2c923fc45b70)), ((6a6d2611-e5ad-436f-9a52-75e3784d847a)) and ((6a6d2611-1992-43a0-a932-507b1ebca6c1)).
 - ## Outstanding structural defect
-	- Twelve of the eighteen topics above are blocked on mathematical methods directly or through a prerequisite chain. Only ((6a6d2611-4f8d-4fc3-b91e-1af00b90d9c6)) and ((6a6d2611-817a-482c-b036-f05969927429)) are startable today, and both only in part. The specific dependencies:
+	- Twelve of the eighteen topics above are blocked on [[METH1]] directly or through a prerequisite chain. The specific dependencies:
 		- | Needed | Blocks |
 		  |---|---|
-		  | Proportionality, scaling and self-consistency | ((6a6d2611-4f8d-4fc3-b91e-1af00b90d9c6)), ((6a6d2611-3e9e-49d4-a33b-cebe73480c28)) |
-		  | Vectors | ((6a6d2611-817a-482c-b036-f05969927429)) (two-dimensional half), ((6a6d2611-9d5c-401e-999d-01150d52f0ec)), ((6a6d2611-cf79-41dc-a66b-5424286da946)), ((6a6d2611-5a70-4774-a7c4-dd87ee59b226)) |
-		  | Differentiation | ((6a6d2611-9d5c-401e-999d-01150d52f0ec)), ((6a6d2611-cf79-41dc-a66b-5424286da946)), ((6a6d2611-5a70-4774-a7c4-dd87ee59b226)), ((6a6d2611-8b27-4f10-a37b-b6008c805c38)), ((6a6d2611-294e-448e-8e55-f3ac23d43cc2)) |
-		  | Integration | ((6a6d2611-9d5c-401e-999d-01150d52f0ec)), ((6a6d2611-cf79-41dc-a66b-5424286da946)), ((6a6d2611-8b27-4f10-a37b-b6008c805c38)), ((6a6d2611-3e9e-49d4-a33b-cebe73480c28)) |
-		  | Exponentials, logarithms and log plots | ((6a6d2611-53e4-4c4e-8a67-2c923fc45b70)), ((6a6d2611-1992-43a0-a932-507b1ebca6c1)) |
-		  | Differential equations | ((6a6d2611-f7df-4d36-a9be-25f818693951)), ((6a6d2611-1992-43a0-a932-507b1ebca6c1)) |
-		  | Counting | ((6a6d2611-53e4-4c4e-8a67-2c923fc45b70)) |
-		  | Probability | ((6a6d2611-1992-43a0-a932-507b1ebca6c1)) |
-		  | Expectation, variance and the additivity of variance | ((6a6d2611-98e1-4256-aac1-c658129b3b06)), ((6a6d2611-1992-43a0-a932-507b1ebca6c1)) |
-		  | Sampling and uncertainty | ((6a6d2611-4f8d-4fc3-b91e-1af00b90d9c6)), ((6a6d2611-98e1-4256-aac1-c658129b3b06)) |
+		  | ((6a764603-9d94-459c-a35d-e86f65a6f2b5)) | ((6a6d2611-4f8d-4fc3-b91e-1af00b90d9c6)), ((6a6d2611-3e9e-49d4-a33b-cebe73480c28)) |
+		  | ((6a764603-0755-44c9-9bf7-7183c2981d1f)) | ((6a6d2611-817a-482c-b036-f05969927429)) (two-dimensional half), ((6a6d2611-9d5c-401e-999d-01150d52f0ec)), ((6a6d2611-cf79-41dc-a66b-5424286da946)), ((6a6d2611-5a70-4774-a7c4-dd87ee59b226)) |
+		  | ((6a764603-68bf-4c9b-b789-01547b08ac39)) | ((6a6d2611-9d5c-401e-999d-01150d52f0ec)), ((6a6d2611-cf79-41dc-a66b-5424286da946)), ((6a6d2611-5a70-4774-a7c4-dd87ee59b226)), ((6a6d2611-8b27-4f10-a37b-b6008c805c38)), ((6a6d2611-294e-448e-8e55-f3ac23d43cc2)) |
+		  | ((6a764603-0b3c-41d0-bf58-4816eaed5355)) | ((6a6d2611-9d5c-401e-999d-01150d52f0ec)), ((6a6d2611-cf79-41dc-a66b-5424286da946)), ((6a6d2611-8b27-4f10-a37b-b6008c805c38)), ((6a6d2611-3e9e-49d4-a33b-cebe73480c28)) |
+		  | ((6a764603-6fef-4d19-800a-0be0a896acbc)) | ((6a6d2611-53e4-4c4e-8a67-2c923fc45b70)), ((6a6d2611-1992-43a0-a932-507b1ebca6c1)) |
+		  | ((6a764603-b774-41ca-80b9-1c4c26c8bb74)) | ((6a6d2611-f7df-4d36-a9be-25f818693951)), ((6a6d2611-1992-43a0-a932-507b1ebca6c1)) |
+		  | ((6a764603-bb4b-4d28-9bbb-69531bf77848)) | ((6a6d2611-53e4-4c4e-8a67-2c923fc45b70)) |
+		  | ((6a764603-9774-4284-916d-c03620cbb92e)) | ((6a6d2611-1992-43a0-a932-507b1ebca6c1)) |
+		  | ((6a764603-6a7b-471e-8b5f-e52238c76f6a)) | ((6a6d2611-98e1-4256-aac1-c658129b3b06)), ((6a6d2611-1992-43a0-a932-507b1ebca6c1)) |
+		  | ((6a764603-a8e4-4234-b650-a45bc7ce1cb8)) | ((6a6d2611-4f8d-4fc3-b91e-1af00b90d9c6)), ((6a6d2611-1992-43a0-a932-507b1ebca6c1)) |
 	- The statistics gap in particular has now been found in three separate diagnostics — biology on 2026-07-26 (mean square displacement of a random walk; the Poisson assignment in Luria–Delbrück inverted), and physics on 2026-07-31 (the $1/\sqrt{n}$ law unavailable; random error described as averaging to the size of a single deviation). It also blocks ((6a67d966-6038-4128-a6b5-86cac76d8342)), ((6a67d966-9401-4c47-810f-89b084670196)) and ((6a67d966-971c-48d6-a8de-65c2502525d0)), and bears on ((6a652f81-4b1e-4023-b7c1-706eb337dfac)).
-	- **Recommendation: the mathematical methods diagnostic is the next session, ahead of any physics or biology topic.** It has now been deferred once and the cost of deferring it again is that three of four subjects stall.
+	- **Recommendation, recorded 2026-07-31: the mathematical methods diagnostic is the next session, ahead of any physics or biology topic.** It has now been deferred once and the cost of deferring it again is that three of four subjects stall.
 	- Mathematical methods is a distinct subject from mathematics, not a level of it. Its purpose is instrumental — the tools the sciences need, sequenced by which science needs them next. A pure mathematics syllabus, concerned with abstraction, derivation and proof, is a separate subject with its own diagnostic, and is not addressed by this.
-	- **Resolved 2026-08-07.** The mathematical methods syllabus exists (Level 1, twelve topics). The dependency table above stands; consult [[METH1]] for which methods topic unblocks what.
+	- **Resolved 2026-08-07.** The mathematical methods syllabus exists ([[METH1]], twelve topics). The dependency table above stands; consult [[METH1: Foundations]] for which methods topic unblocks what.
 - ## Level completion
 	- Level 1 is complete when all eighteen topics are marked complete and no outstanding note remains unresolved against any of them. The next level is designed only then, and specialises on the basis of what proved difficult or interesting here.
 - ## Appendix A: Diagnostic record (2026-07-31)
