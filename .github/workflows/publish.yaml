@@ -29,8 +29,13 @@ jobs:
             LAST_UPDATED="$(git log -1 --format='%ad' --date=short -- "${PAGE}")"
             [[ "${LAST_UPDATED}" ]] || continue
 
-            # Poor man's urlencoding for spaces in page names
-            ENCODED="${PAGE// /%20}"
+            # Poor man's urlencoding. Logseq has already encoded the reserved
+            # characters in the page title (":" as "%3A", and so on), so the
+            # literal "%" must be escaped first, before the spaces it leaves
+            # behind. Doing it the other way round would re-escape the "%25"
+            # this step introduces.
+            ENCODED="${PAGE//%/%25}"
+            ENCODED="${ENCODED// /%20}"
             HISTORY_URL="https://github.com/${GITHUB_REPOSITORY}/blame/${GITHUB_REF_NAME}/${ENCODED}"
 
             printf \
