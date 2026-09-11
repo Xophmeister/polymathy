@@ -38,8 +38,8 @@ tags:: syllabus, METH1
 	- ### [[METH1.1: Number, powers and estimation]] 
 	  id:: 6a764603-b3e8-4083-aa3b-45c339131c28
 	  prerequisites::
-	  state:: not started
-	  note::
+	  state:: completed
+	  note:: Complete 2026-08-20. Estimation machinery built and applied; rational-exponent binomial derived by inversion, and the second-order term extracted the same way. Weak: the linearisation condition is $|nx| \ll 1$, not $|x| \ll 1$ — dismissed as the explanation when it was the right one, re-test in ((6a764603-6fef-4d19-800a-0be0a896acbc)). Fraction/percentage conversion erred twice. Constants ($\ln 2$, $\ln 10$, $e$, $\sqrt3$) not held; to be learnt before ((6a764603-6fef-4d19-800a-0be0a896acbc)).
 		- Indices and roots as one operation rather than two. Fractional and negative exponents. Splitting a fractional power into an integer part and a root that is known — $2^{-5/2} = 1/(4\sqrt{2})$ — and the small set of constants worth holding cold: $\sqrt{2}$, $\sqrt{3}$, $\ln 2$, $\ln 10$, $e$. Significant figures and what a stated precision claims. Order-of-magnitude arithmetic and Fermi estimation done numerically rather than gestured at. The binomial approximation $(1+x)^n \approx 1 + nx$ for small $x$, derived rather than quoted, together with the question of how small is small enough — the first appearance of "linearise, then check the term you discarded".
 		- Order-of-magnitude reasoning is recorded as *intact* in all three science diagnostics. This topic is what makes it numerical.
 		- *Re-tests from diagnostic:* $2^{-5/2}$ estimated in the head, with the method stated.

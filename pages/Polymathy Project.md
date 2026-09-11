@@ -6,7 +6,7 @@
 	- ### Mathematics
 	- ### Mathematical methods for science
 		- #### [Foundations]([[METH1: Foundations]])
-			- TODO [Number, powers and estimation]([[METH1.1: Number, powers and estimation]])
+			- DONE [Number, powers and estimation]([[METH1.1: Number, powers and estimation]])
 			- TODO [Proportionality, scaling and self-consistency]([[METH1.2: Proportionality, scaling and self-consistency]])
 			- TODO [Vectors]([[METH1.3: Vectors]])
 			- TODO [Differentiation]([[METH1.4: Differentiation]])
@@ -40,7 +40,7 @@
 			- TODO [The nucleus]([[PHYS1.18: The nucleus]])
 	- ### Chemistry
 		- #### [Foundations]([[CHEM1: Foundations]])
-			- TODO [Atoms, nuclei and isotopes]([[CHEM1.1: Atoms, nuclei and isotopes]])
+			- DONE [Atoms, nuclei and isotopes]([[CHEM1.1: Atoms, nuclei and isotopes]])
 			- TODO [Electrons and the shell model]([[CHEM1.2: Electrons and the shell model]])
 			- TODO [The periodic table]([[CHEM1.3: The periodic table]])
 			- TODO [Ionic bonding and ionic solids]([[CHEM1.4: Ionic bonding and ionic solids]])
