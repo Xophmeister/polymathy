@@ -4,6 +4,7 @@
   #+END_QUOTE
 - ## Curricula
 	- ### Mathematics
+		- #### Foundations
 	- ### Mathematical methods for science
 		- #### [Foundations]([[METH1: Foundations]])
 			- DONE [Number, powers and estimation]([[METH1.1: Number, powers and estimation]])
@@ -74,6 +75,10 @@
 			- TODO [Exchange surfaces and mass transport]([[BIO1.15: Exchange surfaces and mass transport]])
 			- TODO [Homeostasis and control]([[BIO1.16: Homeostasis and control]])
 			- TODO [Ecosystems: energy flow and matter cycling]([[BIO1.17: Ecosystems: energy flow and matter cycling]])
+	- ### Philosophy
+		- #### Foundations
+	- ### Comparative Mythology
+		- #### Foundations
 - ## Meta
 	- ### [[About]]
 		- #### [[AI tutor system prompt]]
