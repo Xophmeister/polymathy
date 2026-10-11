@@ -21,7 +21,7 @@ tags:: syllabus, CHEM1
 	  note:: Complete 2026-09-10. Isotope arithmetic and RAM-as-population-average secure in both directions; mole/mass distinction reached unprompted. Weak: reactivity attributed to proton–electron charge imbalance rather than electron arrangement — re-test in ((6a652f81-da78-4db3-9c2d-1bf6c35244f4)) and ((6a652f81-0192-406b-8fb4-007dd74679d5)). A numerical result (the H/D kinetic isotope factor) was carried to boron without checking its generating mechanism transferred.
 		- Protons, neutrons, electrons: charge, mass, location. Atomic number as the definition of an element. Mass number. Isotopes and why they exist without changing chemistry. Relative atomic mass as a weighted mean over isotopic abundance. Why chemical behaviour is a property of electrons and not the nucleus.
 		- *Re-tests from diagnostic:* "same number of neutrons down a group".
-		- *Cross-subject:* nuclear structure and isotopic stability ( ((6a6d2611-1992-43a0-a932-507b1ebca6c1)) ); relative atomic mass as a weighted mean ( ((6a764603-6a7b-471e-8b5f-e52238c76f6a)) ).
+		- *Cross-subject:* nuclear structure and isotopic stability ( ((6a6d2611-1992-43a0-a932-507b1ebca6c1)) ); relative atomic mass as a weighted mean ( ((6a764603-6a7b-471e-8b5f-e52238c76f6a)) ); Democritus' atoms ( ((6acb85de-b07e-4af4-8984-e23c7add2199))).
 	- ### [[CHEM1.2: Electrons and the shell model]]
 	  id:: 6a652f81-da78-4db3-9c2d-1bf6c35244f4
 	  prerequisites:: ((6a652f81-3ddd-43f8-8a38-18c1c85d37c3))

@@ -76,7 +76,25 @@
 			- TODO [Homeostasis and control]([[BIO1.16: Homeostasis and control]])
 			- TODO [Ecosystems: energy flow and matter cycling]([[BIO1.17: Ecosystems: energy flow and matter cycling]])
 	- ### Philosophy
-		- #### Foundations
+		- #### [Foundations]([[PHIL1: Foundations]])
+			- TODO [Arguments: validity, soundness and answering the question]([[PHIL1.1: Arguments: validity, soundness and answering the question]])
+			- TODO [Formal logic as a tool]([[PHIL1.2: Formal logic as a tool]])
+			- TODO [From myth to argument: the pre-Socratics]([[PHIL1.3: From myth to argument: the pre-Socratics]])
+			- TODO [Knowledge, justification and scepticism]([[PHIL1.4: Knowledge, justification and scepticism]])
+			- TODO [Induction and its problem]([[PHIL1.5: Induction and its problem]])
+			- TODO [Testing theories: falsification, underdetermination and paradigms]([[PHIL1.6: Testing theories: falsification, underdetermination and paradigms]])
+			- TODO [Causation and explanation]([[PHIL1.7: Causation and explanation]])
+			- TODO [Scientific realism]([[PHIL1.8: Scientific realism]])
+			- TODO [Identity and persistence]([[PHIL1.9: Identity and persistence]])
+			- TODO [Mind and body]([[PHIL1.10: Mind and body]])
+			- TODO [Free will and determinism]([[PHIL1.11: Free will and determinism]])
+			- TODO [Meaning and reference]([[PHIL1.12: Meaning and reference]])
+			- TODO [Consequentialism]([[PHIL1.13: Consequentialism]])
+			- TODO [Duties and constraints]([[PHIL1.14: Duties and constraints]])
+			- TODO [Virtue and character]([[PHIL1.15: Virtue and character]])
+			- TODO [Metaethics: facts, values and the rationality of morality]([[PHIL1.16: Metaethics: facts, values and the rationality of morality]])
+			- TODO [Political authority and obligation]([[PHIL1.17: Political authority and obligation]])
+			- TODO [Distributive justice]([[PHIL1.18: Distributive justice]])
 	- ### Comparative Mythology
 		- #### Foundations
 - ## Meta
