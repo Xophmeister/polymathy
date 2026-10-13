@@ -20,7 +20,7 @@ tags:: syllabus, PHIL1
 	- **Boundaries with other subjects:**
 		- *Pure mathematics (not yet designed, code not yet minted).* ((6acb85de-0a3d-4563-8e0a-98d947682be3)) owns propositional and predicate logic as a tool for assessing arguments. Metalogic — soundness and completeness of proof systems, decidability, Gödel — belongs to pure mathematics.
 		- *Mathematical methods.* [[METH1]] owns the mechanics of probability and statistical testing; [[PHIL1]] owns what those mechanics license you to believe. The canonical instance: computing a $p$-value is ((6a764603-7297-4b85-beff-26db87c6c2f4)); what it does and does not show about a hypothesis is ((6acb85de-dbff-4656-87d9-67de9ad86949)).
-		- *Comparative mythology (`MYTH`, agreed, not yet designed).* The transition from mythic to rational cosmology is owned by ((6acb85de-b07e-4af4-8984-e23c7add2199)). Philosophy of religion is deferred (see below); its boundary with `MYTH` is to be fixed when `MYTH` is designed.
+		- *Mythology ([[MYTH1]]).* The transition from mythic to rational cosmology is owned by ((6acb85de-b07e-4af4-8984-e23c7add2199)); ((6aceb0db-d751-4e90-bcac-a74de1d16e51)) owns Hesiod as a text and cites it. Philosophy of religion (deferred) owns the truth of religious claims; ((6aceb0db-396a-4e7c-ad59-1316ac37ecdf)) owns their origin, transmission and function.
 - ## Topics
 	- ### [[PHIL1.1: Arguments: validity, soundness and answering the question]]
 	  id:: 6acb85de-7ee9-48c9-98bb-a0827de9fc02
@@ -30,6 +30,7 @@ tags:: syllabus, PHIL1
 		- Premises and conclusion; reconstructing an argument from ordinary prose, including the premises it leaves unstated. Validity as a property of form — no possible situation with true premises and a false conclusion — and soundness as validity plus true premises, with the sharp consequence that only a sound argument obliges you to accept its conclusion. Deductive validity against inductive strength. The counterexample as the universal test: of an argument's validity, of a premise, and of a proposed principle — and the discipline of running it against your own principle before offering it. Charity in interpretation. Fallacies taught by structure rather than as a list.
 		- Then the habit. Identifying exactly what claim is on the table and answering *that* — not a claim one step away from it. Why philosophers stipulate hypotheticals, understood as the controlled experiment of the subject: the stipulation isolates one variable, and fighting it reintroduces the confounders the case was built to remove.
 		- *Re-tests from diagnostic:* validity and soundness (Q1); "didn't reduce accidents" drifting to "aren't useful" and then to policy (Q1); invented facts in the performer case (Q6); widened scope in the suffering case (Q8); principles offered untested and broken by counterexamples constructible from the case itself (Q4).
+		- *Cross-subject:* "valid" used for "possible" ( ((6aceb0db-e452-4b9d-badc-4dbc7541cfb8)), Q8).
 	- ### [[PHIL1.2: Formal logic as a tool]]
 	  id:: 6acb85de-0a3d-4563-8e0a-98d947682be3
 	  prerequisites:: ((6acb85de-7ee9-48c9-98bb-a0827de9fc02))
@@ -45,8 +46,8 @@ tags:: syllabus, PHIL1
 	  state:: not started
 	  note::
 		- What changed when divine genealogy gave way to natural principle. Thales and the single underlying stuff; Anaximander's *apeiron* and the argument against any one element being primary; Heraclitus on flux and logos; Parmenides' deduction that change is impossible, taken seriously as an argument with premises to be located and denied; Zeno's paradoxes, and the arrow in particular as a problem about instantaneous motion; the atomists as the response to Parmenides. Why this counts as the beginning of philosophy and of science at once — and the case that it was less of a clean break than the story says.
-		- Owned here; to be cited by `MYTH` once designed.
-		- *Cross-subject:* the arrow paradox and instantaneous rate of change ( ((6a764603-68bf-4c9b-b789-01547b08ac39))); Democritus' atoms against the modern atom ( ((6a652f81-3ddd-43f8-8a38-18c1c85d37c3))).
+		- Owned here; cited by ((6aceb0db-d751-4e90-bcac-a74de1d16e51)).
+		- *Cross-subject:* the arrow paradox and instantaneous rate of change ( ((6a764603-68bf-4c9b-b789-01547b08ac39))); Democritus' atoms against the modern atom ( ((6a652f81-3ddd-43f8-8a38-18c1c85d37c3))); Hesiod's Theogony as the mythic baseline ( ((6aceb0db-d751-4e90-bcac-a74de1d16e51))).
 	- ### [[PHIL1.4: Knowledge, justification and scepticism]]
 	  id:: 6acb85de-c302-40aa-9d89-e68cb494d8fb
 	  prerequisites:: ((6acb85de-7ee9-48c9-98bb-a0827de9fc02))
@@ -55,6 +56,7 @@ tags:: syllabus, PHIL1
 		- Knowledge as justified true belief, and the Gettier cases that broke the analysis. Responses: no-false-lemmas, reliabilism, the defeasibility condition. Internalism against externalism about justification. Foundationalism and coherentism as answers to the regress. Cartesian scepticism and the brain in a vat; the closure principle as the engine of sceptical arguments, and what denying it costs. Testimony: how believing others can confer justification, and when it does not.
 		- Also owned here: the distinction between what is the case and what can be known to be the case — metaphysics against epistemology — as a standing check.
 		- *Re-tests from diagnostic:* whether the original *is* the original run together with whether anyone could *tell* (Q3). Testimony was reached unprompted in Q2 and is retained; build on it.
+		- *Cross-subject:* the ancient source as testimony ( ((6aceb0db-e940-4047-b56f-64d4e10bed17))).
 	- ### [[PHIL1.5: Induction and its problem]]
 	  id:: 6acb85de-f2e3-4948-b798-a1885864967e
 	  prerequisites:: ((6acb85de-c302-40aa-9d89-e68cb494d8fb))
@@ -69,7 +71,7 @@ tags:: syllabus, PHIL1
 	  state:: not started
 	  note::
 		- Popper's attempt to rest science on falsification rather than confirmation, as a response to ((6acb85de-f2e3-4948-b798-a1885864967e)), and the question of whether corroboration smuggles induction back in. Demarcation and why it is harder than it looks. Duhem–Quine: no hypothesis is tested alone, so a failed prediction never says which assumption failed. Kuhn: normal science, anomaly, revolution, and the incommensurability claim. Lakatos: research programmes, progressive and degenerating. Simplicity and Occam's razor — what preference for the simpler theory amounts to, and whether it is itself an inductive bet. What a statistical significance test does and does not license.
-		- *Cross-subject:* what a $p$-value licenses, as against how it is computed ( ((6a764603-7297-4b85-beff-26db87c6c2f4))); Luria–Delbrück as a decisive discrimination between hypotheses ( ((6a67d966-9401-4c47-810f-89b084670196))).
+		- *Cross-subject:* what a $p$-value licenses, as against how it is computed ( ((6a764603-7297-4b85-beff-26db87c6c2f4))); Luria–Delbrück as a decisive discrimination between hypotheses ( ((6a67d966-9401-4c47-810f-89b084670196))); theories of myth as testable hypotheses ( ((6aceb0db-3180-481f-b506-e90a9c3ebbb0))); Dumézil and unfalsifiability ( ((6aceb0db-d3dd-43b4-8dab-abd99825e870))); statistical support for a phylogeny ( ((6aceb0db-79a8-4315-b990-edac8f989745))).
 	- ### [[PHIL1.7: Causation and explanation]]
 	  id:: 6acb85de-06bc-46aa-a9d4-d95078d9d9b6
 	  prerequisites:: ((6acb85de-f2e3-4948-b798-a1885864967e))
@@ -77,7 +79,7 @@ tags:: syllabus, PHIL1
 	  note::
 		- Hume on causation: constant conjunction, and why necessary connection is never observed. The counterfactual analysis — $c$ caused $e$ if, had $c$ not occurred, $e$ would not have — and its problems with pre-emption and overdetermination. The counterfactual is never observed, which is the whole difficulty of causal inference: confounding, the control group as a stand-in for the unobserved world, and randomisation as the reason the stand-in is trustworthy. Regression to the mean as a case study. Correlation against causation, stated precisely. Explanation: the covering-law model, its counterexamples, and causal and unifying accounts.
 		- *Re-tests from diagnostic:* confounding was reached in Q1 from a concrete case but not stated as the principle that a causal claim is a comparison against an unobserved counterfactual; to be produced from a standing start.
-		- *Cross-subject:* covariance and correlation ( ((6a764603-6a7b-471e-8b5f-e52238c76f6a))).
+		- *Cross-subject:* covariance and correlation ( ((6a764603-6a7b-471e-8b5f-e52238c76f6a))); Galton's problem and the control group in comparison ( ((6aceb0db-d3dd-43b4-8dab-abd99825e870))).
 	- ### [[PHIL1.8: Scientific realism]]
 	  id:: 6acb85de-e3bf-41ec-b972-06523aee7a49
 	  prerequisites:: ((6acb85de-dbff-4656-87d9-67de9ad86949)), ((6acb85de-06bc-46aa-a9d4-d95078d9d9b6))
@@ -161,7 +163,7 @@ tags:: syllabus, PHIL1
 		- *Re-tests from diagnostic:* the whole of Q6 — the clean case reached a correct intermediate judgement but not its implication for distributive justice.
 - ## Deferred to Level 2
 	- Recorded here so the omissions are deliberate and reviewable:
-		- **Philosophy of religion.** Arguments for and against the existence of God, the problem of evil, religious language. Its boundary with `MYTH` is to be fixed when that subject is designed.
+		- **Philosophy of religion.** Arguments for and against the existence of God, the problem of evil, religious language. Boundary with [[MYTH1]] fixed 2026-10-13: see ((6aceb0db-396a-4e7c-ad59-1316ac37ecdf)).
 		- **History of philosophy as history.** Plato, Aristotle, the rationalists and empiricists, Kant, read as systems in their own right. Level 1 draws on them by problem, not by figure.
 		- **Aesthetics.**
 		- **Philosophy of mathematics.** Depends on ((6acb85de-0a3d-4563-8e0a-98d947682be3)) and on the pure mathematics subject.

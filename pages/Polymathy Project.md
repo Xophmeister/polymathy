@@ -95,8 +95,25 @@
 			- TODO [Metaethics: facts, values and the rationality of morality]([[PHIL1.16: Metaethics: facts, values and the rationality of morality]])
 			- TODO [Political authority and obligation]([[PHIL1.17: Political authority and obligation]])
 			- TODO [Distributive justice]([[PHIL1.18: Distributive justice]])
-	- ### Comparative Mythology
-		- #### Foundations
+	- ### Mythology
+		- #### [Foundations]([[MYTH1: Foundations]])
+			- TODO [What a myth is, and what it is for]([[MYTH1.1: What a myth is, and what it is for]])
+			- TODO [Sources and source criticism]([[MYTH1.2: Sources and source criticism]])
+			- TODO [Historical linguistics: sound change and the family tree]([[MYTH1.3: Historical linguistics: sound change and the family tree]])
+			- TODO [Morphology, borrowing and contact]([[MYTH1.4: Morphology, borrowing and contact]])
+			- TODO [Inherited, borrowed or independent: comparing stories]([[MYTH1.5: Inherited, borrowed or independent: comparing stories]])
+			- TODO [Greek myth: the sources and the system]([[MYTH1.6: Greek myth: the sources and the system]])
+			- TODO [Roman religion and Roman myth]([[MYTH1.7: Roman religion and Roman myth]])
+			- TODO [Norse myth: the Eddas, the skalds and Snorri]([[MYTH1.8: Norse myth: the Eddas, the skalds and Snorri]])
+			- TODO [The Irish and Welsh material]([[MYTH1.9: The Irish and Welsh material]])
+			- TODO [Anglo-Saxon England: myth from almost nothing]([[MYTH1.10: Anglo-Saxon England: myth from almost nothing]])
+			- TODO [The ancient Near East]([[MYTH1.11: The ancient Near East]])
+			- TODO [Christianity: tradition, transmitter, and the edge of "myth"]([[MYTH1.12: Christianity: tradition, transmitter, and the edge of "myth"]])
+			- TODO [The sky-father and what reconstructs]([[MYTH1.13: The sky-father and what reconstructs]])
+			- TODO [Origins: kingship in heaven and the world made from a body]([[MYTH1.14: Origins: kingship in heaven and the world made from a body]])
+			- TODO [The dragon-slayer]([[MYTH1.15: The dragon-slayer]])
+			- TODO [Death, return and the underworld]([[MYTH1.16: Death, return and the underworld]])
+			- TODO [Phylogenetic methods: trees for stories]([[MYTH1.17: Phylogenetic methods: trees for stories]])
 - ## Meta
 	- ### [[About]]
 		- #### [[AI tutor system prompt]]

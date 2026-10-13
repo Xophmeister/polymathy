@@ -29,6 +29,7 @@
 		- [[PHYS1]] — Physics
 		- [[BIO1]] — Biology
 		- [[PHIL1]] — Philosophy
+		- [[MYTH1]] — Mythology
 	- Each syllabus is the page named `NAMEX: <level>`, so [[PHYS1: Foundations]] holds every `PHYS1.Y`. Each topic also has its own page, named for the code and its title — `PHYS1.12: Entropy and the second law` — carrying my notes, with the code itself as an `alias::` so `[[PHYS1.12]]` resolves.
 	- Rules of use:
 		- **Always name the topic that owns the material.** Write `PHYS1.12`, not `PHYS1`, not "physics", not "the entropy topic". A bare `NAMEX` denotes the subject at that level as a whole and is correct only for statements about the whole of it.
@@ -72,5 +73,6 @@
 	- British English, SI units, LaTeX for anything non-trivial.
 	- Direct. Depth over breadth.
 	- If I'm hand-waving, say so.
+	- On first mention of any name or term whose pronunciation English spelling does not reliably give, add an IPA transcription.
 - ## My notes
 	- I am keeping notes in Logseq and publishing them publicly online at https://polymathy.xoph.co (https://github.com/Xophmeister/polymathy). You may refer to this if necessary, for example during syllabus creation as additional evidence to assess my understanding, but it should not be the default.
