@@ -24,3 +24,15 @@ alias:: METH1.1
 			- Of 0.11, it's 4.5% (nearly 10 times higher)
 		- So two significant figures buys you somewhere between around 0.5% and 5% error
 		- So what relative precision does the input demand to guarantee output precision?
+			- Take the worst case scenario (0.5%): The leading digit can be as high as 9, so the tolerance can be as tight as $\frac{0.005}{0.95}\approx 0.5\%$.
+			- In general: $n$ significant figures costs roughly $0.5\times 10^{-n}$ relative precision in the worst case, and up to $10\times$ less in the best.
+			- So $\sqrt{2}\approx 1.4$ yields 2sf in the output; $\sqrt{2}\approx 1.41$ yields 3sf
+	- ### Apply to $5^\frac{3}{2}$
+		- $5^\frac{3}{2} = 5\sqrt{5}$
+		- First I tried to estimate $\sqrt{5}$ by noting that it must be in $(2,3)$. However, to get an estimate within 0.5% of the true value lead me to (painfully) bisecting this interval -- on paper -- five times to get to $\sqrt{5}\in(2.22,2.25)$.
+			- Taking the midpoint gives an answer of 11.175; or 11 to 2sf
+			- The leading digit is a 1, so the relative tolerance is closer to 5%, so those bisections weren't necessary
+		- Also notice that reduced surd form hides a simpler method: $5\sqrt{5} = \sqrt{125}$. 125 is right next to 121, which is $11^2$, giving us 2sf straightaway
+			- This isn't just close: $\sqrt{125} = \sqrt{121\times\frac{125}{121}}=11\sqrt{1+\frac{4}{121}}$
+			- This is the form for the binomial approximation: $(1+x)^n\approx 1+nx$
+- ## Binomial approximation
