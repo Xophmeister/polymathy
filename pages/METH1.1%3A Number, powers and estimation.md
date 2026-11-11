@@ -17,12 +17,20 @@ alias:: METH1.1
 		- In this case, rationalising the denominator gives $\sqrt{2}/8$, which is particularly simple because $8=2^3$, so we just need to halve three times.
 	- You need to know whether $\sqrt{2} < 1.45$. What is the cheapest check, and why is it preferable to appealing to how precisely you remember $\sqrt{2}$?
 		- Square the RHS: $1.45^2 = 2.1025 > 2$, so we have a cheap upper bound for $\sqrt{2}$
-		- If you can bound your approximation, say in $(a,b)$, then the relative error can be quantified as $\pm\frac{b-a}{b+a}$.
-		- So for $(1.41,1.45)$, the relative error is about $\pm1.4\%$
+		- If you can bound your approximation, say in $(a,b)$, then the relative error from the midpoint of the interval can be quantified as $\pm\frac{b-a}{b+a}$.
+		- So for an approximation in $(1.41,1.45)$, the relative error is at most $\pm1.4\%$
 	- Three halvings were applied to an approximate $\sqrt{2}$. What happened to the absolute error, and what happened to the relative error? Which of the two is the right currency to track, and why?
+		- The absolute error changes as a function of the halvings; the relative error is invariant under scaling.
+		- You want to track the relative error because that's where it shows up in the output. If you need a specific precision, you know immediately what the input's precision must be.
 	- An answer of $0.11$ and an answer of $0.98$ both carry an absolute tolerance of $\pm 0.005$ at two significant figures. Why do they not carry the same relative tolerance?
+		- "Significant figures" is an artefact of decimalisation, rather than ratios. $\pm0.005$ has a relative tolerance of nearly 5% when the answer is 0.11, but just $0.5%$ for 0.98.
+		- So 2sf in the input earns between 0.5% to 5% relative error in the output _just_ by virtue of where the answer falls in the fractional part.
 	- What relative precision must an input carry to secure $n$ significant figures in the output *whatever* the output turns out to be? Why the worst case rather than the typical one?
+		- $n$ sf costs approximately $0.5\times 10^{-n}$ relative precision in the worst case.
+		- If the fraction part cannot be estimated through other means, you cannot tell where it will fall within it, so the worst case is a guarantee of output precision.
 	- Given that worst-case figure, why is $\sqrt{2} \approx 1.4$ nevertheless often enough? What is the cheaper, adaptive discipline, and what does it require you to do first?
+		- This is about 0.2% off, which is less than the 0.5% minimum, so buys us 2sf of output.
+		- If we have knowledge of where the fractional part lies, we can
 	- Estimating $5^{3/2}$: the tidy form is $5\sqrt{5}$. Why is the untidy form $\sqrt{125}$ the more useful one?
 	- Derive $(1+x)^n \approx 1 + nx$ for $n \in \mathbb{N}$. What makes the discarded part negligible?
 	- "$\lim_{x \to 0}(1+x)^n = 1 + nx$." Why is this not the statement you want, and what is?
