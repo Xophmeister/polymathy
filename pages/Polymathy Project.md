@@ -58,7 +58,7 @@
 			- TODO [Redox and electrochemistry]([[CHEM1.15: Redox and electrochemistry]])
 	- ### Biology
 		- #### [Foundations]([[BIO1: Foundations]])
-			- TODO [Life, free energy and the far-from-equilibrium state]([[BIO1.1: Life, free energy and the far-from-equilibrium state]])
+			- DONE [Life, free energy and the far-from-equilibrium state]([[BIO1.1: Life, free energy and the far-from-equilibrium state]])
 			- TODO [Scale, surface area and diffusion]([[BIO1.2: Scale, surface area and diffusion]])
 			- TODO [Cells and compartments]([[BIO1.3: Cells and compartments]])
 			- TODO [Membranes and transport across them]([[BIO1.4: Membranes and transport across them]])

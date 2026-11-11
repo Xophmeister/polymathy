@@ -92,7 +92,7 @@ tags:: syllabus, CHEM1
 	  note::
 		- Exothermic and endothermic change. Bond breaking as endothermic and bond making as exothermic, and the net enthalpy change as the difference. Enthalpy change per mole; calculation from bond energies; sign conventions. Reaction profiles and activation energy. Where the light and heat of a burning ribbon actually come from.
 		- Treated quantitatively, per the diagnostic.
-		- *Cross-subject:* energy conservation and the first law ( ((6a6d2611-8b27-4f10-a37b-b6008c805c38)), ((6a6d2611-98e1-4256-aac1-c658129b3b06))); enthalpy against entropy ( ((6a6d2611-53e4-4c4e-8a67-2c923fc45b70))); bond energies and the ATP economy ( ((6a67d966-f2dc-48fb-8184-688f036835ed)), ((6a67d966-9d55-4cbf-b5bf-f22bc57c153c))).
+		- *Cross-subject:* energy conservation and the first law ( ((6a6d2611-8b27-4f10-a37b-b6008c805c38)), ((6a6d2611-98e1-4256-aac1-c658129b3b06))); enthalpy against entropy ( ((6a6d2611-53e4-4c4e-8a67-2c923fc45b70))); bond energies and the ATP economy ( ((6a67d966-f2dc-48fb-8184-688f036835ed)), ((6a67d966-9d55-4cbf-b5bf-f22bc57c153c))); why maintenance costs free energy continuously ( ((6a67d966-8a73-4ddc-b595-68782e0a53df))).
 	- ### [[CHEM1.12: Rates of reaction]]
 	  id:: 6a652f81-4b1e-4023-b7c1-706eb337dfac
 	  prerequisites:: ((6a652f81-52b6-4329-8323-e4ce94566a56)), ((6a652f81-0d4e-41ed-a431-4ea08facae04)), ((6a764603-68bf-4c9b-b789-01547b08ac39))

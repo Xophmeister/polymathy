@@ -20,12 +20,12 @@ tags:: syllabus, BIO1
 	- ### [[BIO1.1: Life, free energy and the far-from-equilibrium state]]
 	  id:: 6a67d966-8a73-4ddc-b595-68782e0a53df
 	  prerequisites::
-	  state:: not started
-	  note::
+	  state:: completed
+	  note:: Complete 2026-11-11 (six sessions). Entropy as a microstate count reached with one prompt; the crystal used unprompted as the counterexample to "order", verdict stated; hot-to-cold heat flow derived from counting with help, then applied unaided on the second attempt; the need for a surplus in coupling only once supplied. Weak: "energy" for "free energy" at least three times (incl. internal work "for free"); counts, multipliers and entropy mixed in vocabulary; body modelled as passive and drifting to ambient despite own answer that heat production cannot stop; local fall in entropy against the world's rise not given to the sceptic; plant's free energy attributed to soil. Entropy-as-order not observed, but still to be earned in ((6a6d2611-53e4-4c4e-8a67-2c923fc45b70)).
 		- Why persistence costs an organism something and costs a rock nothing. Equilibrium as the state a system arrives at when left alone, and why the crystal is already there while the cell is not. Entropy as a count of microstates, distinguished sharply from free energy as capacity to do work — the two were conflated in the diagnostic and the confusion must not survive this topic. Maintenance as continuous work against drift: ion gradients, protein conformation, body temperature. Basal metabolic rate as the price of doing nothing. What "an organism is an open system" actually asserts.
 		- Boundary with ((6a67d966-9d55-4cbf-b5bf-f22bc57c153c)): this topic establishes that free energy must be spent continuously and why. ((6a67d966-9d55-4cbf-b5bf-f22bc57c153c)) covers how it is captured and disbursed.
 		- *Re-tests from diagnostic:* "a state of entropy"; free energy misidentified as entropy; order as the thing being maintained.
-		- *Cross-subject:* second law, and enthalpy versus entropy ( ((6a652f81-0d4e-41ed-a431-4ea08facae04)); physics).
+		- *Cross-subject:* second law and free energy ( ((6a6d2611-53e4-4c4e-8a67-2c923fc45b70))); enthalpy versus entropy ( ((6a652f81-0d4e-41ed-a431-4ea08facae04))).
 	- ### [[BIO1.2: Scale, surface area and diffusion]]
 	  id:: 6a67d966-bc9e-4651-9524-4a6d0814f6ef
 	  prerequisites:: ((6a67d966-8a73-4ddc-b595-68782e0a53df))
@@ -187,3 +187,4 @@ tags:: syllabus, BIO1
 		- self-monitoring: confusion flagged explicitly rather than concealed, and the flagged question was the one that dissolved the problem
 	- **Recurring habit to watch:** stopping one step short. A mechanism given without its constraint; an observation given without its verdict. Twice in the session the second half of an answer had to be requested, and both times it was available.
 	- **Caveat carried forward:** everything under "corrected in conversation" was told, not earned. Being told is not knowing. Each is assigned above to the topic that owns it and must be re-tested there; none is to be treated as already covered. The same applies to the $t \propto L^2$ derivation and to the marginal stability of the fold, both of which were supplied rather than produced.
+	- Learner reports thermodynamics and entropy were never taught at GCSE or A' Level: ((6a67d966-8a73-4ddc-b595-68782e0a53df)) and ((6a6d2611-53e4-4c4e-8a67-2c923fc45b70)) are first exposure, not relearning. "Thermodynamic reasoning of high quality" refers to reasoning, not taught content.
