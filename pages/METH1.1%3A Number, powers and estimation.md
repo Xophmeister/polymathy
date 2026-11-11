@@ -3,7 +3,7 @@ tags:: notes, METH1
 alias:: METH1.1
 
 - ## Approximations to commit to memory
-	- | Value | Approximation (2sf) | Relative error |
+	- | Value | Approximation (3sf) | Relative error |
 	  | - | - | - |
 	  | $\huge\sqrt{2}$ | $\huge 1.41$ | 0.3% |
 	  | $\huge\sqrt{3}$ | $\huge 1.73$ | 0.1% |
@@ -12,7 +12,13 @@ alias:: METH1.1
 	  | $\huge e$ | $\huge 2.72$ | 0.1% |
 - ## Cue sheet
 	- Why does rationalising a denominator help when estimating $1/(4\sqrt{2})$ mentally? What does the operation actually relocate, and why does that matter?
+		- $\sqrt{2}$ in the denominator means attempting to divide by 1.41 when approximating. That's not impossible, but will almost certainly require long division, for which the bookkeeping is difficult to maintain in ones head.
+		- That's true of all irreducible roots in the denominator. Rationalising moves them to the numerator and we avoid the necessary long division incurred from the 3sf input approximation.
+		- In this case, rationalising the denominator gives $\sqrt{2}/8$, which is particularly simple because $8=2^3$, so we just need to halve three times.
 	- You need to know whether $\sqrt{2} < 1.45$. What is the cheapest check, and why is it preferable to appealing to how precisely you remember $\sqrt{2}$?
+		- Square the RHS: $1.45^2 = 2.1025 > 2$, so we have a cheap upper bound for $\sqrt{2}$
+		- If you can bound your approximation, say in $(a,b)$, then the relative error can be quantified as $\pm\frac{b-a}{b+a}$.
+		- So for $(1.41,1.45)$, the relative error is about $\pm1.4\%$
 	- Three halvings were applied to an approximate $\sqrt{2}$. What happened to the absolute error, and what happened to the relative error? Which of the two is the right currency to track, and why?
 	- An answer of $0.11$ and an answer of $0.98$ both carry an absolute tolerance of $\pm 0.005$ at two significant figures. Why do they not carry the same relative tolerance?
 	- What relative precision must an input carry to secure $n$ significant figures in the output *whatever* the output turns out to be? Why the worst case rather than the typical one?
