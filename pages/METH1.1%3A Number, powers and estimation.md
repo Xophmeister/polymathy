@@ -30,11 +30,20 @@ alias:: METH1.1
 		- If the fraction part cannot be estimated through other means, you cannot tell where it will fall within it, so the worst case is a guarantee of output precision.
 	- Given that worst-case figure, why is $\sqrt{2} \approx 1.4$ nevertheless often enough? What is the cheaper, adaptive discipline, and what does it require you to do first?
 		- This is about 0.2% off, which is less than the 0.5% minimum, so buys us 2sf of output.
-		- If we have knowledge of where the fractional part lies, we can
+		- If we have foreknowledge of where the fractional part lies, we can take shortcuts when trying to estimate (e.g., terminating an iterative process early when we have enough precision).
 	- Estimating $5^{3/2}$: the tidy form is $5\sqrt{5}$. Why is the untidy form $\sqrt{125}$ the more useful one?
+		- 125 is very close to $121 = 11^2$.
 	- Derive $(1+x)^n \approx 1 + nx$ for $n \in \mathbb{N}$. What makes the discarded part negligible?
+		- By the binomial theorem: $(1+x)^n = \sum_{k=0}^{n} \binom{n}{k}x^k = 1 + nx + n(n-1)x^2 + \ldots$
+		- When $|x|<1$, the higher polynomial terms will reduce to 0 faster than the linear term, so we can ignore them.
 	- "$\lim_{x \to 0}(1+x)^n = 1 + nx$." Why is this not the statement you want, and what is?
+		- The limit on the LHS is $(1 + 0)^n = 1 \ne 1 + nx$.
+		- Rather we have an "error term", of order 2: $(1+x)^n = 1 + nx + O(x^2)$
 	- The binomial *theorem* you used is a finite sum requiring $n \in \mathbb{N}$. Establish $(1+x)^{1/m} \approx 1 + x/m$ without appealing to an infinite series. What is the move?
+		- Let $(1+x)^\frac{1}{m} = 1+y$
+		- Raising both sides by $m$ gives $1+x=(1+y)^m \approx 1+my$
+		- So $y\approx \frac{x}{m}$ and thus, $(1+x)^\frac{1}{m} \approx 1 + \frac{x}{m}$
+		- This extends to $\mathbb{Q}$
 	- That derivation and the rationalising of the denominator are instances of the same tactic. What is it?
 	- You want the second-order term of $(1+x)^{1/2}$, but $\binom{n}{k} = n!/(k!(n-k)!)$ is undefined at $n = 1/2$. Get it anyway, using only the exact expansion of $(1+y)^2$.
 	- You have $\sqrt{125} = 11(1+x)^{1/2}$ with $x = 4/121$, and you have kept only the linear term. Without computing $\sqrt{125}$ by any other route, how many significant figures is $11.18$ entitled to? What is the comparison that establishes it?
