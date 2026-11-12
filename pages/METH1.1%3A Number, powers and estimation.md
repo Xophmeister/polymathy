@@ -43,13 +43,22 @@ alias:: METH1.1
 		- Let $(1+x)^\frac{1}{m} = 1+y$
 		- Raising both sides by $m$ gives $1+x=(1+y)^m \approx 1+my$
 		- So $y\approx \frac{x}{m}$ and thus, $(1+x)^\frac{1}{m} \approx 1 + \frac{x}{m}$
-		- This extends to $\mathbb{Q}$
+		- This now trivially extends to $\mathbb{Q}$
 	- That derivation and the rationalising of the denominator are instances of the same tactic. What is it?
+		- Hand-wavy: You effectively "undo" the awkwardness -- the messy exponent, in both these cases -- to get it into a form that can be manipulated.
 	- You want the second-order term of $(1+x)^{1/2}$, but $\binom{n}{k} = n!/(k!(n-k)!)$ is undefined at $n = 1/2$. Get it anyway, using only the exact expansion of $(1+y)^2$.
+		- Let $1+x = (1+y)^2 = 1+2y+y^2$; that gives $y=\frac{x}{2}-\frac{y^2}{2}$
+		- So $(1+x)^\frac{1}{2} = 1 + y = 1 + \frac{x}{2} - \frac{y^2}{2}$
+		- Another iteration gives $1+\frac{x}{2}-\frac{x^2}{8} + \frac{xy^2}{4} - \frac{y^4}{8}$
+		- Those $xy^2$ and $y^4$ terms will yield orders higher than 2 in $x$, so we have $1+\frac{x}{2}-\frac{x^2}{8} + O(x^3)$
+		- So the second-order term is $-\frac{x^2}{8}$
 	- You have $\sqrt{125} = 11(1+x)^{1/2}$ with $x = 4/121$, and you have kept only the linear term. Without computing $\sqrt{125}$ by any other route, how many significant figures is $11.18$ entitled to? What is the comparison that establishes it?
+		- Keeping just the linear term gives $11(1+\frac{x}{2}) = 11 + \frac{2}{11} = 11.\dot{1}\dot{8}$
+		- The second-order term would be $-\frac{2}{11^3}$, which is smaller than $-\frac{1}{500} = -0.002$ (because $11^3 > 10^3$ in the denominator)
+		- $-0.002$ cannot affect the tenths and hundredths digits by conventional rounding (it is under the $\pm0.005$ threshold), so $11.18$ is good to 4sf.
 	- $(1-1/8)^{12}$ with the linearisation gives $-1/2$, which is impossible. Which assumption has failed? State the actual condition for the linearisation to be legitimate, and show why the "$x$ is small" version is the wrong one.
 	- $(7/8)^{12}$: you cannot reduce $n$, so what is the only lever available? Describe the route that gets to two significant figures in three mental steps, and say what made each choice along the way a choice rather than an algorithm.
-	- METH1.6 — Why are $\ln 2$ and $\ln 10$ worth holding cold? Give the two specific uses named in the sitting.
+	- [[METH1.6]]: Why are $\ln 2$ and $\ln 10$ worth holding cold? Give the two specific uses named in the sitting.
 	- What does mental estimation give you that a calculator structurally cannot, and why is this not merely a claim about the calculator's finite precision?
 - ## Error cues
 	- You argued that the true value of $2^{-5/2}$ lies above $0.175$ and concluded $0.18$. What is missing?
