@@ -57,7 +57,17 @@ alias:: METH1.1
 		- The second-order term would be $-\frac{2}{11^3}$, which is smaller than $-\frac{1}{500} = -0.002$ (because $11^3 > 10^3$ in the denominator)
 		- $-0.002$ cannot affect the tenths and hundredths digits by conventional rounding (it is under the $\pm0.005$ threshold), so $11.18$ is good to 4sf.
 	- $(1-1/8)^{12}$ with the linearisation gives $-1/2$, which is impossible. Which assumption has failed? State the actual condition for the linearisation to be legitimate, and show why the "$x$ is small" version is the wrong one.
+		- $x=-\frac{1}{8}$ is reasonably small, but $nx=-\frac{3}{2}$ which definitely isn't!
+		- As the linear term in the binomial expansion is $nx$ we need $|nx|\ll1$ rather than just $|x|\ll1$
+		- Moreover, the second-order term is $\frac{1}{2}n(n-1)x^2$, so the ratio of the first with respect to the second-order terms is $\frac{1}{2}(n-1)x$. That means the second-order term will be _greater than_ the first whenever $|(n-1)x|>2$, breaking the negligible assumption on the $O(x^2)$ terms.
 	- $(7/8)^{12}$: you cannot reduce $n$, so what is the only lever available? Describe the route that gets to two significant figures in three mental steps, and say what made each choice along the way a choice rather than an algorithm.
+		- $\frac{7}{8}^{12} = (\frac{7}{8}^3)^4$
+		- $\frac{7}{8}^3 = \frac{343}{512} \approx \frac{2}{3}$; alternatively $\frac{2}{3}+\varepsilon$, for some small error $\varepsilon$
+			- Here $\varepsilon=\frac{5}{1024}\approx 0.005$
+		- So $\frac{7}{8}^{12} = (\frac{2}{3}(1+\varepsilon))^4 \approx \frac{2}{3}^4(1+4\varepsilon)$, provided $|4\varepsilon|\ll1$
+			- $|4\varepsilon|\approx 0.02\ll 1$
+			- So we have $\frac{16}{81}(1 + \frac{20}{1024})$
+		- $\frac{16}{81}\approx\frac{16}{80}=\frac{1}{5}$; noting $81=80(1+\frac{1}{80})$, so this approximation costs $(1+\frac{1}{80})^{-1}\approx 1- \frac{1}{80}$
 	- [[METH1.6]]: Why are $\ln 2$ and $\ln 10$ worth holding cold? Give the two specific uses named in the sitting.
 	- What does mental estimation give you that a calculator structurally cannot, and why is this not merely a claim about the calculator's finite precision?
 - ## Error cues
