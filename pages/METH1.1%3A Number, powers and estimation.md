@@ -59,7 +59,7 @@ alias:: METH1.1
 	- $(1-1/8)^{12}$ with the linearisation gives $-1/2$, which is impossible. Which assumption has failed? State the actual condition for the linearisation to be legitimate, and show why the "$x$ is small" version is the wrong one.
 		- $x=-\frac{1}{8}$ is reasonably small, but $nx=-\frac{3}{2}$ which definitely isn't!
 		- As the linear term in the binomial expansion is $nx$ we need $|nx|\ll1$ rather than just $|x|\ll1$
-		- Moreover, the second-order term is $\frac{1}{2}n(n-1)x^2$, so the ratio of the first with respect to the second-order terms is $\frac{1}{2}(n-1)x$. That means the second-order term will be _greater than_ the first whenever $|(n-1)x|>2$, breaking the negligible assumption on the $O(x^2)$ terms.
+		- Moreover, the second-order term is $\frac{1}{2}n(n-1)x^2$, so the ratio of the first with respect to the second-order terms is $\frac{1}{2}(n-1)x$. That means the second-order term will be _greater than_ the first whenever $|(n-1)x|>2$, breaking the negligiblity assumption on the $O(x^2)$ terms in this case.
 	- $(7/8)^{12}$: you cannot reduce $n$, so what is the only lever available? Describe the route that gets to two significant figures in three mental steps, and say what made each choice along the way a choice rather than an algorithm.
 		- $\frac{7}{8}^{12} = (\frac{7}{8}^3)^4$
 		- $\frac{7}{8}^3 = \frac{343}{512} \approx \frac{2}{3}$; alternatively $\frac{2}{3}+\varepsilon$, for some small error $\varepsilon$
@@ -67,16 +67,29 @@ alias:: METH1.1
 		- So $\frac{7}{8}^{12} = (\frac{2}{3}(1+\varepsilon))^4 \approx \frac{2}{3}^4(1+4\varepsilon)$, provided $|4\varepsilon|\ll1$
 			- $|4\varepsilon|\approx 0.02\ll 1$
 			- So we have $\frac{16}{81}(1 + \frac{20}{1024})$
-		- $\frac{16}{81}\approx\frac{16}{80}=\frac{1}{5}$; noting $81=80(1+\frac{1}{80})$, so this approximation costs $(1+\frac{1}{80})^{-1}\approx 1- \frac{1}{80}$
+			- $\frac{16}{81}\approx\frac{16}{80}=\frac{1}{5}$ and $\frac{20}{1024}\approx\frac{1}{50}$; as above, the errors can be bounded by the same method (left as an exercise for the reader) and, with the leading digit of 2 -- from $\frac{1}{5}$ -- it means we're good for at least 2sf.
+			- $\frac{1}{5} + \frac{1}{250} = 0.204$
+		- So $\frac{7}{8}^{12} = 0.20$ to 2sf...hardly in "three mental steps", but it _is_ doable by hand.
 	- [[METH1.6]]: Why are $\ln 2$ and $\ln 10$ worth holding cold? Give the two specific uses named in the sitting.
+		- Half life, in exponential decay, is $t_\frac{1}{2} = \frac{\ln 2}{\lambda}$, so the decay constant ($\lambda$) can be estimated in ones head.
+		- $\ln 10$ is useful for converting natural logs into decades, apparently.
 	- What does mental estimation give you that a calculator structurally cannot, and why is this not merely a claim about the calculator's finite precision?
+		- It allows the error to be bounded in a quantifiable way; calculators don't do that, they just churn out whatever precision they're specified to.
 - ## Error cues
 	- You argued that the true value of $2^{-5/2}$ lies above $0.175$ and concluded $0.18$. What is missing?
+		- My conclusion was based on my memory for the value of $\sqrt{2}$ being greater than 1.4 and the rounding convention therefore pushing 0.175 (on the rounding boundary) above to get 0.18 to 2sf.
+		- It's missing anything quantifiable that can bound the answer to 0.18.
 	- You bracketed $\sqrt{2}$ in $(1.4, 1.45)$ on the grounds that you recalled it to two significant figures. What is wrong with the provenance of that upper bound?
+		- I just plucked it out of my head from memory. I know it's somewhere in that interval, but squaring the upper bound would have given me assurances.
 	- You gave $\pm 0.005$ expressed as a fraction of $0.18$ as $1/200$, "regardless of the answer". Two errors there — name both.
+		- I simply expressed $\pm0.005$ as a fraction, ignoring it's relativity to 0.18
+		- "Regardless of the answer" implies that the answer's magnitude is irrelevant, whereas in fact it is not
 	- You wrote $\lim_{x\to 0}(1+x)^n = 1+nx$. Evaluate the left-hand side as written. What has gone wrong?
+		- I'm a dumbass 😅 I saw something that relied on a value being small and uncritically jumped to using limits without thinking about it. The LHS here (obviously) evaluates to 1, not $1+nx$; a limit is not the right tool in this form.
 	- Having proved the binomial approximation for $n \in \mathbb{N}$, you wrote "I assume it also holds in $\mathbb{Q}$". Why is that assumption not safe to wave through here in particular?
+		- The binomial theory is a finite sum that _requires_ $n\in\mathbb{N}$; one can't simply plug in $n=\frac{1}{2}$ and hope for the best.
 	- You claimed that because $\binom{1/2}{2}$ is undefined, there is no second-order term to compute. What is the error in that inference?
+		- Oh, I don't think that's strictly true! $\binom{1/2}{2}$ definitely is undefined -- assuming the binomial theorem doesn't generalise to the $Gamma$ function -- but I'm aware that an infinite series expansion exists, which I've forgotten how to dervice, but will probably have a second-order term.
 	- From $y(2+y) = x$ you derived $y = x/(2+y)$, then substituted $y \approx x/2$ and obtained $x^2 \approx 0$. Which equation did you substitute into, and why did it collapse?
 	- You reported $\sqrt{125} \approx 11.18$ as an answer to two significant figures. Count them.
 	- You justified four significant figures on the grounds that $11.18$ "is to $1/100$th". Why is that reasoning circular, and what is the non-circular version?
