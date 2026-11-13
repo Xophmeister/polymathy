@@ -107,6 +107,8 @@ alias:: METH1.1
 	- From $\left(\frac{7}{8}\right)^3 = \frac{2}{3}(1+x)$ you wrote $\left(\frac{7}{8}\right)^{12} = \frac{2}{3}(1+x)^4$. What did you fail to do to the $2/3$, and which quantity did you actually compute?
 		- I forgot to apply the exponent to the common factor that I pulled out, so I was off by a factor of $\frac{2}{3}^3$
 	- You approximated $81 \approx 80$ and arrived at $261/1280$, which needs long division. Where should the $80$ have been attached, and what does the division become?
+		- Looking back at the transcript, how I arrived at $\frac{261}{1280}$ looks a bit deranged. I cannot back-track my thought process to understand how I arrived there.
 	- Against the sceptic you argued that a calculator is "also just estimating" because of floating-point representation. Give the sceptic's one-line reply, and say why an argument of this shape is a bad one to lead with.
+		- A calculator typically computes to many significant figures (12 or more), which is many trillions times more precise than 2 or 3sf. The important point is rather that the calculator does not show its error bounds, which are quantifiable and can be used to justify how many significant figures are actually needed.
 - ## Summary
 	- A colleague says: "Estimation is just being sloppy with a reason. If I want the answer I use a calculator; if I don't have one, I get an approximate answer and I know it's approximate. Dressing it up with discarded terms and relative precision doesn't change that I've got a worse answer than the machine would have given me." Answer them — and make the case you missed on the day.
