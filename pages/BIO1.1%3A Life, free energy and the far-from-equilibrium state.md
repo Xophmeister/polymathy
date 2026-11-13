@@ -1,3 +1,64 @@
 course-code:: BIO1.1
 tags:: notes, BIO1
 alias:: BIO1.1
+
+- ## Cue sheet
+	- METH1.1: A pool loses 1% of what remains each second. Estimate the fraction left after 100 s with the binomial approximation. Are you entitled to the estimate? Give two independent reasons.
+	- A granite pebble and a living bacterium are sealed in a sterile, dark box at room temperature for a year, with only heat exchanged with the room. What state is each in at the end, and why do the outcomes differ?
+	- The sealed box receives energy from the room all year. Why is that no use to the bacterium?
+	- A mill pond holds a great deal of water but cannot turn a wheel. What does it need in order to do so, and what happens to that as the wheel runs?
+	- What does heat require before any work can be got out of it?
+	- PHYS1.11: At a given temperature and number density, what part does the mass of a gas's molecules play in the pressure it exerts, and why?
+	- Where does a living organism get the "difference in level" it runs on? What is on each side of it?
+	- What is the difference between energy and free energy? Illustrate it with the contents of the sealed box at the start and end of the year.
+	- What is a microstate, what is a macrostate, and what exactly does entropy count?
+	- Why, in terms of counting, is a bacterium cut off from supply overwhelmingly likely to end up dead?
+	- A crystal lattice is about as regular an arrangement as matter takes, yet a pebble persists unchanged. How does the counting picture account for that, and what does it imply about entropy and "order"?
+	- When atoms bond into a lattice, where does the energy released go, and what does it do to the microstate count there?
+	- Count the ways to share 1, 2 and 3 identical energy packets among three molecules. By what factor does each additional packet multiply the count, and how does that factor behave as packets accumulate?
+	- Why does granite stay solid at room temperature but melt at 1500 °C? What fixes the temperature at which the outcome swaps, and what part do the bonds play in it?
+	- Two blocks at different temperatures are in contact. Why does heat flow from the hotter to the colder, in terms of microstate counts?
+	- What is the relationship between a system's free energy and the microstate count of the whole world?
+	- Why does keeping an organism in a rare macrostate cost free energy continuously rather than once?
+	- Sodium ions leak into a cell and are pumped back out. Which of these processes raises the world's count? What must the pump be linked to, and why can it never stop?
+	- A frictionless mill lifts water using water falling the same height in the same quantity. Which way does it run, and how fast? What follows for any coupled process that actually runs?
+	- What is the trade-off between the efficiency of a coupling and the rate at which it runs?
+	- A person at rest burns food at about 90 W while doing no external work. Where does all of that energy end up? Why must the answer be the same whatever jobs it paid for along the way?
+	- If a resting body's whole energy intake leaves it as heat, in what sense was work done inside it, and what was actually used up?
+	- BIO1.16: Is warmth necessary to life? Why do mammals and birds keep warm, and where does the heat come from?
+	- What distinguishes an open, a closed and an isolated system? Which was the sealed box?
+	- What is the claim "an organism is an open system" actually making? Why is a candle flame not a counterexample to life needing more than that?
+	- A person rests in still air at 40 °C, with body at 37 °C, metabolism at about 90 W and no sweating. At steady state, how much heat must leave each second? Which way does heat conduct, and why? Why can't the body stop producing heat? Taking mass 70 kg and specific heat $3.5\ \text{kJ kg}^{-1}\,\text{K}^{-1}$, how fast does body temperature rise if no heat leaves? Is the person in danger, and how soon?
+	- BIO1.6: Why does a rise of only a few degrees in core temperature become dangerous?
+- ## Error cues
+	- It's often said that an organism needs energy to stay alive, and that's why one sealed in a box eventually dies. What's wrong with that?
+	- It's sometimes argued that a bacterium sealed in a sterile box dies because it runs out of the raw materials it needs to repair itself. What's wrong with that?
+	- "Heat cannot do work because it has no mass, and so has no momentum to transfer." What's wrong with that?
+	- "Heat can't be turned into useful work without some medium to convey it." What's wrong with that, given what fills a sealed box at room temperature?
+	- "Steam pushes a piston against the air on the other side because steam molecules are more massive than air molecules; heat the air to the same temperature and the steam still wins." What's wrong with that?
+	- "A crystal stays a crystal at room temperature simply because its bonds hold it together and the available energy is below the threshold to break them; a cell drifts because it isn't held that way." What's wrong with that as an account of which arrangement wins?
+	- "Entropy isn't only about microstates and probability; it also has to take account of the free energy in the system." What's wrong with that?
+	- "Entropy is the number of microstates in a system." What's missing?
+	- "Two identical packets of energy can be shared among three molecules in nine ways." What's wrong with that?
+	- "The number of ways to share $n$ identical energy packets among three molecules grows sublinearly with $n$." What's wrong with that, and what quantity actually falls as packets accumulate?
+	- "Granite melts at 1500 °C because, as temperature rises, more states become available to it." What's wrong with that as an explanation?
+	- "Heat flows from hot to cold because the hot body's jostling atoms are more likely to affect the cold body than the other way round." What's wrong with that?
+	- "Death is likely because the free-energy multiplier of the dead macrostate is large." What's wrong with that?
+	- "An organism stays alive by using the free energy in its food to increase the number of microstates available on the alive side, making alive more probable than dead." What's wrong with that?
+	- "A cell's sodium pump raises the world's microstate count, because energy is spent pumping against the concentration gradient to which the pump is coupled." What's wrong with that?
+	- A mill's wheel is driven by water falling from a pond and works a pump lifting other water into a tank with a hole in it. "In the analogy with a cell's ion pump, gravity plays the part of the ion leak." What's wrong with that?
+	- "When falling water drives a mill, its loss of free energy raises the count with a decreasing multiplier, and the lifted water lowers it with an increasing multiplier; those two facts settle which way the mill runs." What's wrong with that?
+	- "Even with no friction, a mill must use more falling water than the water it lifts, because energy has to go into the wheel's mass." What's wrong with that?
+	- "A coupled process only wastes free energy as heat because of friction; without friction a coupling could be 100% efficient and still run." What's wrong with that?
+	- "Converting free energy into heat always requires work to be done." What's wrong with that?
+	- "A resting person's metabolic energy ends up in the processes that need it: protein synthesis, the heartbeat and so on." What's wrong with that as an account of where it ends up?
+	- "Some of the food energy a resting person burns leaves as heat; the rest leaves in solid waste." What's wrong with that?
+	- "If all the energy a resting body takes in leaves it as heat, then the work done inside the body must have cost nothing." What's wrong with that?
+	- "A cell can't run on heat from surroundings at its own temperature, and making the surroundings hotter than the cell wouldn't help, because equilibrium would be reached." What's wrong with the second half?
+	- "When warmer air heats a cooler body, no free energy is flowing, so the world's microstate count is unaffected." What's wrong with that?
+	- A person at rest, metabolising at about 90 W with no sweating, lies in still air at 40 °C with a body temperature of 37 °C. "They warm at about 1.3 K per hour until they reach 40 °C, and there they stay." What's wrong with that?
+	- "An open system is one with free energy flowing in and heat flowing out, and that is what being alive amounts to." What's wrong with that?
+	- "Once a plant has sprouted, it draws its free energy from the soil." What's wrong with that?
+	- "An oak has no lower entropy than the scattered materials it was built from, since everything it does turns free energy into heat." What's wrong with that?
+- ## Summary
+	- Explain to a sceptic, without the word "order": "Life builds orderly structures out of disorder – a seed becomes an oak, an egg becomes a chicken – so living things either break the second law or show that entropy can decrease by itself."
