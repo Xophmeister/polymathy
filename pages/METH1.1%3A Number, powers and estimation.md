@@ -70,6 +70,7 @@ alias:: METH1.1
 			- $\frac{16}{81}\approx\frac{16}{80}=\frac{1}{5}$ and $\frac{20}{1024}\approx\frac{1}{50}$; as above, the errors can be bounded by the same method (left as an exercise for the reader) and, with the leading digit of 2 -- from $\frac{1}{5}$ -- it means we're good for at least 2sf.
 			- $\frac{1}{5} + \frac{1}{250} = 0.204$
 		- So $\frac{7}{8}^{12} = 0.20$ to 2sf...hardly in "three mental steps", but it _is_ doable by hand.
+		- (A not-completely-unreasonable alternative could be to calculate $7^{12}$ then halve it 36 times.)
 	- [[METH1.6]]: Why are $\ln 2$ and $\ln 10$ worth holding cold? Give the two specific uses named in the sitting.
 		- Half life, in exponential decay, is $t_\frac{1}{2} = \frac{\ln 2}{\lambda}$, so the decay constant ($\lambda$) can be estimated in ones head.
 		- $\ln 10$ is useful for converting natural logs into decades, apparently.
@@ -83,21 +84,28 @@ alias:: METH1.1
 		- I just plucked it out of my head from memory. I know it's somewhere in that interval, but squaring the upper bound would have given me assurances.
 	- You gave $\pm 0.005$ expressed as a fraction of $0.18$ as $1/200$, "regardless of the answer". Two errors there — name both.
 		- I simply expressed $\pm0.005$ as a fraction, ignoring it's relativity to 0.18
-		- "Regardless of the answer" implies that the answer's magnitude is irrelevant, whereas in fact it is not
+		- "Regardless of the answer" implies that the answer's magnitude is irrelevant, whereas in fact it is not.
 	- You wrote $\lim_{x\to 0}(1+x)^n = 1+nx$. Evaluate the left-hand side as written. What has gone wrong?
-		- I'm a dumbass 😅 I saw something that relied on a value being small and uncritically jumped to using limits without thinking about it. The LHS here (obviously) evaluates to 1, not $1+nx$; a limit is not the right tool in this form.
+		- I'm a dumbass 😅 I saw something that relied on a value being small/getting smaller and uncritically jumped to using limits without thinking about it. The LHS here (obviously) evaluates to 1, not $1+nx$; a limit is not the right tool in this form.
 	- Having proved the binomial approximation for $n \in \mathbb{N}$, you wrote "I assume it also holds in $\mathbb{Q}$". Why is that assumption not safe to wave through here in particular?
 		- The binomial theory is a finite sum that _requires_ $n\in\mathbb{N}$; one can't simply plug in $n=\frac{1}{2}$ and hope for the best.
 	- You claimed that because $\binom{1/2}{2}$ is undefined, there is no second-order term to compute. What is the error in that inference?
-		- Oh, I don't think that's strictly true! $\binom{1/2}{2}$ definitely is undefined -- assuming the binomial theorem doesn't generalise to the $Gamma$ function -- but I'm aware that an infinite series expansion exists, which I've forgotten how to dervice, but will probably have a second-order term.
+		- I think that's a little bit of an unfair interpretation! $\binom{1/2}{2}$ definitely _is_ undefined, but I'm aware that an infinite series polynomial expansion exists -- which I've forgotten how to derive -- and that will have a second-order term. I'm not of the belief that, because the binomial theorem can't apply in this situation, all bets are off!
 	- From $y(2+y) = x$ you derived $y = x/(2+y)$, then substituted $y \approx x/2$ and obtained $x^2 \approx 0$. Which equation did you substitute into, and why did it collapse?
+		- I substituted into itself, which is not cool and everything just collapsed... Sleep deprivation is a scary thing!
 	- You reported $\sqrt{125} \approx 11.18$ as an answer to two significant figures. Count them.
+		- That was a brainfart on my account. There are clearly 4sf there -- albeit completely unqualified -- the same as the number of "r"s in "strawberry" 😅
 	- You justified four significant figures on the grounds that $11.18$ "is to $1/100$th". Why is that reasoning circular, and what is the non-circular version?
 	- You gave $(1+x)^{-1/2} \approx 1 + x/2$, having used $n = -1$ correctly a few minutes earlier. What is the answer, and what class of error is this?
+		- It should be $1-\frac{x}{2}$, an instance of the mathematician's staple sign error.
 	- You wrote $0.5 \times 10^{-3}$ as "$0.0005\%$". Convert it properly. Where else in the sitting did the same conversion go wrong?
+		- It should be 0.05%. A clumsy error on my part, but -- despite it happening twice -- not indicative of a wider misunderstanding.
 	- You gave the ratio of the second-order term to the first as $2/((n-1)x)$. Derive it and compare.
+		- See my answer above. In my first derivation, I took the reciprocal accidentally. Besides everything we've re-learnt in this session, one very clear lesson is that my algebraic manipulation skills attenuate with fatigue _much_ more than they used to. Sign errors and off-by-one order of magnitude slip-ups are normal human mistakes that happen all the time, but I need to pay closer attention to this now.
 	- You wrote $(1 - 1/4)^2 = 1/2 + 9/16$. What is it, and what went wrong in the expansion?
+		- I don't remember this, so I looked through the transcript and found the error. I cannot fathom what went wrong, but it clearly is very wrong! This simply expands to $1 - \frac{1}{2} + \frac{1}{16} = \frac{9}{16}$.
 	- From $\left(\frac{7}{8}\right)^3 = \frac{2}{3}(1+x)$ you wrote $\left(\frac{7}{8}\right)^{12} = \frac{2}{3}(1+x)^4$. What did you fail to do to the $2/3$, and which quantity did you actually compute?
+		- I forgot to apply the exponent to the common factor that I pulled out, so I was off by a factor of $\frac{2}{3}^3$
 	- You approximated $81 \approx 80$ and arrived at $261/1280$, which needs long division. Where should the $80$ have been attached, and what does the division become?
 	- Against the sceptic you argued that a calculator is "also just estimating" because of floating-point representation. Give the sceptic's one-line reply, and say why an argument of this shape is a bad one to lead with.
 - ## Summary
