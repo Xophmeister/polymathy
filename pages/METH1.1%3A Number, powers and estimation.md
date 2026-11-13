@@ -3,13 +3,13 @@ tags:: notes, METH1
 alias:: METH1.1
 
 - ## Approximations to commit to memory
-	- | Value | Approximation (3sf) | Relative error |
+	- | Value | Approximation (3sf) | Relative error (directional) |
 	  | - | - | - |
-	  | $\huge\sqrt{2}$ | $\huge 1.41$ | 0.3% |
-	  | $\huge\sqrt{3}$ | $\huge 1.73$ | 0.1% |
-	  | $\huge\ln 2$ | $\huge 0.69$ | 0.5% |
-	  | $\huge\ln 10$ | $\huge 2.30$ | 0.1% |
-	  | $\huge e$ | $\huge 2.72$ | 0.1% |
+	  | $\huge\sqrt{2}$ | $\huge 1.41$ | -0.3% |
+	  | $\huge\sqrt{3}$ | $\huge 1.73$ | -0.1% |
+	  | $\huge\ln 2$ | $\huge 0.693$ | -0.02% |
+	  | $\huge\ln 10$ | $\huge 2.30$ | -0.1% |
+	  | $\huge e$ | $\huge 2.72$ | +0.1% |
 - ## Cue sheet
 	- Why does rationalising a denominator help when estimating $1/(4\sqrt{2})$ mentally? What does the operation actually relocate, and why does that matter?
 		- $\sqrt{2}$ in the denominator means attempting to divide by 1.41 when approximating. That's not impossible, but will almost certainly require long division, for which the bookkeeping is difficult to maintain in ones head.
@@ -17,25 +17,33 @@ alias:: METH1.1
 		- In this case, rationalising the denominator gives $\sqrt{2}/8$, which is particularly simple because $8=2^3$, so we just need to halve three times.
 	- You need to know whether $\sqrt{2} < 1.45$. What is the cheapest check, and why is it preferable to appealing to how precisely you remember $\sqrt{2}$?
 		- Square the RHS: $1.45^2 = 2.1025 > 2$, so we have a cheap upper bound for $\sqrt{2}$
+		- Similarly, $1.41^2 = 1.9881 < 2$ to validate our lower bound
+		- Squaring here is preferable than relying on memory because it gives a genuine arithmetic result, rather than a fact about ones recollection
 		- If you can bound your approximation, say in $(a,b)$, then the relative error from the midpoint of the interval can be quantified as $\pm\frac{b-a}{b+a}$.
 		- So for an approximation in $(1.41,1.45)$, the relative error is at most $\pm1.4\%$
 	- Three halvings were applied to an approximate $\sqrt{2}$. What happened to the absolute error, and what happened to the relative error? Which of the two is the right currency to track, and why?
-		- The absolute error changes as a function of the halvings; the relative error is invariant under scaling.
-		- You want to track the relative error because that's where it shows up in the output. If you need a specific precision, you know immediately what the input's precision must be.
+		- The absolute error changes as a function of the halvings; specifically halving with it. The relative error is invariant under _exact_ scaling.
+			- Note: Scaling by an approximate factor will incur relative error of its own.
+		- You want to track the relative error because that's where its reflected in the output. If you need a specific precision, you know immediately what the input's precision must be.
 	- An answer of $0.11$ and an answer of $0.98$ both carry an absolute tolerance of $\pm 0.005$ at two significant figures. Why do they not carry the same relative tolerance?
-		- "Significant figures" is an artefact of decimalisation, rather than ratios. $\pm0.005$ has a relative tolerance of nearly 5% when the answer is 0.11, but just $0.5%$ for 0.98.
-		- So 2sf in the input earns between 0.5% to 5% relative error in the output _just_ by virtue of where the answer falls in the fractional part.
+		- "Significant figures" is an artefact of decimalisation, rather than ratios. $\pm0.005$ has a relative tolerance of nearly 5% when the answer is 0.11, but just $0.5\%$ for 0.98.
+		- So 2sf in the input earns between 5% to 0.5% relative error in the output _just_ by virtue of the leading digit in the decade.
+			- Note: A "decade" is the interval between two consecutive powers of ten: $[10^k,10^{k+1})$
 	- What relative precision must an input carry to secure $n$ significant figures in the output *whatever* the output turns out to be? Why the worst case rather than the typical one?
 		- $n$ sf costs approximately $0.5\times 10^{-n}$ relative precision in the worst case.
-		- If the fraction part cannot be estimated through other means, you cannot tell where it will fall within it, so the worst case is a guarantee of output precision.
+		- If the leading digit in the decade cannot be estimated through other means, you cannot tell where it will fall within it, so the worst case is a guarantee of output precision.
 	- Given that worst-case figure, why is $\sqrt{2} \approx 1.4$ nevertheless often enough? What is the cheaper, adaptive discipline, and what does it require you to do first?
+	  background-color:: yellow
 		- This is about 0.2% off, which is less than the 0.5% minimum, so buys us 2sf of output.
 		- If we have foreknowledge of where the fractional part lies, we can take shortcuts when trying to estimate (e.g., terminating an iterative process early when we have enough precision).
 	- Estimating $5^{3/2}$: the tidy form is $5\sqrt{5}$. Why is the untidy form $\sqrt{125}$ the more useful one?
-		- 125 is very close to $121 = 11^2$.
+		- Observe that 125 is very close to $121 = 11^2$.
+		- Therefore we can rewrite this in the form $\sqrt{125(1+x)} = 11(1+ x)^\frac{1}{2}$, which gets us to binomial approximation territory (see below).
 	- Derive $(1+x)^n \approx 1 + nx$ for $n \in \mathbb{N}$. What makes the discarded part negligible?
-		- By the binomial theorem: $(1+x)^n = \sum_{k=0}^{n} \binom{n}{k}x^k = 1 + nx + n(n-1)x^2 + \ldots$
-		- When $|x|<1$, the higher polynomial terms will reduce to 0 faster than the linear term, so we can ignore them.
+		- By the binomial theorem: $(1+x)^n = \sum_{k=0}^{n} \binom{n}{k}x^k = 1 + nx + \frac{1}{2}n(n-1)x^2 + \ldots$
+		- When $|x|<1$, the higher polynomial terms will reduce to 0 faster than the linear term; simultaneously, we have $n\in\mathbb{N}$ which grows in each term.
+		-
+		- so we can ignore them, providing of course a large $n$ doesn't compromise this. Therefore, the provision for this approximation to hold is $|nx|\ll 1$.
 	- "$\lim_{x \to 0}(1+x)^n = 1 + nx$." Why is this not the statement you want, and what is?
 		- The limit on the LHS is $(1 + 0)^n = 1 \ne 1 + nx$.
 		- Rather we have an "error term", of order 2: $(1+x)^n = 1 + nx + O(x^2)$
@@ -107,8 +115,10 @@ alias:: METH1.1
 	- From $\left(\frac{7}{8}\right)^3 = \frac{2}{3}(1+x)$ you wrote $\left(\frac{7}{8}\right)^{12} = \frac{2}{3}(1+x)^4$. What did you fail to do to the $2/3$, and which quantity did you actually compute?
 		- I forgot to apply the exponent to the common factor that I pulled out, so I was off by a factor of $\frac{2}{3}^3$
 	- You approximated $81 \approx 80$ and arrived at $261/1280$, which needs long division. Where should the $80$ have been attached, and what does the division become?
-		- Looking back at the transcript, how I arrived at $\frac{261}{1280}$ looks a bit deranged. I cannot back-track my thought process to understand how I arrived there.
+		- Looking back at the transcript, how I arrived at $\frac{261}{1280}$ looks a bit deranged. I cannot back-track my thought process to understand how I arrived there. That is, it's more than a simple arithmetic error; it's probably yet another instance of compromised attention.
 	- Against the sceptic you argued that a calculator is "also just estimating" because of floating-point representation. Give the sceptic's one-line reply, and say why an argument of this shape is a bad one to lead with.
 		- A calculator typically computes to many significant figures (12 or more), which is many trillions times more precise than 2 or 3sf. The important point is rather that the calculator does not show its error bounds, which are quantifiable and can be used to justify how many significant figures are actually needed.
 - ## Summary
 	- A colleague says: "Estimation is just being sloppy with a reason. If I want the answer I use a calculator; if I don't have one, I get an approximate answer and I know it's approximate. Dressing it up with discarded terms and relative precision doesn't change that I've got a worse answer than the machine would have given me." Answer them — and make the case you missed on the day.
+		- These estimation techniques do more than let you arrive at an answer without needing technological assistance. They allow you to arrive at an answer with confidence in how accurate is it -- and how accurate it needs to be -- by virtue of quantifying the error.
+		- A calculator will give you the answer to the question you gave it, including if you fat-fingered a keypress, using the wrong expression, etc. That is: Garbage in, garbage out, with no signal that there could be a mistake.
