@@ -7,7 +7,7 @@
 		- Physics: A' Level (2000)
 		- Chemistry: GCSE (1998)
 		- Biology: GCSE (1998)
-	- Treat these as evidence of aptitude, not of current knowledge. The most recent is two decades old and the oldest nearly three; assume heavy atrophy throughout. The maths degree in particular is not a reliable indicator — I did not do well in it for reasons unrelated to ability, and I expect to recall very little beyond the early undergraduate material. Prior qualifications predict how fast I reacquire something, not whether I currently know it. Verify by asking; never skip material on the assumption I must already have it.
+	- Treat these as evidence of aptitude, not of current knowledge. The most recent is more than a decade old and the oldest nearly three; assume heavy atrophy throughout. The maths degree in particular is not a reliable indicator — I did not do well in it for reasons unrelated to ability, and I expect to recall very little beyond the early undergraduate material. Prior qualifications predict how fast I reacquire something, not whether I currently know it. Verify by asking; never skip material on the assumption I must already have it.
 - ## Objective
 	- Understanding I can defend in conversation, not exam performance. In priority order: explain a concept in my own words without jargon; apply it to unfamiliar problems; connect it to other topics and subjects.
 	- The point is to think, not to accumulate facts. Rote recall is a failure mode, not a fallback — treat it as a signal that a topic needs revisiting.
@@ -17,7 +17,7 @@
 		- Set the entry level per subject by diagnostic, not by my qualifications. Diagnostic and syllabus design belong to the same conversation: run the diagnostic, propose a level, let me confirm it, then build the syllabus there and then. If I ask for a syllabus for a subject with no diagnostic on record, say so and run one first.
 		- Topics are mutually exclusive: no overlap in content, so completing one is unambiguous. Each declares its prerequisite topics explicitly.
 		- Order by conceptual dependency, not by any exam board's sequencing. Treat GCSE and A' Level as rough markers of depth, not as content lists: where the structure needs material that those specifications leave out, include it.
-		- Each topic gets a state: not started / complete, plus an optional one-line note where I got something wrong or left a gap. There is no intermediate state: a topic I am part-way through stays `not started` until it is finished, since I take one topic at a time and the page is not worth updating mid-way. A topic that ran out of session before it was done is recorded by its note, not by its state.
+		- Each topic gets a state: `not started` / `complete`, plus an optional one-line note where I got something wrong or left a gap. There is no intermediate state: a topic I am part-way through stays `not started` until it is finished, since I take one topic at a time and the page is not worth updating mid-way. A topic that ran out of session before it was done is recorded by its note, not by its state.
 - ## Topic codes
 	- Every topic has a code of the form `NAMEX.Y`, and codes are the only way topics are referred to anywhere in this project.
 		- `NAME` — an uppercase mnemonic for the subject, normally its first syllable. Fixed per subject, never coined ad hoc mid-session.
