@@ -33,11 +33,8 @@ alias:: METH1.1
 		- $n$ sf costs approximately $0.5\times 10^{-n}$ relative precision in the worst case.
 		- If the leading digit in the decade cannot be estimated through other means, you cannot tell where it will fall within it, so the worst case is a guarantee of output precision.
 	- Given that worst-case figure, why is $\sqrt{2} \approx 1.4$ nevertheless often enough? What is the cheaper, adaptive discipline, and what does it require you to do first?
-	  background-color:: red
-		- This is about 0.2% off, which is less than the 0.5% minimum, so buys us 2sf of output.
-		  background-color:: red
-		- If we have foreknowledge of where the fractional part lies, we can take shortcuts when trying to estimate (e.g., terminating an iterative process early when we have enough precision).
-		  background-color:: red
+		- 1.4 has a relative error of about 1%. It's leading digit in the decade is 1, which has a tolerance of 5% to 2sf.
+		- As we have foreknowledge of this, we can take shortcuts when trying to estimate (e.g., terminating an iterative process early when we have enough precision).
 	- Estimating $5^{3/2}$: the tidy form is $5\sqrt{5}$. Why is the untidy form $\sqrt{125}$ the more useful one?
 		- Observe that 125 is very close to $121 = 11^2$.
 		- Therefore we can rewrite this in the form $\sqrt{125(1+x)} = 11(1+ x)^\frac{1}{2}$, which gets us to binomial approximation territory (see below).
@@ -56,9 +53,9 @@ alias:: METH1.1
 		- This now trivially extends to $\mathbb{Q}$
 			- $(1+x)^\frac{p}{q}=\left((1+x)^\frac{1}{q}\right)^p \approx (1+\frac{x}{q})^p \approx 1 + \frac{px}{q}$
 	- That derivation and the rationalising of the denominator are instances of the same tactic. What is it?
-	  background-color:: red
-		- Hand-wavy: You effectively "undo" the awkwardness -- the messy exponent, in both these cases -- to get it into a form that can be manipulated.
-		  background-color:: red
+		- Algebraic manipulation of reciprocal exponents -- i.e., roots -- is limited.
+		- The derivation above uses a substitution to remove the root, using its inverse, in such a way that we can derive a closed form that can be substituted back in to remove the original root.
+		- Rationalising the denominator is not dissimilar, in the sense that one uses a particular representation of 1 (identity under multiplication), that inverts the root in the denominator at the expense of the numerator.
 	- You want the second-order term of $(1+x)^{1/2}$, but $\binom{n}{k} = n!/(k!(n-k)!)$ is undefined at $n = 1/2$. Get it anyway, using only the exact expansion of $(1+y)^2$.
 		- Let $1+x = (1+y)^2 = 1+2y+y^2$; that gives $y=\frac{x}{2}-\frac{y^2}{2}$
 		- So $(1+x)^\frac{1}{2} = 1 + y = 1 + \frac{x}{2} - \frac{y^2}{2}$
@@ -110,12 +107,22 @@ alias:: METH1.1
 		- It allows the error to be bounded in a quantifiable way; calculators don't do that, they just churn out whatever precision they're specified to. Moreover, calculators don't know where their input came from, so the provenance of any error and the ability to track it is completely lost.
 - ## Error cues
 	- A calculation gives exactly $0.175$ using $\sqrt2 \approx 1.4$. Since $\sqrt2$ is a little more than $1.4$, the true value lies above $0.175$, and so it rounds to $0.18$ at two significant figures. What's wrong with this argument?
+		- Rounding up at the $0.5\times 10^{-n}$ boundary is a convention. It worked here, but it's not a technique to rely upon.
+		- Asserting that "[it]'s a little more than 1.4" and carrying that through to the output is imprecise and more about ones memory than the actual numeric value.
 	- "I know $\sqrt2$ to two significant figures as $1.4$, so it must lie below $1.45$." Is that a sound basis for an upper bound? What's wrong with it?
+		- It's as sound as ones memory, which is notoriously unsound!
 	- It's often said that two significant figures always mean a relative tolerance of 1 part in 200 – half a unit in the second place – whatever the number happens to be. What's wrong with that?
+		- $\pm0.005$ only gives the relative tolerance for 2sf for numbers whose absolute value is less than 1.
+		- For example, 120 is to 2sf, but its relative tolerance is $\pm5$.
 	- The binomial approximation is written "$\lim_{x\to0}(1+x)^n = 1 + nx$". What's wrong with that statement?
+		- This is an invalid use of limits; the limit on the LHS is equal to 1, which is not the same as the RHS.
 	- "$(1+x)^n \approx 1 + nx$ follows from the binomial theorem for natural $n$, so it holds for rational $n$ by the same argument." What's wrong with that?
+		- It doesn't hold by the same argument, because you cannot plug arbitrary rational numbers into the binomial theorem; it's only valid for $n\in\mathbb{N}$.
+		- It can be shown to hold for $\mathbb{Q}$, but using a different argument (see above).
 	- "The second-order coefficient of $(1+x)^{1/2}$ can't be computed, because $\binom{n}{k} = n!/(k!(n-k)!)$ is undefined at $n = \tfrac12$." What's wrong with that inference?
+		- The inability to use the binomial expansion on rational exponents -- because the binomial coefficients, amongst other things, are undefined in that case -- does not imply that there is no (infinite) polynomial expansion whatsoever. It's just the wrong tool for the job.
 	- To find the second-order term of $(1+x)^{1/2} = 1 + y$, someone squares to get $y(2+y) = x$, rearranges to $y = x/(2+y)$, and then substitutes $y \approx x/2$ into $y(2+y) = x$. This gives $2x + x^2 \approx 2x$, hence $x^2 \approx 0$, and they conclude that the second-order correction vanishes. What's wrong?
+		- It's a circular argument: by substituting the substitute back into itself, the expression collapses into meaninglessness.
 	- A linear approximation gives $\sqrt{125} \approx 11.18$. Since that is stated to the hundredths place, it is good to four significant figures. What's wrong with that reasoning?
 	- "Since $(1+x)^{1/2} \approx 1 + x/2$, the same holds for $(1+x)^{-1/2}$: the sign of the exponent only affects the higher-order terms." What's wrong with that?
 	- "A relative precision of $0.5 \times 10^{-3}$ is $0.0005\%$." What's wrong with that?
