@@ -42,7 +42,7 @@ alias:: METH1.1
 		- By the binomial theorem: $(1+x)^n = \sum_{k=0}^{n} \binom{n}{k}x^k = 1 + nx + \frac{1}{2}n(n-1)x^2 + \ldots$
 		- When $|x|<1$, the higher polynomial terms will reduce to 0 faster than the linear term; simultaneously, we have $n\in\mathbb{N}$ counteracting that.
 		- For the second-order term to be negligible -- so we can discard it and the higher-order terms -- we need $|\frac{1}{2}n(n-1)x^2|\ll |nx|$. That is, $|\frac{1}{2}(n-1)x|\ll 1$
-		- As a "rule of thumb", this is often approximated as just $|nx|\ll 1$. (See below for a demonstration of $|x|<1$ is not enough.)
+		- As a "rule of thumb", this is often approximated as just $|nx|\ll 1$. (See below for a demonstration of $|x|<1$ not being enough.)
 	- "$\lim_{x \to 0}(1+x)^n = 1 + nx$." Why is this not the statement you want, and what is?
 		- The limit on the LHS is $(1 + 0)^n = 1 \ne 1 + nx$.
 		- Rather we have an "error term", of order 2: $(1+x)^n = 1 + nx + O(x^2)$
@@ -124,80 +124,19 @@ alias:: METH1.1
 	- To find the second-order term of $(1+x)^{1/2} = 1 + y$, someone squares to get $y(2+y) = x$, rearranges to $y = x/(2+y)$, and then substitutes $y \approx x/2$ into $y(2+y) = x$. This gives $2x + x^2 \approx 2x$, hence $x^2 \approx 0$, and they conclude that the second-order correction vanishes. What's wrong?
 		- It's a circular argument: by substituting the substitute back into itself, the expression collapses into meaninglessness.
 	- A linear approximation gives $\sqrt{125} \approx 11.18$. Since that is stated to the hundredths place, it is good to four significant figures. What's wrong with that reasoning?
+		- It puts too much trust in the source, which may be erroneous. It's effectively the logical fallacy of appealing to authority.
 	- "Since $(1+x)^{1/2} \approx 1 + x/2$, the same holds for $(1+x)^{-1/2}$: the sign of the exponent only affects the higher-order terms." What's wrong with that?
+		- The sign of the exponent matters for all terms; it can't just be brushed away. We derived above the approximation for arbitrary exponents in $\mathbb{Q}$, so $(1+x)^{-\frac{1}{2}}\approx 1 - \frac{x}{2}$.
 	- "A relative precision of $0.5 \times 10^{-3}$ is $0.0005\%$." What's wrong with that?
+		- It's off by two orders of magnitude; $0.5\times 10^{-3}$ is 0.05%.
 	- "In $(1+x)^n = 1 + nx + \ldots$, the ratio of the second-order term to the first-order term is $2/((n-1)x)$, so the second-order term is negligible when $(n-1)x$ is large." What's wrong with that?
+		- The first-order term is $nx$, the second-order term is $\frac{1}{2}n(n-1)x^2$, so the ratio is actually $\frac{1}{2}(n-1)x$. That is, the reciprocal of what's given.
 	- "$(1+x)^n \approx 1 + nx$ is valid whenever $|x|$ is small. With $x = -\tfrac18$, which is small, it gives $(7/8)^{12} \approx -\tfrac12$. So the approximation must fail for negative $x$." What's wrong with that?
+		- The approximation doesn't fail when $x$ is negative; it failed when $|nx|$ isn't small. Here $|nx|=1.5$ which is not in the least bit small.
 	- "$(7/8)^3 = \tfrac23(1+x)$ with $x$ small, therefore $(7/8)^{12} = \tfrac23(1+x)^4$." What's wrong with that?
+		- The common factor of $\frac{2}{3}$ that has been pulled out has not been raised to the fourth power. It should be $\frac{7}{8}^{12}=\
 	- "Mental estimation is no worse than using a calculator, because a calculator is only estimating too: floating-point arithmetic can't represent most numbers exactly." What's wrong with that as a defence of estimation?
-	- ### Broken error cues (to assimilate into the above)
-	  background-color:: red
-		- You argued that the true value of $2^{-5/2}$ lies above $0.175$ and concluded $0.18$. What is missing?
-		  background-color:: red
-			- My conclusion was based on my memory for the value of $\sqrt{2}$ being greater than 1.4 and the rounding convention therefore pushing 0.175 (on the rounding boundary) above to get 0.18 to 2sf.
-			  background-color:: red
-			- It's missing anything quantifiable that can bound the answer to 0.18.
-			  background-color:: red
-		- You bracketed $\sqrt{2}$ in $(1.4, 1.45)$ on the grounds that you recalled it to two significant figures. What is wrong with the provenance of that upper bound?
-		  background-color:: red
-			- I just plucked it out of my head from memory. I know it's somewhere in that interval, but squaring the upper bound would have given me assurances.
-			  background-color:: red
-		- You gave $\pm 0.005$ expressed as a fraction of $0.18$ as $1/200$, "regardless of the answer". Two errors there — name both.
-		  background-color:: red
-			- I simply expressed $\pm0.005$ as a fraction, ignoring it's relativity to 0.18
-			  background-color:: red
-			- "Regardless of the answer" implies that the answer's magnitude is irrelevant, whereas in fact it is not.
-			  background-color:: red
-		- You wrote $\lim_{x\to 0}(1+x)^n = 1+nx$. Evaluate the left-hand side as written. What has gone wrong?
-		  background-color:: red
-			- I'm a dumbass 😅 I saw something that relied on a value being small/getting smaller and uncritically jumped to using limits without thinking about it. The LHS here (obviously) evaluates to 1, not $1+nx$; a limit is not the right tool in this form.
-			  background-color:: red
-		- Having proved the binomial approximation for $n \in \mathbb{N}$, you wrote "I assume it also holds in $\mathbb{Q}$". Why is that assumption not safe to wave through here in particular?
-		  background-color:: red
-			- The binomial theory is a finite sum that _requires_ $n\in\mathbb{N}$; one can't simply plug in $n=\frac{1}{2}$ and hope for the best.
-			  background-color:: red
-		- You claimed that because $\binom{1/2}{2}$ is undefined, there is no second-order term to compute. What is the error in that inference?
-		  background-color:: red
-			- I think that's a little bit of an unfair interpretation! $\binom{1/2}{2}$ definitely _is_ undefined, but I'm aware that an infinite series polynomial expansion exists -- which I've forgotten how to derive -- and that will have a second-order term. I'm not of the belief that, because the binomial theorem can't apply in this situation, all bets are off!
-			  background-color:: red
-		- From $y(2+y) = x$ you derived $y = x/(2+y)$, then substituted $y \approx x/2$ and obtained $x^2 \approx 0$. Which equation did you substitute into, and why did it collapse?
-		  background-color:: red
-			- I substituted into itself, which is not cool and everything just collapsed... Sleep deprivation is a scary thing!
-			  background-color:: red
-		- You reported $\sqrt{125} \approx 11.18$ as an answer to two significant figures. Count them.
-		  background-color:: red
-			- That was a brainfart on my account. There are clearly 4sf there -- albeit completely unqualified -- the same as the number of "r"s in "strawberry" 😅
-			  background-color:: red
-		- You justified four significant figures on the grounds that $11.18$ "is to $1/100$th". Why is that reasoning circular, and what is the non-circular version?
-		  background-color:: red
-		- You gave $(1+x)^{-1/2} \approx 1 + x/2$, having used $n = -1$ correctly a few minutes earlier. What is the answer, and what class of error is this?
-		  background-color:: red
-			- It should be $1-\frac{x}{2}$, an instance of the mathematician's staple sign error.
-			  background-color:: red
-		- You wrote $0.5 \times 10^{-3}$ as "$0.0005\%$". Convert it properly. Where else in the sitting did the same conversion go wrong?
-		  background-color:: red
-			- It should be 0.05%. A clumsy error on my part, but -- despite it happening twice -- not indicative of a wider misunderstanding.
-			  background-color:: red
-		- You gave the ratio of the second-order term to the first as $2/((n-1)x)$. Derive it and compare.
-		  background-color:: red
-			- See my answer above. In my first derivation, I took the reciprocal accidentally. Besides everything we've re-learnt in this session, one very clear lesson is that my algebraic manipulation skills attenuate with fatigue _much_ more than they used to. Sign errors and off-by-one order of magnitude slip-ups are normal human mistakes that happen all the time, but I need to pay closer attention to this now.
-			  background-color:: red
-		- You wrote $(1 - 1/4)^2 = 1/2 + 9/16$. What is it, and what went wrong in the expansion?
-		  background-color:: red
-			- I don't remember this, so I looked through the transcript and found the error. I cannot fathom what went wrong, but it clearly is very wrong! This simply expands to $1 - \frac{1}{2} + \frac{1}{16} = \frac{9}{16}$.
-			  background-color:: red
-		- From $\left(\frac{7}{8}\right)^3 = \frac{2}{3}(1+x)$ you wrote $\left(\frac{7}{8}\right)^{12} = \frac{2}{3}(1+x)^4$. What did you fail to do to the $2/3$, and which quantity did you actually compute?
-		  background-color:: red
-			- I forgot to apply the exponent to the common factor that I pulled out, so I was off by a factor of $\frac{2}{3}^3$
-			  background-color:: red
-		- You approximated $81 \approx 80$ and arrived at $261/1280$, which needs long division. Where should the $80$ have been attached, and what does the division become?
-		  background-color:: red
-			- Looking back at the transcript, how I arrived at $\frac{261}{1280}$ looks a bit deranged. I cannot back-track my thought process to understand how I arrived there. That is, it's more than a simple arithmetic error; it's probably yet another instance of compromised attention.
-			  background-color:: red
-		- Against the sceptic you argued that a calculator is "also just estimating" because of floating-point representation. Give the sceptic's one-line reply, and say why an argument of this shape is a bad one to lead with.
-		  background-color:: red
-			- A calculator typically computes to many significant figures (12 or more), which is many trillions times more precise than 2 or 3sf. The important point is rather that the calculator does not show its error bounds, which are quantifiable and can be used to justify how many significant figures are actually needed.
-			  background-color:: red
+		- A calculator cannot quantify the relative error of either the input or the output. Moreover, it is a dumb tool that dutifully performs what's asked of it, even when it doesn't make sense.
 - ## Summary
 	- A colleague says: "Estimation is just being sloppy with a reason. If I want the answer I use a calculator; if I don't have one, I get an approximate answer and I know it's approximate. Dressing it up with discarded terms and relative precision doesn't change that I've got a worse answer than the machine would have given me." Answer them — and make the case you missed on the day.
 		- These estimation techniques do more than let you arrive at an answer without needing technological assistance. They allow you to arrive at an answer with confidence in how accurate is it -- and how accurate it needs to be -- by virtue of quantifying the error. Without provenance over its inputs and their relative error, any hope of tracking the error in the output is lost.
