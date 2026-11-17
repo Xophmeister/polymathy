@@ -75,31 +75,18 @@ alias:: METH1.1
 		- As the linear term in the binomial expansion is $nx$ we need $|nx|\ll1$ rather than just $|x|\ll1$
 		- Moreover, the second-order term is $\frac{1}{2}n(n-1)x^2$, so the ratio of the second with respect to the first-order terms is $\frac{1}{2}(n-1)x$. That means the second-order term will be _greater than_ the first whenever $|(n-1)x|>2$, breaking the negligiblity assumption on the $O(x^2)$ terms in this case.
 	- $(7/8)^{12}$: you cannot reduce $n$, so what is the only lever available? Describe the route that gets to two significant figures in three mental steps, and say what made each choice along the way a choice rather than an algorithm.
-	  background-color:: red
-		- $\frac{7}{8}^{12} = (\frac{7}{8}^3)^4$, which we perform because the inside cube is doable by hand
-		  background-color:: red
+		- $\frac{7}{8}^{12} = (\frac{7}{8}^3)^4$, which we perform because the inside cube is doable by hand while minimising the final $n$.
+			- The square is also doable by hand in $(\frac{7}{8}^2)^6$, but then that works against us by virtue of the resulting $|6\varepsilon|\ll 1$ constraint. Specifically, $\frac{49}{64}\approx \frac{3}{4}$, so we'd end up with $\varepsilon = \frac{1}{48}$ and $6\varepsilon=\frac{1}{8}$, which isn't especially small.
 		- $\frac{7}{8}^3 = \frac{343}{512} \approx \frac{2}{3}$; alternatively, it precisely equals $\frac{2}{3}(1+\varepsilon)$, for some small error $\varepsilon$
-		  background-color:: red
 			- Here $\varepsilon=\frac{5}{1024}\approx 0.005$
-			  background-color:: red
 			- This gives us the correct conditions for the binomial approximation
-			  background-color:: red
 		- So $\frac{7}{8}^{12} = (\frac{2}{3}(1+\varepsilon))^4 \approx \frac{2}{3}^4(1+4\varepsilon)$, provided $|4\varepsilon|\ll1$
-		  background-color:: red
 			- $|4\varepsilon|\approx 0.02\ll 1$
-			  background-color:: red
 			- So we have $\frac{16}{81}(1 + \frac{20}{1024})$
-			  background-color:: red
 			- $\frac{16}{81}\approx\frac{16}{80}=\frac{1}{5}$ and $\frac{20}{1024}\approx\frac{1}{50}$
-			  background-color:: red
-				- In both these cases, the approximations reduce the denominators ($80<81$ and $1000<1024$), so rather than 0.2 and 0.02, the leading digits in their respective decade will be 1.
-				  background-color:: red
-				- ...
-				  background-color:: red
-			- $\frac{1}{5} + \frac{1}{250} = 0.204$
-			  background-color:: red
-		- So $\frac{7}{8}^{12} = 0.20$ to 2sf
-		  background-color:: red
+				- In both these cases, the approximations reduce the denominators ($80<81$ and $1000<1024$), which yield overestimates. In these cases: by 1.25% and 2.4%, respectively. The latter is affected by the multiplicative error, so it really just contributes 0.03% error.
+				- $\frac{1}{5}=0.2$, so the leading digit of 2 in the decade affords 2.5% of tolerance at 2sf. The $\frac{1}{250}=0.004$ is already outside the 2sf range in the same decade, so it can be dropped.
+				- $2.5\%>1.25\%$, so $\frac{7}{12}^{12} = 0.20$ to 2sf
 	- [[METH1.6]]: Why are $\ln 2$ and $\ln 10$ worth holding cold? Give the two specific uses named in the sitting.
 		- Half life, in exponential decay, is $t_\frac{1}{2} = \frac{\ln 2}{\lambda}$, so the decay constant ($\lambda$) can be estimated in ones head.
 		- $\ln 10$ is useful for converting natural logs into decades, apparently.
@@ -134,7 +121,7 @@ alias:: METH1.1
 	- "$(1+x)^n \approx 1 + nx$ is valid whenever $|x|$ is small. With $x = -\tfrac18$, which is small, it gives $(7/8)^{12} \approx -\tfrac12$. So the approximation must fail for negative $x$." What's wrong with that?
 		- The approximation doesn't fail when $x$ is negative; it failed when $|nx|$ isn't small. Here $|nx|=1.5$ which is not in the least bit small.
 	- "$(7/8)^3 = \tfrac23(1+x)$ with $x$ small, therefore $(7/8)^{12} = \tfrac23(1+x)^4$." What's wrong with that?
-		- The common factor of $\frac{2}{3}$ that has been pulled out has not been raised to the fourth power. It should be $\frac{7}{8}^{12}=\
+		- The common factor of $\frac{2}{3}$ that has been pulled out has not been raised to the fourth power. It should be $\frac{7}{8}^{12}=\frac{2}{3}^4 (1+x)^4$.
 	- "Mental estimation is no worse than using a calculator, because a calculator is only estimating too: floating-point arithmetic can't represent most numbers exactly." What's wrong with that as a defence of estimation?
 		- A calculator cannot quantify the relative error of either the input or the output. Moreover, it is a dumb tool that dutifully performs what's asked of it, even when it doesn't make sense.
 - ## Summary
