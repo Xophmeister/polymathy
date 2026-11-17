@@ -80,13 +80,17 @@ alias:: METH1.1
 		- $\frac{7}{8}^3 = \frac{343}{512} \approx \frac{2}{3}$; alternatively, it precisely equals $\frac{2}{3}(1+\varepsilon)$, for some small error $\varepsilon$
 			- Here $\varepsilon=\frac{5}{1024}\approx 0.005$
 			- This gives us the correct conditions for the binomial approximation
-		- So $\frac{7}{8}^{12} = (\frac{2}{3}(1+\varepsilon))^4 \approx \frac{2}{3}^4(1+4\varepsilon)$, provided $|4\varepsilon|\ll1$
+		- So $(\frac{7}{8})^{12} = (\frac{2}{3}(1+\varepsilon))^4 \approx (\frac{2}{3})^4(1+4\varepsilon)$ , provided $|4\varepsilon|\ll1$
 			- $|4\varepsilon|\approx 0.02\ll 1$
-			- So we have $\frac{16}{81}(1 + \frac{20}{1024})$
-			- $\frac{16}{81}\approx\frac{16}{80}=\frac{1}{5}$ and $\frac{20}{1024}\approx\frac{1}{50}$
-				- In both these cases, the approximations reduce the denominators ($80<81$ and $1000<1024$), which yield overestimates. In these cases: by 1.25% and 2.4%, respectively. The latter is affected by the multiplicative error, so it really just contributes 0.03% error.
-				- $\frac{1}{5}=0.2$, so the leading digit of 2 in the decade affords 2.5% of tolerance at 2sf. The $\frac{1}{250}=0.004$ is already outside the 2sf range in the same decade, so it can be dropped.
-				- $2.5\%>1.25\%$, so $\frac{7}{12}^{12} = 0.20$ to 2sf
+			- So we have $\frac{16}{81}(1 + 4\varepsilon)$
+			- $\frac{16}{81}\approx\frac{16}{80}=\frac{1}{5} = 0.2$. The answer's leading digit is 2, so 2sf gives a budget of $\pm2.5\%$
+				- $\frac{16}{80}$ for $\frac{16}{81}$: $+1.25\%$ (smaller denominator, so too big)
+				- Dropping $(1+4\varepsilon)$: $\approx -2\%$ (the factor exceeds 1, so dropping it makes the result too small)
+				- Relative errors add under multiplication, so the net is $\approx -0.7\%$ , inside $\pm2.5\%$
+				- Ignoring signs, the total would be $\approx 3.2\%$ , outside the budget: the signs are essential, and they are known exactly, rather than guessed
+				- Note: This sub-level was supplied, not earned (see transcript circa 2026-11-17)
+				  background-color:: yellow
+			- So $(\frac{7}{8})^{12} = 0.20$ to 2sf.
 	- [[METH1.6]]: Why are $\ln 2$ and $\ln 10$ worth holding cold? Give the two specific uses named in the sitting.
 		- Half life, in exponential decay, is $t_\frac{1}{2} = \frac{\ln 2}{\lambda}$, so the decay constant ($\lambda$) can be estimated in ones head.
 		- $\ln 10$ is useful for converting natural logs into decades, apparently.

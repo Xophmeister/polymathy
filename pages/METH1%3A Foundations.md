@@ -135,6 +135,7 @@ tags:: syllabus, METH1
 		- Propagation of uncertainty through a formula: the fractional forms and why they are the useful ones, sums against products, and the doubling that follows from a squared term. Independent contributions added in quadrature, and the reason that is the same statement as variance additivity.
 		- **Boundary with** ((6a6d2611-4f8d-4fc3-b91e-1af00b90d9c6)): ((6a6d2611-4f8d-4fc3-b91e-1af00b90d9c6)) owns the experimental categories — random against systematic as properties of a *procedure* rather than of an instrument, precision against accuracy, and the practice of measurement. This topic owns the mathematics those categories run on. The qualitative half of ((6a6d2611-4f8d-4fc3-b91e-1af00b90d9c6)) is startable now; its quantitative half waits on this.
 		- *Re-tests from diagnostic:* the $1/\sqrt{n}$ law, which was unavailable in two diagnostics; the fractional uncertainty of a Poisson count.
+		- *Re-tests:* relative errors combined by multiplying rather than adding under a product, and a separate tolerance assigned to each factor rather than one budget to the answer ([[METH1.1: Number, powers and estimation]] write-up, November 2026).
 		- *Cross-subject:* measurement and uncertainty ( ((6a6d2611-4f8d-4fc3-b91e-1af00b90d9c6))); activity and the statistics of counting ( ((6a6d2611-1992-43a0-a932-507b1ebca6c1))); sampling as the formalised inductive step ( ((6acb85de-f2e3-4948-b798-a1885864967e))).
 	- ### [[METH1.12: Fitting and testing against data]]
 	  id:: 6a764603-7297-4b85-beff-26db87c6c2f4
