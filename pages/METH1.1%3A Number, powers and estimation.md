@@ -63,13 +63,10 @@ alias:: METH1.1
 		- $y=O(x)$, so those $xy^2$ and $y^4$ terms will yield orders higher than 2 in $x$, so we have $1+\frac{x}{2}-\frac{x^2}{8} + O(x^3)$
 		- So the second-order term is $-\frac{x^2}{8}$
 	- You have $\sqrt{125} = 11(1+x)^{1/2}$ with $x = 4/121$, and you have kept only the linear term. Without computing $\sqrt{125}$ by any other route, how many significant figures is $11.18$ entitled to? What is the comparison that establishes it?
-	  background-color:: red
 		- Keeping just the linear term gives $11(1+\frac{x}{2}) = 11 + \frac{2}{11} = 11.\dot{1}\dot{8}$
-		  background-color:: red
 		- The second-order term would be $-\frac{2}{11^3}$, which is smaller than $-\frac{1}{500} = -0.002$ (because $11^3 > 10^3$ in the denominator)
-		  background-color:: red
-		- $-0.002$ cannot affect the tenths and hundredths digits by conventional rounding (it is under the $\pm0.005$ threshold), so $11.18$ is good to 4sf.
-		  background-color:: red
+			- The first discarded term can stand in for the whole tail, as subsequent terms become geometrically smaller. Specifically by a factor of $\frac{4}{121}$ per term, which upon summation will fit within the 0.002 bound.
+		- For 11.18 to be good to 4sf, the second-order term must keep the approximation within $[11.175,11.185)$, which it clearly does: $11.\dot{1}\dot{8}-0.002 = 11.179\dot{8}\dot{1} > 11.175$. (The upper bound cannot be reached with the approximations we've calculated.)
 	- $(1-1/8)^{12}$ with the linearisation gives $-1/2$, which is impossible. Which assumption has failed? State the actual condition for the linearisation to be legitimate, and show why the "$x$ is small" version is the wrong one.
 		- $x=-\frac{1}{8}$ is reasonably small, but $nx=-\frac{3}{2}$ which definitely isn't!
 		- As the linear term in the binomial expansion is $nx$ we need $|nx|\ll1$ rather than just $|x|\ll1$

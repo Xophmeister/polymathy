@@ -1,0 +1,53 @@
+/* Typography: a Palatino-like serif with leading to suit it. */
+
+:root {
+  /* Logseq builds the html font stack as var(--ls-font-family) followed by
+     sans-serif fallbacks, so the serif fallbacks must live inside the
+     variable itself or a missing Palatino would drop through to sans.
+     P052 is URW's metric-compatible Palatino clone, shipped with Ghostscript. */
+  --ls-font-family: "Palatino", "Palatino Linotype", "Book Antiqua",
+    "TeX Gyre Pagella", "P052", serif;
+
+  /* Palatino has a much smaller x-height than Logseq's default Inter, so it
+     reads small at the same nominal size. Everything sized in em follows
+     this, including the bullet rows and KaTeX below. */
+  --ls-page-text-size: 1.2em;
+
+  /* Logseq's default is 1.5; Palatino's wide letterforms read better with a
+     little more. */
+  --polymathy-body-line-height: 1.7;
+}
+
+/* Body text only. Logseq sets line-height: 1.5 on p explicitly, so it has to
+   be named here as well as the block container it would otherwise inherit
+   from. The textarea is included so a block doesn't reflow on entering edit
+   mode. */
+.ls-block .block-content,
+.ls-block .block-content p,
+.editor-inner textarea:not(:is(.h1, .h2, .h3, .h4, .h5, .h6)) {
+  line-height: var(--polymathy-body-line-height);
+}
+
+/* Headings would otherwise inherit the looser body leading. */
+.ls-block :is(h1, h2, h3, h4, h5, h6) {
+  line-height: 1.5;
+}
+
+/* Logseq sizes the bullet's row and the empty-block minimum at a fixed 24px,
+   i.e. one line at its default leading, and centres the bullet within it.
+   Tying them to the same variable keeps the bullet centred on the first line
+   of text. */
+.block-control-wrap {
+  height: calc(var(--polymathy-body-line-height) * 1em);
+}
+
+.ls-block .block-content {
+  min-height: calc(var(--polymathy-body-line-height) * 1em);
+}
+
+/* KaTeX scales maths to 1.21em to match the x-height of a typical sans body
+   font. Palatino's x-height is already large, so that scaling makes inline
+   maths look oversized beside it. */
+.katex {
+  font-size: 1.1em;
+}
