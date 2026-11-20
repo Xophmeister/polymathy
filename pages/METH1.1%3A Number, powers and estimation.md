@@ -98,7 +98,7 @@ alias:: METH1.1
 	- "I know $\sqrt2$ to two significant figures as $1.4$, so it must lie below $1.45$." Is that a sound basis for an upper bound? What's wrong with it?
 		- It's as sound as ones memory, which is notoriously unsound!
 	- It's often said that two significant figures always mean a relative tolerance of 1 part in 200 – half a unit in the second place – whatever the number happens to be. What's wrong with that?
-		- 1 part in 200 (0.5%) relative tolerance yielding 2sf _only_ applies when the decimalisation leads with a 5 or less.
+		- 1 part in 200 (0.5%) relative tolerance yielding 2sf _only_ applies when the decimalised answer leads with a 5 or less.
 	- The binomial approximation is written "$\lim_{x\to0}(1+x)^n = 1 + nx$". What's wrong with that statement?
 		- This is an invalid use of limits; the limit on the LHS is equal to 1, which is not the same as the RHS.
 	- "$(1+x)^n \approx 1 + nx$ follows from the binomial theorem for natural $n$, so it holds for rational $n$ by the same argument." What's wrong with that?
@@ -109,7 +109,7 @@ alias:: METH1.1
 	- To find the second-order term of $(1+x)^{1/2} = 1 + y$, someone squares to get $y(2+y) = x$, rearranges to $y = x/(2+y)$, and then substitutes $y \approx x/2$ into $y(2+y) = x$. This gives $2x + x^2 \approx 2x$, hence $x^2 \approx 0$, and they conclude that the second-order correction vanishes. What's wrong?
 		- It's a circular argument: by substituting the substitute back into itself, the expression collapses into meaninglessness.
 	- A linear approximation gives $\sqrt{125} \approx 11.18$. Since that is stated to the hundredths place, it is good to four significant figures. What's wrong with that reasoning?
-		- It puts too much trust in the source, which may be erroneous. It's effectively the logical fallacy of appealing to authority.
+		- If it is good to 4sf, then the true answer must lie in $[11.175,11.185)$. We can verify this by squaring: $11.175^2 = 124.880625 < 125 < 125.104225 = 11.185^2$.
 	- "Since $(1+x)^{1/2} \approx 1 + x/2$, the same holds for $(1+x)^{-1/2}$: the sign of the exponent only affects the higher-order terms." What's wrong with that?
 		- The sign of the exponent matters for all terms; it can't just be brushed away. We derived above the approximation for arbitrary exponents in $\mathbb{Q}$, so $(1+x)^{-\frac{1}{2}}\approx 1 - \frac{x}{2}$.
 	- "A relative precision of $0.5 \times 10^{-3}$ is $0.0005\%$." What's wrong with that?
@@ -121,7 +121,8 @@ alias:: METH1.1
 	- "$(7/8)^3 = \tfrac23(1+x)$ with $x$ small, therefore $(7/8)^{12} = \tfrac23(1+x)^4$." What's wrong with that?
 		- The common factor of $\frac{2}{3}$ that has been pulled out has not been raised to the fourth power. It should be $\frac{7}{8}^{12}=\frac{2}{3}^4 (1+x)^4$.
 	- "Mental estimation is no worse than using a calculator, because a calculator is only estimating too: floating-point arithmetic can't represent most numbers exactly." What's wrong with that as a defence of estimation?
-		- A calculator cannot quantify the relative error of either the input or the output. Moreover, it is a dumb tool that dutifully performs what's asked of it, even when it doesn't make sense.
+		- Floating-point representation quantises $\mathbb{R}$ into $2^n$ values, for some $n$ (e.g., 16, 32, 64, etc.). The arithmetic it performs operates over this finite set in such a way that it approximates the usual arithmetic operations over $\mathbb{R}$ (e.g., associativity goes out the window). That is not to say it is imprecise, but rather that is limited.
+		- Mental estimation has a different trade-off: You lose "arbitrary" finite precision (modulo the calculator's word size) -- because it becomes intractable to compute manually -- but not at the expense of continuitiy, while also gaining the ability to reason about the precision you need.
 - ## Summary
 	- A colleague says: "Estimation is just being sloppy with a reason. If I want the answer I use a calculator; if I don't have one, I get an approximate answer and I know it's approximate. Dressing it up with discarded terms and relative precision doesn't change that I've got a worse answer than the machine would have given me." Answer them — and make the case you missed on the day.
 		- These estimation techniques do more than let you arrive at an answer without needing technological assistance. They allow you to arrive at an answer with confidence in how accurate is it -- and how accurate it needs to be -- by virtue of quantifying the error. Without provenance over its inputs and their relative error, any hope of tracking the error in the output is lost.
