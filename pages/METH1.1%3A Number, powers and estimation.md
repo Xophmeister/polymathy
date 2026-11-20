@@ -9,7 +9,7 @@ alias:: METH1.1
 	  | $\huge\sqrt{3}$ | $\huge 1.73$ | -0.1% |
 	  | $\huge\ln 2$ | $\huge 0.693$ | -0.02% |
 	  | $\huge\ln 10$ | $\huge 2.30$ | -0.1% |
-	  | $\huge e$ | $\huge 2.72$ | +0.1% |
+	  | $\huge e$ | $\huge 2.72$ | +0.06% |
 - ## Cue sheet
 	- Why does rationalising a denominator help when estimating $1/(4\sqrt{2})$ mentally? What does the operation actually relocate, and why does that matter?
 		- $\sqrt{2}$ in the denominator means attempting to divide by 1.41 when approximating. That's not impossible, but will almost certainly require long division, for which the bookkeeping is difficult to maintain in ones head.
@@ -27,17 +27,16 @@ alias:: METH1.1
 		- You want to track the relative error because that's where its reflected in the output. If you need a specific precision, you know immediately what the input's precision must be.
 	- An answer of $0.11$ and an answer of $0.98$ both carry an absolute tolerance of $\pm 0.005$ at two significant figures. Why do they not carry the same relative tolerance?
 		- "Significant figures" is an artefact of decimalisation, rather than ratios. $\pm0.005$ has a relative tolerance of nearly 5% when the answer is 0.11, but just $0.5\%$ for 0.98.
-		- So 2sf in the input earns between 5% to 0.5% relative error in the output _just_ by virtue of the leading digit in the decade.
+		- So 2sf in the output earns between 5% to 0.5% relative error _just_ by virtue of its leading digit in the decade.
 			- Note: A "decade" is the interval between two consecutive powers of ten: $[10^k,10^{k+1})$
 	- What relative precision must an input carry to secure $n$ significant figures in the output *whatever* the output turns out to be? Why the worst case rather than the typical one?
 		- $n$ sf costs approximately $0.5\times 10^{-n}$ relative precision in the worst case.
 		- If the leading digit in the decade cannot be estimated through other means, you cannot tell where it will fall within it, so the worst case is a guarantee of output precision.
 	- Given that worst-case figure, why is $\sqrt{2} \approx 1.4$ nevertheless often enough? What is the cheaper, adaptive discipline, and what does it require you to do first?
-		- 1.4 has a relative error of about 1%. It's leading digit in the decade is 1, which has a tolerance of 5% to 2sf.
-		- As we have foreknowledge of this, we can take shortcuts when trying to estimate (e.g., terminating an iterative process early when we have enough precision).
+		- If we have foreknowledge of leading digit in the decade of the answer -- e.g., by computing it through other means, first -- we can take shortcuts when trying to estimate (e.g., terminating an iterative process early when we have enough precision).
 	- Estimating $5^{3/2}$: the tidy form is $5\sqrt{5}$. Why is the untidy form $\sqrt{125}$ the more useful one?
 		- Observe that 125 is very close to $121 = 11^2$.
-		- Therefore we can rewrite this in the form $\sqrt{125(1+x)} = 11(1+ x)^\frac{1}{2}$, which gets us to binomial approximation territory (see below).
+		- Therefore we can rewrite this in the form $\sqrt{121(1+x)} = 11(1+ x)^\frac{1}{2}$, which gets us to binomial approximation territory (see below).
 	- Derive $(1+x)^n \approx 1 + nx$ for $n \in \mathbb{N}$. What makes the discarded part negligible?
 		- By the binomial theorem: $(1+x)^n = \sum_{k=0}^{n} \binom{n}{k}x^k = 1 + nx + \frac{1}{2}n(n-1)x^2 + \ldots$
 		- When $|x|<1$, the higher polynomial terms will reduce to 0 faster than the linear term; simultaneously, we have $n\in\mathbb{N}$ counteracting that.
@@ -94,14 +93,12 @@ alias:: METH1.1
 	- What does mental estimation give you that a calculator structurally cannot, and why is this not merely a claim about the calculator's finite precision?
 		- It allows the error to be bounded in a quantifiable way; calculators don't do that, they just churn out whatever precision they're specified to. Moreover, calculators don't know where their input came from, so the provenance of any error and the ability to track it is completely lost.
 - ## Error cues
-	- A calculation gives exactly $0.175$ using $\sqrt2 \approx 1.4$. Since $\sqrt2$ is a little more than $1.4$, the true value lies above $0.175$, and so it rounds to $0.18$ at two significant figures. What's wrong with this argument?
-		- Rounding up at the $0.5\times 10^{-n}$ boundary is a convention. It worked here, but it's not a technique to rely upon.
-		- Asserting that "[it]'s a little more than 1.4" and carrying that through to the output is imprecise and more about ones memory than the actual numeric value.
+	- The calculation of $\sqrt{2}/8$ gives exactly $0.175$ using $\sqrt2 \approx 1.4$. Since $\sqrt2$ is a little more than $1.4$, the true value lies above $0.175$, and so it rounds to $0.18$ at two significant figures. What's wrong with this argument?
+		- For an answer of 0.18 to 2sf, we must also show that both lower (0.175) and upper (0.185) bounds are satisfied. We see that $(8\times 1.75)^2=1.96 < 2 < 2.1904=(8\times 1.85)^2$
 	- "I know $\sqrt2$ to two significant figures as $1.4$, so it must lie below $1.45$." Is that a sound basis for an upper bound? What's wrong with it?
 		- It's as sound as ones memory, which is notoriously unsound!
 	- It's often said that two significant figures always mean a relative tolerance of 1 part in 200 – half a unit in the second place – whatever the number happens to be. What's wrong with that?
-		- $\pm0.005$ only gives the relative tolerance for 2sf for numbers whose absolute value is less than 1.
-		- For example, 120 is to 2sf, but its relative tolerance is $\pm5$.
+		- 1 part in 200 (0.5%) relative tolerance yielding 2sf _only_ applies when the decimalisation leads with a 5 or less.
 	- The binomial approximation is written "$\lim_{x\to0}(1+x)^n = 1 + nx$". What's wrong with that statement?
 		- This is an invalid use of limits; the limit on the LHS is equal to 1, which is not the same as the RHS.
 	- "$(1+x)^n \approx 1 + nx$ follows from the binomial theorem for natural $n$, so it holds for rational $n$ by the same argument." What's wrong with that?
