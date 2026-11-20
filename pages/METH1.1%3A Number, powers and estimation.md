@@ -12,13 +12,13 @@ alias:: METH1.1
 	  | $\huge e$ | $\huge 2.72$ | +0.06% |
 - ## Cue sheet
 	- Why does rationalising a denominator help when estimating $1/(4\sqrt{2})$ mentally? What does the operation actually relocate, and why does that matter?
-		- $\sqrt{2}$ in the denominator means attempting to divide by 1.41 when approximating. That's not impossible, but will almost certainly require long division, for which the bookkeeping is difficult to maintain in ones head.
+		- $\sqrt{2}$ in the denominator means attempting to divide by 1.41 when approximating. That's not impossible, but will almost certainly require long division, for which the bookkeeping is difficult to maintain in one's head.
 		- That's true of all irreducible roots in the denominator. Rationalising moves them to the numerator and we avoid the necessary long division incurred from the 3sf input approximation.
 		- In this case, rationalising the denominator gives $\sqrt{2}/8$, which is particularly simple because $8=2^3$, so we just need to halve three times.
 	- You need to know whether $\sqrt{2} < 1.45$. What is the cheapest check, and why is it preferable to appealing to how precisely you remember $\sqrt{2}$?
 		- Square the RHS: $1.45^2 = 2.1025 > 2$, so we have a cheap upper bound for $\sqrt{2}$
 		- Similarly, $1.41^2 = 1.9881 < 2$ to validate our lower bound
-		- Squaring here is preferable than relying on memory because it gives a genuine arithmetic result, rather than a fact about ones recollection
+		- Squaring here is preferable than relying on memory because it gives a genuine arithmetic result, rather than a fact about one's recollection
 		- If you can bound your approximation, say in $(a,b)$, then the relative error from the midpoint of the interval can be quantified as $\pm\frac{b-a}{b+a}$.
 		- So for an approximation in $(1.41,1.45)$, the relative error is at most $\pm1.4\%$
 	- Three halvings were applied to an approximate $\sqrt{2}$. What happened to the absolute error, and what happened to the relative error? Which of the two is the right currency to track, and why?
@@ -33,6 +33,7 @@ alias:: METH1.1
 		- $n$ sf costs approximately $0.5\times 10^{-n}$ relative precision in the worst case.
 		- If the leading digit in the decade cannot be estimated through other means, you cannot tell where it will fall within it, so the worst case is a guarantee of output precision.
 	- Given that worst-case figure, why is $\sqrt{2} \approx 1.4$ nevertheless often enough? What is the cheaper, adaptive discipline, and what does it require you to do first?
+		- 1.4 is about 1% out. As the leading digit is 1, that affords a budget of nearly 5% relative error for 2sf. 1% is less than 5%.
 		- If we have foreknowledge of leading digit in the decade of the answer -- e.g., by computing it through other means, first -- we can take shortcuts when trying to estimate (e.g., terminating an iterative process early when we have enough precision).
 	- Estimating $5^{3/2}$: the tidy form is $5\sqrt{5}$. Why is the untidy form $\sqrt{125}$ the more useful one?
 		- Observe that 125 is very close to $121 = 11^2$.
@@ -88,15 +89,15 @@ alias:: METH1.1
 				  background-color:: yellow
 			- So $(\frac{7}{8})^{12} = 0.20$ to 2sf.
 	- [[METH1.6]]: Why are $\ln 2$ and $\ln 10$ worth holding cold? Give the two specific uses named in the sitting.
-		- Half life, in exponential decay, is $t_\frac{1}{2} = \frac{\ln 2}{\lambda}$, so the decay constant ($\lambda$) can be estimated in ones head.
+		- Half life, in exponential decay, is $t_\frac{1}{2} = \frac{\ln 2}{\lambda}$, so the decay constant ($\lambda$) can be estimated in one's head.
 		- $\ln 10$ is useful for converting natural logs into decades, apparently.
 	- What does mental estimation give you that a calculator structurally cannot, and why is this not merely a claim about the calculator's finite precision?
 		- It allows the error to be bounded in a quantifiable way; calculators don't do that, they just churn out whatever precision they're specified to. Moreover, calculators don't know where their input came from, so the provenance of any error and the ability to track it is completely lost.
 - ## Error cues
 	- The calculation of $\sqrt{2}/8$ gives exactly $0.175$ using $\sqrt2 \approx 1.4$. Since $\sqrt2$ is a little more than $1.4$, the true value lies above $0.175$, and so it rounds to $0.18$ at two significant figures. What's wrong with this argument?
-		- For an answer of 0.18 to 2sf, we must also show that both lower (0.175) and upper (0.185) bounds are satisfied. We see that $(8\times 1.75)^2=1.96 < 2 < 2.1904=(8\times 1.85)^2$
+		- For an answer of 0.18 to 2sf, we must also show that both lower (0.175) and upper (0.185) bounds are satisfied. We see that $(8\times 0.175)^2=1.96 < 2 < 2.1904=(8\times 0.185)^2$
 	- "I know $\sqrt2$ to two significant figures as $1.4$, so it must lie below $1.45$." Is that a sound basis for an upper bound? What's wrong with it?
-		- It's as sound as ones memory, which is notoriously unsound!
+		- It's as sound as one's memory, which is notoriously unsound!
 	- It's often said that two significant figures always mean a relative tolerance of 1 part in 200 – half a unit in the second place – whatever the number happens to be. What's wrong with that?
 		- 1 part in 200 (0.5%) relative tolerance yielding 2sf _only_ applies when the decimalised answer leads with a 5 or less.
 	- The binomial approximation is written "$\lim_{x\to0}(1+x)^n = 1 + nx$". What's wrong with that statement?
@@ -108,21 +109,23 @@ alias:: METH1.1
 		- The inability to use the binomial expansion on rational exponents -- because the binomial coefficients, amongst other things, are undefined in that case -- does not imply that there is no (infinite) polynomial expansion whatsoever. It's just the wrong tool for the job.
 	- To find the second-order term of $(1+x)^{1/2} = 1 + y$, someone squares to get $y(2+y) = x$, rearranges to $y = x/(2+y)$, and then substitutes $y \approx x/2$ into $y(2+y) = x$. This gives $2x + x^2 \approx 2x$, hence $x^2 \approx 0$, and they conclude that the second-order correction vanishes. What's wrong?
 		- It's a circular argument: by substituting the substitute back into itself, the expression collapses into meaninglessness.
+		- The $y\approx\frac{x}{2}$ can be substituted back into the original $1+y$ substitution, to get the standard binomial approximation: $1 + \frac{x}{2}$.
+		- For the second-order term, you need to keep the $y^2$ term and iteratively substitute into the $1+y$ until all second-order terms in $x$ are accounted for (see above).
 	- A linear approximation gives $\sqrt{125} \approx 11.18$. Since that is stated to the hundredths place, it is good to four significant figures. What's wrong with that reasoning?
+		- Stating without justifying is not enough to establish precision objectively.
 		- If it is good to 4sf, then the true answer must lie in $[11.175,11.185)$. We can verify this by squaring: $11.175^2 = 124.880625 < 125 < 125.104225 = 11.185^2$.
 	- "Since $(1+x)^{1/2} \approx 1 + x/2$, the same holds for $(1+x)^{-1/2}$: the sign of the exponent only affects the higher-order terms." What's wrong with that?
 		- The sign of the exponent matters for all terms; it can't just be brushed away. We derived above the approximation for arbitrary exponents in $\mathbb{Q}$, so $(1+x)^{-\frac{1}{2}}\approx 1 - \frac{x}{2}$.
 	- "A relative precision of $0.5 \times 10^{-3}$ is $0.0005\%$." What's wrong with that?
 		- It's off by two orders of magnitude; $0.5\times 10^{-3}$ is 0.05%.
 	- "In $(1+x)^n = 1 + nx + \ldots$, the ratio of the second-order term to the first-order term is $2/((n-1)x)$, so the second-order term is negligible when $(n-1)x$ is large." What's wrong with that?
-		- The first-order term is $nx$, the second-order term is $\frac{1}{2}n(n-1)x^2$, so the ratio is actually $\frac{1}{2}(n-1)x$. That is, the reciprocal of what's given.
+		- The first-order term is $nx$, the second-order term is $\frac{1}{2}n(n-1)x^2$, so the ratio is actually $\frac{1}{2}(n-1)x$ -- that is, the reciprocal of what's given -- making the second-order term negligible only when $|\frac{1}{2}(n-1)x|\ll 1$.
 	- "$(1+x)^n \approx 1 + nx$ is valid whenever $|x|$ is small. With $x = -\tfrac18$, which is small, it gives $(7/8)^{12} \approx -\tfrac12$. So the approximation must fail for negative $x$." What's wrong with that?
 		- The approximation doesn't fail when $x$ is negative; it failed when $|nx|$ isn't small. Here $|nx|=1.5$ which is not in the least bit small.
 	- "$(7/8)^3 = \tfrac23(1+x)$ with $x$ small, therefore $(7/8)^{12} = \tfrac23(1+x)^4$." What's wrong with that?
 		- The common factor of $\frac{2}{3}$ that has been pulled out has not been raised to the fourth power. It should be $\frac{7}{8}^{12}=\frac{2}{3}^4 (1+x)^4$.
 	- "Mental estimation is no worse than using a calculator, because a calculator is only estimating too: floating-point arithmetic can't represent most numbers exactly." What's wrong with that as a defence of estimation?
-		- Floating-point representation quantises $\mathbb{R}$ into $2^n$ values, for some $n$ (e.g., 16, 32, 64, etc.). The arithmetic it performs operates over this finite set in such a way that it approximates the usual arithmetic operations over $\mathbb{R}$ (e.g., associativity goes out the window). That is not to say it is imprecise, but rather that is limited.
-		- Mental estimation has a different trade-off: You lose "arbitrary" finite precision (modulo the calculator's word size) -- because it becomes intractable to compute manually -- but not at the expense of continuitiy, while also gaining the ability to reason about the precision you need.
+		- A calculator give you its full precision, whether you need it or not; regardless of the input precision, the output precision is noise rather than signal. Mental estimation forces you to state the input precision to get the desired output precision.
 - ## Summary
 	- A colleague says: "Estimation is just being sloppy with a reason. If I want the answer I use a calculator; if I don't have one, I get an approximate answer and I know it's approximate. Dressing it up with discarded terms and relative precision doesn't change that I've got a worse answer than the machine would have given me." Answer them — and make the case you missed on the day.
 		- These estimation techniques do more than let you arrive at an answer without needing technological assistance. They allow you to arrive at an answer with confidence in how accurate is it -- and how accurate it needs to be -- by virtue of quantifying the error. Without provenance over its inputs and their relative error, any hope of tracking the error in the output is lost.
