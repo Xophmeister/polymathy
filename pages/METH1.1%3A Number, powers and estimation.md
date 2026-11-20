@@ -33,7 +33,7 @@ alias:: METH1.1
 		- $n$ sf costs approximately $0.5\times 10^{-n}$ relative precision in the worst case.
 		- If the leading digit in the decade cannot be estimated through other means, you cannot tell where it will fall within it, so the worst case is a guarantee of output precision.
 	- Given that worst-case figure, why is $\sqrt{2} \approx 1.4$ nevertheless often enough? What is the cheaper, adaptive discipline, and what does it require you to do first?
-		- 1.4 is about 1% out. As the leading digit is 1, that affords a budget of nearly 5% relative error for 2sf. 1% is less than 5%.
+		- The leading digit in the decade of what is being computed informs us what tolerance we need to assure 2sf. The worst-case scenario is a budget of 0.5% error, the best-case is about 5%. We have 1.4 which is about 1% out, so that's within budget whenever the leading digit in the answer is 5 or less.
 		- If we have foreknowledge of leading digit in the decade of the answer -- e.g., by computing it through other means, first -- we can take shortcuts when trying to estimate (e.g., terminating an iterative process early when we have enough precision).
 	- Estimating $5^{3/2}$: the tidy form is $5\sqrt{5}$. Why is the untidy form $\sqrt{125}$ the more useful one?
 		- Observe that 125 is very close to $121 = 11^2$.
@@ -100,6 +100,7 @@ alias:: METH1.1
 		- It's as sound as one's memory, which is notoriously unsound!
 	- It's often said that two significant figures always mean a relative tolerance of 1 part in 200 – half a unit in the second place – whatever the number happens to be. What's wrong with that?
 		- 1 part in 200 (0.5%) relative tolerance yielding 2sf _only_ applies when the decimalised answer leads with a 5 or less.
+		  background-color:: red
 	- The binomial approximation is written "$\lim_{x\to0}(1+x)^n = 1 + nx$". What's wrong with that statement?
 		- This is an invalid use of limits; the limit on the LHS is equal to 1, which is not the same as the RHS.
 	- "$(1+x)^n \approx 1 + nx$ follows from the binomial theorem for natural $n$, so it holds for rational $n$ by the same argument." What's wrong with that?
@@ -112,7 +113,7 @@ alias:: METH1.1
 		- The $y\approx\frac{x}{2}$ can be substituted back into the original $1+y$ substitution, to get the standard binomial approximation: $1 + \frac{x}{2}$.
 		- For the second-order term, you need to keep the $y^2$ term and iteratively substitute into the $1+y$ until all second-order terms in $x$ are accounted for (see above).
 	- A linear approximation gives $\sqrt{125} \approx 11.18$. Since that is stated to the hundredths place, it is good to four significant figures. What's wrong with that reasoning?
-		- Stating without justifying is not enough to establish precision objectively.
+		- "Good to 4sf" happens to be true, but the reasoning of "written to the hundredths place" doesn't establish this.
 		- If it is good to 4sf, then the true answer must lie in $[11.175,11.185)$. We can verify this by squaring: $11.175^2 = 124.880625 < 125 < 125.104225 = 11.185^2$.
 	- "Since $(1+x)^{1/2} \approx 1 + x/2$, the same holds for $(1+x)^{-1/2}$: the sign of the exponent only affects the higher-order terms." What's wrong with that?
 		- The sign of the exponent matters for all terms; it can't just be brushed away. We derived above the approximation for arbitrary exponents in $\mathbb{Q}$, so $(1+x)^{-\frac{1}{2}}\approx 1 - \frac{x}{2}$.
@@ -125,7 +126,7 @@ alias:: METH1.1
 	- "$(7/8)^3 = \tfrac23(1+x)$ with $x$ small, therefore $(7/8)^{12} = \tfrac23(1+x)^4$." What's wrong with that?
 		- The common factor of $\frac{2}{3}$ that has been pulled out has not been raised to the fourth power. It should be $\frac{7}{8}^{12}=\frac{2}{3}^4 (1+x)^4$.
 	- "Mental estimation is no worse than using a calculator, because a calculator is only estimating too: floating-point arithmetic can't represent most numbers exactly." What's wrong with that as a defence of estimation?
-		- A calculator give you its full precision, whether you need it or not; regardless of the input precision, the output precision is noise rather than signal. Mental estimation forces you to state the input precision to get the desired output precision.
+		- A calculator's precision and floating-point representation doesn't invalidate its estimation capabilities. In terms of precision, it's superior -- by several orders of magnitude -- to mental estimation.
 - ## Summary
 	- A colleague says: "Estimation is just being sloppy with a reason. If I want the answer I use a calculator; if I don't have one, I get an approximate answer and I know it's approximate. Dressing it up with discarded terms and relative precision doesn't change that I've got a worse answer than the machine would have given me." Answer them — and make the case you missed on the day.
 		- These estimation techniques do more than let you arrive at an answer without needing technological assistance. They allow you to arrive at an answer with confidence in how accurate is it -- and how accurate it needs to be -- by virtue of quantifying the error. Without provenance over its inputs and their relative error, any hope of tracking the error in the output is lost.
