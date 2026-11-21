@@ -99,8 +99,8 @@ alias:: METH1.1
 	- "I know $\sqrt2$ to two significant figures as $1.4$, so it must lie below $1.45$." Is that a sound basis for an upper bound? What's wrong with it?
 		- It's as sound as one's memory, which is notoriously unsound!
 	- It's often said that two significant figures always mean a relative tolerance of 1 part in 200 – half a unit in the second place – whatever the number happens to be. What's wrong with that?
-		- 1 part in 200 (0.5%) relative tolerance yielding 2sf _only_ applies when the decimalised answer leads with a 5 or less.
-		  background-color:: red
+		- 1 part in 200 (0.05%) is the worst-case bound, so it will secure 2sf for any answer.
+		- However, the bound can be more relaxed -- up to 1 part in 20 (0.5%) -- depending on the leading digit in the answer's decade.
 	- The binomial approximation is written "$\lim_{x\to0}(1+x)^n = 1 + nx$". What's wrong with that statement?
 		- This is an invalid use of limits; the limit on the LHS is equal to 1, which is not the same as the RHS.
 	- "$(1+x)^n \approx 1 + nx$ follows from the binomial theorem for natural $n$, so it holds for rational $n$ by the same argument." What's wrong with that?
